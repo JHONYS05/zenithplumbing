@@ -47,12 +47,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!page) return {};
   const cms = await getCmsPage(slug);
   const firstText = other?.sections.find((s) => s.body)?.body.replace(/\s+/g, " ").slice(0, 155);
-  return buildMetadata({
+  const meta = buildMetadata({
     title: cms.title ?? page.title,
     description: cms.description ?? (page.description || cms.intro || firstText || ""),
     path: `/${slug}`,
     keywords: page.keywords,
   });
+  const og = categoryPageContent[slug]?.og;
+  if (!og) return meta;
+  return {
+    ...meta,
+    openGraph: { ...meta.openGraph, title: og.title, description: og.description },
+    twitter: { card: "summary_large_image", title: og.title, description: og.description },
+  };
 }
 
 export default async function SlugPage({ params }: Props) {
@@ -81,7 +88,7 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
   const extraQs = new Set(extraFaqs.map((f) => f.q));
   // Keep the category's own FAQs, minus the pricing one the longer list already answers.
   const faqs = extra
-    ? [...extraFaqs, ...category.faqs.filter((f) => !extraQs.has(f.q) && !/pricing before/i.test(f.q))]
+    ? [...extraFaqs, ...category.faqs.filter((f) => !extraQs.has(f.q) && !extra.replacesFaqs?.includes(f.q))]
     : category.faqs;
   return (
     <>
@@ -113,6 +120,8 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
       {extra && (
         <section className="section">
           <div className="container home-intro">
+            {extra.introHeading && <h2>{extra.introHeading}</h2>}
+            {extra.introSubheading && <p className="intro-subheading">{extra.introSubheading}</p>}
             {extra.introParagraphs.map((p, i) => (
               <p key={i} className={i === 0 ? "home-lead" : undefined}>
                 {p}
@@ -180,7 +189,7 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
                 <h2>{extra.servicesHeading}</h2>
                 <p>{extra.servicesLead}</p>
               </div>
-              <div className="home-services home-services-wide">
+              <div className={`home-services home-services-wide${extra.services.length % 3 === 0 ? " grid-3" : ""}`}>
                 {extra.services.map((sv) => (
                   <article key={sv.title} className="home-service">
                     <h3>
@@ -188,6 +197,21 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
                     </h3>
                     {sv.paragraphs.map((p, i) => (
                       <p key={i}>{p}</p>
+                    ))}
+                    {sv.bullets && (
+                      <>
+                        {sv.bulletsLead && <p className="home-service-lead">{sv.bulletsLead}</p>}
+                        <ul>
+                          {sv.bullets.map((b) => (
+                            <li key={b}>
+                              <Icon name="check" size={16} /> {b}
+                            </li>
+                          ))}
+                        </ul>
+                      </>
+                    )}
+                    {sv.outro?.map((p, i) => (
+                      <p key={`o${i}`}>{p}</p>
                     ))}
                     {sv.href && (
                       <Link href={sv.href} className="home-service-link">
@@ -197,9 +221,67 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
                   </article>
                 ))}
               </div>
+              {extra.relatedLinks && (
+                <div className="related-links">
+                  <strong>Related services:</strong>
+                  <ul className="area-list">
+                    {extra.relatedLinks.map((l) => (
+                      <li key={l.href}>
+                        <Link href={l.href}>
+                          <Icon name="arrow" size={14} /> {l.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           </section>
 
+          {extra.signs && (
+            <section className="section">
+              <div className="container">
+                <div className="section-head">
+                  <h2>{extra.signs.heading}</h2>
+                  {extra.signs.lead.map((p, i) => (
+                    <p key={i}>{p}</p>
+                  ))}
+                </div>
+                <div className={`home-why${extra.signs.items.length % 3 === 0 ? " grid-3" : ""}`}>
+                  {extra.signs.items.map((it) => (
+                    <div key={it.title} className="home-why-item">
+                      <Icon name="check" size={22} />
+                      <h3>{it.title}</h3>
+                      <p>{it.body}</p>
+                    </div>
+                  ))}
+                </div>
+                {extra.signs.outro && <p className="signs-warning">{extra.signs.outro}</p>}
+              </div>
+            </section>
+          )}
+
+          {extra.process && (
+            <section className="section section-tint">
+              <div className="container">
+                <div className="section-head">
+                  <h2>{extra.process.heading}</h2>
+                  <p>{extra.process.lead}</p>
+                </div>
+                <ol className="home-steps">
+                  {extra.process.steps.map((st) => (
+                    <li key={st.title}>
+                      <strong>{st.title}</strong>
+                      <p>{st.body}</p>
+                    </li>
+                  ))}
+                </ol>
+                {extra.process.outro && <p className="process-outro">{extra.process.outro}</p>}
+              </div>
+            </section>
+          )}
+
+          {extra.listSections && (
           <section className="section">
             <div className="container two-col">
               {extra.listSections.map((ls) => (
@@ -220,6 +302,7 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
               ))}
             </div>
           </section>
+          )}
 
           {extra.split && (
             <section className="section">
@@ -276,7 +359,11 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
       <CtaBand
         title={extra?.cta.title}
         label={offer ? `Book ${offer.price} ${offer.title}` : extra?.ctaLabel}
-        text={offer ? `${offer.price} ${offer.title.toLowerCase()}. ${offer.note}` : extra?.cta.text}
+        text={
+          offer
+            ? `${extra ? `${extra.cta.text} ` : ""}${offer.price} ${offer.title.toLowerCase()}. ${offer.note}`
+            : extra?.cta.text
+        }
       />
     </>
   );

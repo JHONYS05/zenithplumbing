@@ -477,3 +477,12 @@ html, body { overflow-x: clip; }
 .home-service > p + p { margin-top: -4px; }
 .home-services-wide { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
 .check-list + p { margin-top: 16px; }
+.intro-subheading { color: var(--gold-deep) !important; font-weight: 600; font-size: 1.1rem; margin-top: -6px; }
+.home-service-lead { font-weight: 600; color: var(--ink) !important; margin: 4px 0 8px !important; }
+.home-service ul + p { margin-top: 0; }
+.related-links { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.signs-warning { margin-top: 22px; padding: 14px 16px; border-left: 4px solid var(--gold); background: var(--gold-soft); border-radius: 8px; font-weight: 600; }
+.process-outro { margin-top: 18px; color: var(--muted); }
+.grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 960px) { .grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 620px) { .grid-3 { grid-template-columns: 1fr; } }
