@@ -26,6 +26,7 @@ import { ContactForm } from "@/components/ContactForm";
 import { JsonLd } from "@/components/JsonLd";
 import { Icon } from "@/components/Icon";
 import { offerFor } from "@/data/offers";
+import { offeringsByCategory } from "@/data/plumbingServices";
 import { getContactInfo } from "@/lib/contactInfo";
 
 export function generateStaticParams() {
@@ -72,10 +73,17 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
   const offer = offerFor(category.slug);
   const children = (await getCatalog()).servicesIn(category.key);
   const childCms = await getCmsPages(children.map((s) => s.slug));
+  const offerings = offeringsByCategory[category.slug];
   return (
     <>
       <JsonLd
-        data={serviceSchema({ name: category.name, description: category.description, path: `/${category.slug}`, offer })}
+        data={serviceSchema({
+          name: category.name,
+          description: category.description,
+          path: `/${category.slug}`,
+          offer,
+          catalog: offerings,
+        })}
       />
       <Hero title={cms.h1 ?? category.h1} intro={cms.intro ?? category.intro} image={cms.heroImage} offer={offer}>
         <Breadcrumbs
@@ -106,6 +114,35 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
           </div>
         </div>
       </section>
+
+      {offerings && (
+        <section className="section offerings-section" aria-labelledby="offerings-heading">
+          <div className="container">
+            <div className="section-head">
+              <h2 id="offerings-heading">{category.name} Services We Offer</h2>
+              <p>Everything our team handles, from a dripping faucet to a whole-house repipe.</p>
+            </div>
+            <div className="offerings-grid">
+              {offerings.map((g) => (
+                <div key={g.group} className="offerings-group">
+                  <h3>{g.group}</h3>
+                  <ul>
+                    {g.items.map((it) => (
+                      <li key={it.name}>
+                        <Icon name="check" size={18} />
+                        <span>
+                          {it.href ? <Link href={it.href}>{it.name}</Link> : <strong>{it.name}</strong>}
+                          <small>{it.text}</small>
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="section section-tint">
         <div className="container content-grid">

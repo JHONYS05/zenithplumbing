@@ -37,6 +37,8 @@ export function serviceSchema(opts: {
   description: string;
   path: string;
   offer?: { title: string; note: string; priceValue: number };
+  /** Full list of services offered (shown as an OfferCatalog to Google). */
+  catalog?: { group: string; items: { name: string; text: string }[] }[];
 }) {
   return {
     "@context": "https://schema.org",
@@ -47,6 +49,20 @@ export function serviceSchema(opts: {
     url: absoluteUrl(opts.path),
     provider: { "@id": businessId },
     areaServed: { "@type": "State", name: "Colorado" },
+    ...(opts.catalog && {
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: `${opts.name} services`,
+        itemListElement: opts.catalog.map((g) => ({
+          "@type": "OfferCatalog",
+          name: g.group,
+          itemListElement: g.items.map((it) => ({
+            "@type": "Offer",
+            itemOffered: { "@type": "Service", name: it.name, description: it.text },
+          })),
+        })),
+      },
+    }),
     ...(opts.offer && {
       offers: {
         "@type": "Offer",

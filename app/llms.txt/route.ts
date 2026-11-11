@@ -4,6 +4,7 @@
  */
 import { categories } from "@/data/services";
 import { drainCleaningOffer } from "@/data/offers";
+import { offeringsByCategory } from "@/data/plumbingServices";
 import { getCatalog } from "@/lib/catalog";
 import { getContactInfo } from "@/lib/contactInfo";
 import { absoluteUrl } from "@/lib/seo";
@@ -44,6 +45,10 @@ export async function GET() {
   for (const c of categories) {
     lines.push(`### ${c.name}`, "", link(c.name, `/${c.slug}`, c.summary));
     for (const s of catalog.servicesIn(c.key)) lines.push(link(s.name, `/${s.slug}`, s.summary));
+    for (const g of offeringsByCategory[c.slug] ?? []) {
+      lines.push("", `Also offered (${g.group}):`);
+      for (const it of g.items) lines.push(`- ${it.name}: ${it.text}`);
+    }
     lines.push("");
   }
 
