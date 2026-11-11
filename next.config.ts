@@ -11,8 +11,7 @@ const nextConfig: NextConfig = {
   },
   images: {
     formats: ["image/avif", "image/webp"],
-    // Photos uploaded in /admin: served from /media (on your server) or Vercel Blob storage.
-    remotePatterns: [{ protocol: "https", hostname: "**.public.blob.vercel-storage.com" }],
+    // Photos uploaded in /admin are served by this site at /media/…, so no outside image hosts are needed.
   },
 };
 

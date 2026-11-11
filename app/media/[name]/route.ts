@@ -1,11 +1,11 @@
-import { readDiskUpload } from "@/lib/contentStore";
+import { readUpload } from "@/lib/contentStore";
 
-/** Serves images uploaded through /admin when storing on disk (not used with Vercel Blob). */
+/** Serves images uploaded through /admin (stored on disk, or in the private Vercel Blob store). */
 export async function GET(_req: Request, { params }: { params: Promise<{ name: string }> }) {
   const { name } = await params;
-  const file = await readDiskUpload(name);
+  const file = await readUpload(name);
   if (!file) return new Response("Not found", { status: 404 });
-  return new Response(new Uint8Array(file.data), {
+  return new Response(file.body as BodyInit, {
     headers: {
       "Content-Type": file.type,
       // File names include a random suffix and never change, so they can be cached long-term.

@@ -7,7 +7,7 @@
 export const siteConfig = {
   name: "Zenith Plumbing, Drain, Sewer & HVAC",
   shortName: "Zenith",
-  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.zenithplumbing.com").replace(/\/$/, ""),
+  url: (process.env.NEXT_PUBLIC_SITE_URL?.trim() || "https://www.zenithplumbingandhvac.com").replace(/\/$/, ""),
 
   // Placeholders — set the real phone and email in Admin → Business info (/admin/settings).
   phone: "(303) 555-0123",

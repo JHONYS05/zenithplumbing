@@ -3,8 +3,8 @@ import Script from "next/script";
 import "./globals.css";
 import { siteConfig } from "@/lib/siteConfig";
 
-const gaId = process.env.NEXT_PUBLIC_GA_ID;
-const verification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
+const gaId = process.env.NEXT_PUBLIC_GA_ID?.trim() || undefined;
+const verification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION?.trim() || undefined;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),

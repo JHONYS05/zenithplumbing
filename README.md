@@ -11,7 +11,7 @@ npm run dev                  # http://localhost:3000
 npm run build && npm start   # production
 ```
 
-Deploys to Vercel: import the repo, set `NEXT_PUBLIC_SITE_URL` and `ADMIN_PASSWORD`, and connect a Blob store (Storage → Blob) so admin uploads are kept.
+Deploys to Vercel: import the repo, set `NEXT_PUBLIC_SITE_URL` and `ADMIN_PASSWORD`, and connect a **private** Blob store (Storage → Blob, Access: Private) so admin uploads and leads are kept. See DEPLOY.md.
 
 ## How it's organized
 
@@ -29,7 +29,7 @@ Deploys to Vercel: import the repo, set `NEXT_PUBLIC_SITE_URL` and `ADMIN_PASSWO
 | `app/sitemap.ts`, `app/robots.ts` | Generated automatically from the data. |
 | `app/api/contact/route.ts` | Contact form endpoint — saves each submission as a lead (`lib/leads.ts`), shown at `/admin/leads`. |
 | `app/admin/` | **Built-in admin** at `/admin` — upload photos and edit text for every page. See [ADMIN-GUIDE.md](ADMIN-GUIDE.md). |
-| `lib/contentStore.ts` | Where admin changes are stored — as JSON in `storage/content.json` (or Vercel Blob). |
+| `lib/contentStore.ts` | Where admin changes are stored — as JSON in `storage/content.json` (or a private Vercel Blob store; photos are served at `/media/…`). |
 | `lib/cms.ts` | Supplies the admin's saved photos and text to the pages. |
 
 ### Add a new service
@@ -45,7 +45,7 @@ Admin → Pages → **＋ Add page** creates city, service and other pages; ever
 - [ ] Admin → Pages: hide built-in cities you don't serve (Show on website switch), add cities you do, and add real local details and project photos
 - [ ] Review all service copy for accuracy against the work Zenith actually does
 - [ ] Contact form leads are saved and shown at `/admin/leads`. Optional: add email/text alerts for new leads
-- [ ] Set a strong `ADMIN_PASSWORD`; on Vercel connect a Blob store, then upload real photos in `/admin`
+- [ ] Set a strong `ADMIN_PASSWORD`; on Vercel connect a private Blob store, then upload real photos in `/admin`
 - [ ] Replace the placeholder logo (`components/Logo.tsx`, `public/icon.svg`)
 - [ ] Google Tag Manager (GTM-N5SFJ9B5) is installed on public pages; set up GA4 and conversions inside Tag Manager (form submissions send a `generate_lead` event)
 - [ ] Set `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`, then submit `/sitemap.xml` in Search Console

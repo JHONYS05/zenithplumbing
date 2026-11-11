@@ -70,8 +70,8 @@ export default async function AdminHome({ searchParams }: { searchParams: Promis
 
         {storageMode === "disk" && process.env.VERCEL && (
           <p className="admin-warning">
-            <strong>Uploads won&apos;t be saved on Vercel yet.</strong> Connect a Vercel Blob store to this project
-            (Storage → Blob) so photos and changes are kept permanently.
+            <strong>Uploads won&apos;t be saved on Vercel yet.</strong> Create a Vercel Blob store with Access set to
+            Private (Storage → Blob) and connect it to this project, then redeploy.
           </p>
         )}
 

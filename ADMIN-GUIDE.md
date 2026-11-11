@@ -118,7 +118,7 @@ returns it to the built-in content. It can't be undone.
 
 ## Where things are stored
 
-- **On Vercel:** connect a Blob store (Project → Storage → Blob → Connect). Photos and changes are
+- **On Vercel:** create a Blob store with **Access: Private** (Project → Storage → Blob) and connect it to the project. Photos and changes are
   stored there permanently. Without it, the admin shows a warning and uploads won't be kept.
 - **On your own server / computer:** everything is saved in the `storage/` folder. Back it up.
 

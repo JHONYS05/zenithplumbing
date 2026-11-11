@@ -7,7 +7,7 @@ import Script from "next/script";
 const DEFAULT_ID = "GTM-N5SFJ9B5";
 
 export function gtmId() {
-  const id = (process.env.NEXT_PUBLIC_GTM_ID ?? DEFAULT_ID).trim();
+  const id = process.env.NEXT_PUBLIC_GTM_ID?.trim() || DEFAULT_ID;
   return /^GTM-[A-Z0-9]+$/.test(id) ? id : null;
 }
 

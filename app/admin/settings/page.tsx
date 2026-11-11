@@ -1,5 +1,5 @@
 import { requireAdmin } from "@/lib/adminAuth";
-import { readContent } from "@/lib/contentStore";
+import { readContent, storageMode, NO_STORAGE_MESSAGE } from "@/lib/contentStore";
 import { readSettings } from "@/lib/contactInfo";
 import { siteConfig } from "@/lib/siteConfig";
 import { sanitizeHours } from "@/lib/hours";
@@ -25,6 +25,12 @@ export default async function SettingsPage() {
             </p>
           </div>
         </div>
+
+        {storageMode === "disk" && process.env.VERCEL && (
+          <p className="admin-warning">
+            <strong>Changes can&apos;t be saved yet.</strong> {NO_STORAGE_MESSAGE}
+          </p>
+        )}
 
         {(!settings.phone || !settings.email) && (
           <p className="admin-warning">

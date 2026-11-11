@@ -70,6 +70,7 @@ export async function saveSettingsAction(_prev: SettingsState | undefined, formD
     return { ok: true, values: { phone: phone || "", email: email || "", hours } };
   } catch (err) {
     console.error("[admin] saving business info failed", err);
-    return { error: "Saving failed. Please try again.", values: raw };
+    const msg = err instanceof Error && err.message.startsWith("Saving isn't set up") ? err.message : "Saving failed. Please try again.";
+    return { error: msg, values: raw };
   }
 }

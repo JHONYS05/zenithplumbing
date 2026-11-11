@@ -12,7 +12,8 @@ import { promises as fs } from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
 import { put, list, del, get } from "@vercel/blob";
-import { storageMode } from "./contentStore";
+import { assertCanSave, BLOB_TOKEN, storageMode } from "./contentStore";
+import { env } from "./env";
 
 export type LeadStatus = "new" | "contacted" | "done";
 
@@ -32,7 +33,7 @@ export interface Lead {
 }
 
 const diskDir = path.join(
-  path.resolve(/*turbopackIgnore: true*/ process.env.ADMIN_STORAGE_DIR ?? path.join(process.cwd(), "storage")),
+  path.resolve(/*turbopackIgnore: true*/ env("ADMIN_STORAGE_DIR") ?? path.join(process.cwd(), "storage")),
   "leads",
 );
 const PREFIX = "leads/";
@@ -48,6 +49,7 @@ export function newLeadId() {
 
 export async function saveLead(lead: Lead) {
   if (!validId(lead.id)) throw new Error("Invalid lead id");
+  assertCanSave();
   const json = JSON.stringify(lead, null, 2);
   if (storageMode === "disk") {
     await fs.mkdir(diskDir, { recursive: true });
@@ -59,6 +61,7 @@ export async function saveLead(lead: Lead) {
   }
   await put(`${PREFIX}${lead.id}.json`, json, {
     access: "private",
+    token: BLOB_TOKEN,
     contentType: "application/json",
     addRandomSuffix: false,
     allowOverwrite: true,
@@ -71,7 +74,7 @@ export async function deleteLead(id: string) {
     await fs.unlink(path.join(diskDir, `${id}.json`)).catch(() => {});
     return;
   }
-  await del(`${PREFIX}${id}.json`).catch(() => {});
+  await del(`${PREFIX}${id}.json`, { token: BLOB_TOKEN }).catch(() => {});
 }
 
 // ───────────────────────── read ─────────────────────────
@@ -82,7 +85,7 @@ export async function getLead(id: string): Promise<Lead | null> {
     if (storageMode === "disk") {
       return JSON.parse(await fs.readFile(path.join(diskDir, `${id}.json`), "utf8"));
     }
-    const res = await get(`${PREFIX}${id}.json`, { access: "private", useCache: false });
+    const res = await get(`${PREFIX}${id}.json`, { access: "private", useCache: false, token: BLOB_TOKEN });
     if (!res) return null;
     return JSON.parse(await new Response(res.stream).text());
   } catch {
@@ -102,7 +105,7 @@ export async function listLeads(): Promise<Lead[]> {
   } else {
     let cursor: string | undefined;
     do {
-      const page = await list({ prefix: PREFIX, cursor, limit: 1000 });
+      const page = await list({ prefix: PREFIX, cursor, limit: 1000, token: BLOB_TOKEN });
       ids.push(...page.blobs.map((b) => b.pathname.slice(PREFIX.length, -5)));
       cursor = page.hasMore ? page.cursor : undefined;
     } while (cursor && ids.length < MAX_LIST * 2);
