@@ -26,7 +26,7 @@ import { ContactForm } from "@/components/ContactForm";
 import { JsonLd } from "@/components/JsonLd";
 import { Icon } from "@/components/Icon";
 import { offerFor } from "@/data/offers";
-import { offeringsByCategory } from "@/data/plumbingServices";
+import { offeringAnchor, offeringsByCategory } from "@/data/plumbingServices";
 import { getContactInfo } from "@/lib/contactInfo";
 
 export function generateStaticParams() {
@@ -128,7 +128,7 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
                   <h3>{g.group}</h3>
                   <ul>
                     {g.items.map((it) => (
-                      <li key={it.name}>
+                      <li key={it.name} id={offeringAnchor(it.name)}>
                         <Icon name="check" size={18} />
                         <span>
                           {it.href ? <Link href={it.href}>{it.name}</Link> : <strong>{it.name}</strong>}

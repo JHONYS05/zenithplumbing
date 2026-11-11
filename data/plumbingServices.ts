@@ -71,3 +71,17 @@ export const plumbingOfferings: OfferingGroup[] = [
 export const offeringsByCategory: Record<string, OfferingGroup[]> = {
   plumbing: plumbingOfferings,
 };
+
+/** Anchor id for a service on its category page, e.g. "Whole House Repiping" → "whole-house-repiping". */
+export function offeringAnchor(name: string) {
+  return name
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+/** Where a service links in menus: its own page if it has one, otherwise its spot on the category page. */
+export function offeringHref(categorySlug: string, item: OfferingItem) {
+  return item.href ?? `/${categorySlug}#${offeringAnchor(item.name)}`;
+}
