@@ -10,7 +10,7 @@ export async function ServiceArea({ heading = "Areas We Serve", serviceName }: {
       <h2>{heading}</h2>
       <p>
         {serviceName ? `Zenith provides ${serviceName.toLowerCase()} ` : "Zenith serves homeowners "}
-        across the Denver metro and Front Range, including:
+        across the Denver Metro and Northern Colorado, including:
       </p>
       <ul className="area-list">
         {locations.map((l) => (

@@ -43,7 +43,7 @@ export function customServiceDefaults(name: string, summary?: string) {
     h1: name,
     intro:
       summary ||
-      `Zenith provides professional ${lower} for homes across the Denver metro and Colorado Front Range. We explain your options and the price before any work begins.`,
+      `Zenith provides professional ${lower} for homes across the Denver Metro and Northern Colorado. We explain your options and the price before any work begins.`,
   };
 }
 

@@ -20,7 +20,7 @@ export async function GET() {
   const lines: string[] = [
     `# ${siteConfig.name}`,
     "",
-    `> Residential plumbing, drain cleaning, sewer line repair and replacement, water heater and HVAC (heating and air conditioning) company serving homeowners in the Denver metro and Colorado Front Range.`,
+    `> Residential plumbing, drain cleaning, sewer line repair and replacement, water heater and HVAC (heating and air conditioning) company serving homeowners in the Denver Metro and Northern Colorado.`,
     "",
     "## Contact",
     "",

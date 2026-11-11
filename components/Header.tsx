@@ -30,7 +30,7 @@ export async function Header() {
             </span>
             <span>{contact.hoursSummary}</span>
           </span>
-          <span>Serving the Denver metro &amp; Front Range</span>
+          <span>Serving Denver Metro &amp; Northern Colorado</span>
         </div>
       </div>
       <div className="container header-inner">

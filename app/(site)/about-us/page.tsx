@@ -29,8 +29,8 @@ export default async function AboutPage() {
         <div className="container narrow prose">
           <h2>Plumbing and HVAC under one roof</h2>
           <p>
-            Zenith Plumbing, Drain, Sewer &amp; HVAC serves homeowners across the Denver metro and
-            Colorado Front Range. Our team handles everything from clogged drains and sewer line
+            Zenith Plumbing, Drain, Sewer &amp; HVAC serves homeowners across the Denver Metro and
+            Northern Colorado. Our team handles everything from clogged drains and sewer line
             replacements to water heaters, furnaces, air conditioners and heat pumps — so you have
             one company to call for the systems that keep your home running.
           </p>

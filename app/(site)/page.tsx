@@ -15,24 +15,15 @@ import { OfferBadge } from "@/components/OfferBadge";
 import { drainCleaningOffer } from "@/data/offers";
 import { Gallery } from "@/components/Gallery";
 import { getCmsPage, getCmsPages } from "@/lib/cms";
-
-const homeTitle = "Zenith Plumbing, Drain, Sewer & HVAC | Colorado";
-const homeDescription =
-  "Looking for reliable plumbing, drain cleaning, sewer repair, water heater or HVAC services in Colorado? Contact Zenith to request professional home service.";
+import { HOME } from "@/lib/homeContent";
 
 export async function generateMetadata() {
   const cms = await getCmsPage("home");
   return buildMetadata({
-  title: cms.title ?? homeTitle,
-  description: cms.description ?? homeDescription,
+  title: cms.title ?? HOME.title,
+  description: cms.description ?? HOME.description,
   path: "/",
-  keywords: [
-    "plumbing company Colorado",
-    "HVAC company Colorado",
-    "drain cleaning Colorado",
-    "sewer repair Colorado",
-    "water heater services Colorado",
-  ],
+  keywords: HOME.keywords,
   });
 }
 
@@ -54,12 +45,10 @@ export default async function HomePage() {
     <>
       <Hero
         large
-        eyebrow="Colorado home services"
-        title={cms.h1 ?? "Plumbing, Drain, Sewer & HVAC Services in Colorado"}
-        intro={
-          cms.intro ??
-          "From a clogged main line to a furnace that quit on the coldest night of the year, Zenith diagnoses the problem, explains your options and fixes it right — with plumbing and HVAC under one roof."
-        }
+        eyebrow={HOME.eyebrow}
+        title={cms.h1 ?? HOME.h1}
+        subtitle={HOME.subtitle}
+        intro={cms.intro ?? HOME.intro}
         image={cms.heroImage}
       />
 

@@ -10,7 +10,7 @@ import { Icon } from "@/components/Icon";
 export const metadata = buildMetadata({
   title: "Service Areas | Zenith Plumbing, Drain, Sewer & HVAC",
   description:
-    "Zenith provides plumbing, drain cleaning, sewer, water heater and HVAC services across the Denver metro and Colorado Front Range. Find your city.",
+    "Zenith provides plumbing, drain cleaning, sewer, water heater and HVAC services across the Denver Metro and Northern Colorado. Find your city.",
   path: "/service-areas",
 });
 
@@ -22,7 +22,7 @@ export default async function ServiceAreasPage() {
       <Hero
         image={cms.heroImage}
         title="Areas We Serve in Colorado"
-        intro="Zenith serves homeowners across the Denver metro and Front Range. Find your city below, or contact us to confirm service at your address."
+        intro="Zenith serves homeowners across the Denver Metro and Northern Colorado. Find your city below, or contact us to confirm service at your address."
       >
         <Breadcrumbs
           crumbs={[

@@ -15,7 +15,7 @@ export async function Footer() {
           <Logo inverted />
           <p>
             Plumbing, drain cleaning, sewer, water heater and HVAC services for homes across the
-            Colorado Front Range.
+            Denver Metro and Northern Colorado.
           </p>
           <p>
             <a href={contact.phoneHref}>{contact.phone}</a>

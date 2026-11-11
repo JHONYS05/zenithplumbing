@@ -445,3 +445,7 @@ html, body { overflow-x: clip; }
 .offerings-group li { scroll-margin-top: 140px; border-radius: 8px; }
 .offerings-group li:target { background: var(--gold-soft); outline: 6px solid var(--gold-soft); }
 .has-menu[data-closed] .dropdown, .has-menu[data-closed] .mega { opacity: 0 !important; visibility: hidden !important; }
+
+/* Hero subheadline */
+.hero-subtitle { font-family: var(--font-display); font-size: clamp(1.1rem, 2vw, 1.35rem); font-weight: 600; color: var(--gold-light); margin: -4px 0 14px; max-width: 760px; }
+.hero-large h1 { max-width: 900px; }

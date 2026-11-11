@@ -3,6 +3,7 @@
  * The defaults are shown as placeholders in the admin so you can see what a blank field falls back to.
  */
 import "server-only";
+import { HOME } from "./homeContent";
 import { categories, getCategory, publishedServices } from "@/data/services";
 import { publishedLocations } from "@/data/locations";
 import type { ContentDoc } from "./contentStore";
@@ -25,12 +26,11 @@ export interface EditablePage {
   offline?: boolean;
 }
 
-const HOME_TITLE = "Zenith Plumbing, Drain, Sewer & HVAC | Colorado";
-const HOME_DESC =
-  "Looking for reliable plumbing, drain cleaning, sewer repair, water heater or HVAC services in Colorado? Contact Zenith to request professional home service.";
+const HOME_TITLE = HOME.title;
+const HOME_DESC = HOME.description;
 
 const main: EditablePage[] = [
-  { key: "home", label: "Homepage", path: "/", defaults: { title: HOME_TITLE, description: HOME_DESC, h1: "Plumbing, Drain, Sewer & HVAC Services in Colorado", intro: "" } },
+  { key: "home", label: "Homepage", path: "/", defaults: { title: HOME_TITLE, description: HOME_DESC, h1: HOME.h1, intro: HOME.intro } },
   { key: "about-us", label: "About Us", path: "/about-us", defaults: blank("About Zenith") },
   { key: "contact", label: "Contact", path: "/contact", defaults: blank("Request Service") },
   { key: "service-areas", label: "Service Areas", path: "/service-areas", defaults: blank("Areas We Serve in Colorado") },

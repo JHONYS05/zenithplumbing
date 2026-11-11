@@ -9,6 +9,8 @@ import { OfferBadge } from "./OfferBadge";
 interface HeroProps {
   eyebrow?: string;
   title: string;
+  /** Optional line under the heading. */
+  subtitle?: string;
   intro: string;
   ctaLabel?: string;
   children?: React.ReactNode;
@@ -19,7 +21,7 @@ interface HeroProps {
   offer?: Offer;
 }
 
-export async function Hero({ eyebrow, title, intro, ctaLabel = "Request Service", children, large, image, offer }: HeroProps) {
+export async function Hero({ eyebrow, title, subtitle, intro, ctaLabel = "Request Service", children, large, image, offer }: HeroProps) {
   const contact = await getContactInfo();
   return (
     <section className={`hero${large ? " hero-large" : ""}${image ? " hero-with-image" : ""}`}>
@@ -28,6 +30,7 @@ export async function Hero({ eyebrow, title, intro, ctaLabel = "Request Service"
           {children}
           {eyebrow && <p className="eyebrow">{eyebrow}</p>}
           <h1>{title}</h1>
+          {subtitle && <p className="hero-subtitle">{subtitle}</p>}
           {intro && <p className="hero-intro">{intro}</p>}
           {offer && <OfferBadge offer={offer} />}
           <div className="hero-actions">
