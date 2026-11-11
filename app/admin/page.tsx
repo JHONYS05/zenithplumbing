@@ -3,6 +3,7 @@ import { requireAdmin } from "@/lib/adminAuth";
 import { readContent, storageMode } from "@/lib/contentStore";
 import { editablePages, type EditablePage } from "@/lib/pageRegistry";
 import { AdminBar } from "./AdminBar";
+import { NotifySearchEngines } from "./search/NotifySearchEngines";
 import { listLeads } from "@/lib/leads";
 import { readSettings } from "@/lib/contactInfo";
 
@@ -74,6 +75,9 @@ export default async function AdminHome({ searchParams }: { searchParams: Promis
             Private (Storage → Blob) and connect it to this project, then redeploy.
           </p>
         )}
+
+
+        <NotifySearchEngines />
 
         {GROUPS.map((group) => {
           const list = pages.filter((p) => p.group === group);

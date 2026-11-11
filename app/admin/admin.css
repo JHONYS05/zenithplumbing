@@ -301,3 +301,9 @@
 .admin-repeat-head { display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; font-weight: 700; color: var(--muted); }
 .admin-link-danger { background: none; border: 0; color: #b42318; font: inherit; font-size: 0.86rem; font-weight: 600; cursor: pointer; padding: 0; }
 .admin-link-danger:hover { text-decoration: underline; }
+
+/* Search engines card */
+.admin-search-card { display: flex; justify-content: space-between; align-items: center; gap: 18px; flex-wrap: wrap; }
+.admin-search-card > div { flex: 1 1 360px; }
+.admin-search-card h2 { margin-bottom: 4px; }
+.admin-search-card p { margin: 0 0 6px; }

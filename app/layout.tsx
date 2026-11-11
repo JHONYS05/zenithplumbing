@@ -5,6 +5,7 @@ import { siteConfig } from "@/lib/siteConfig";
 
 const gaId = process.env.NEXT_PUBLIC_GA_ID?.trim() || undefined;
 const verification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION?.trim() || undefined;
+const bingVerification = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION?.trim() || undefined;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -15,7 +16,10 @@ export const metadata: Metadata = {
   description:
     "Looking for reliable plumbing, drain cleaning, sewer repair, water heater or HVAC services in Colorado? Contact Zenith to request professional home service.",
   applicationName: siteConfig.name,
-  verification: verification ? { google: verification } : undefined,
+  verification:
+    verification || bingVerification
+      ? { google: verification, other: bingVerification ? { "msvalidate.01": bingVerification } : undefined }
+      : undefined,
   icons: { icon: "/icon.svg" },
 };
 
