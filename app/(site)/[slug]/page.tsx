@@ -47,9 +47,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!page) return {};
   const cms = await getCmsPage(slug);
   const firstText = other?.sections.find((s) => s.body)?.body.replace(/\s+/g, " ").slice(0, 155);
+  let description = cms.description ?? (page.description || cms.intro || firstText || "");
+  if (description.includes("{phone}")) {
+    const contact = await getContactInfo();
+    description = description.replace("Call {phone}.", contact.isPlaceholder ? "Call today!" : `Call ${contact.phone}.`);
+  }
   const meta = buildMetadata({
     title: cms.title ?? page.title,
-    description: cms.description ?? (page.description || cms.intro || firstText || ""),
+    description,
     path: `/${slug}`,
     keywords: page.keywords,
   });
@@ -95,7 +100,7 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
       <JsonLd
         data={serviceSchema({
           name: category.name,
-          description: category.description,
+          description: category.description.replace(" Call {phone}.", ""),
           path: `/${category.slug}`,
           offer,
           catalog: offerings,
@@ -134,7 +139,7 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
       <section className="section">
         <div className="container">
           <div className="section-head">
-            <h2>{category.name} Services</h2>
+            <h2>{category.name.endsWith("Services") ? category.name : `${category.name} Services`}</h2>
             <p>Choose a service to learn about warning signs, our process and common questions.</p>
           </div>
           <div className="card-grid">
@@ -189,7 +194,7 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
                 <h2>{extra.servicesHeading}</h2>
                 <p>{extra.servicesLead}</p>
               </div>
-              <div className={`home-services home-services-wide${extra.services.length % 3 === 0 ? " grid-3" : ""}`}>
+              <div className={`home-services home-services-wide${extra.services.length % 3 === 0 || extra.services.length === 5 ? " grid-3" : ""}`}>
                 {extra.services.map((sv) => (
                   <article key={sv.title} className="home-service">
                     <h3>
@@ -268,7 +273,7 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
                   <h2>{extra.process.heading}</h2>
                   <p>{extra.process.lead}</p>
                 </div>
-                <ol className="home-steps">
+                <ol className={`home-steps${extra.process.steps.length === 6 ? " grid-3" : ""}`}>
                   {extra.process.steps.map((st) => (
                     <li key={st.title}>
                       <strong>{st.title}</strong>

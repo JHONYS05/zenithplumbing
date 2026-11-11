@@ -72,7 +72,7 @@ export function editablePages(doc: ContentDoc): EditablePage[] {
       label: c.name,
       group: "Service categories" as const,
       path: `/${c.slug}`,
-      defaults: { title: c.title, description: c.description, h1: c.h1, intro: c.intro },
+      defaults: { title: c.title, description: c.description.replace("{phone}", "your phone number"), h1: c.h1, intro: c.intro },
     })),
     ...publishedServices().map((s) => ({
       key: s.slug,

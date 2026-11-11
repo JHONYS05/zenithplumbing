@@ -425,7 +425,210 @@ const drainCleaning: CategoryPageContent = {
   },
 };
 
+const sewer: CategoryPageContent = {
+  introHeading: "Sewer Line Repair, Replacement & Inspection Across Denver Metro",
+  introParagraphs: [
+    "Zenith Plumbing, Drain, Sewer & HVAC provides professional sewer line repair, sewer line replacement, sewer inspections, trenchless sewer solutions, and sewer cleanout installation throughout Denver Metro and Northern Colorado.",
+    "Our approach starts with understanding the condition of your sewer line. We evaluate the problem, explain the available solutions, and provide clear pricing before work begins.",
+  ],
+  servicesHeading: "Complete Sewer Services",
+  servicesLead:
+    "Zenith provides sewer solutions for homeowners and residential properties dealing with damaged, aging, or failing sewer lines. Whether you need a localized repair or a complete sewer line replacement, we help identify the right approach for your property's conditions.",
+  services: [
+    {
+      title: "Sewer Line Repair",
+      href: "/sewer-repair",
+      linkLabel: "Sewer Line Repair",
+      paragraphs: [
+        "A damaged sewer pipe does not always require a complete replacement. Depending on the location and condition of the damage, a targeted sewer line repair may be a practical solution.",
+      ],
+      bulletsLead: "Our sewer repair services can address:",
+      bullets: [
+        "Cracked or broken sewer pipes",
+        "Leaking underground sewer lines",
+        "Separated or misaligned pipe connections",
+        "Root intrusion",
+        "Damaged pipe sections",
+        "Recurring sewer problems",
+        "Localized pipe deterioration",
+      ],
+      outro: ["We evaluate the damaged section and explain the repair options before beginning work."],
+    },
+    {
+      title: "Sewer Line Replacement",
+      href: "/sewer-replacement",
+      linkLabel: "Sewer Line Replacement",
+      paragraphs: [
+        "When a sewer line has extensive damage, severe deterioration, repeated failures, or multiple compromised sections, replacing the existing pipe may be the best long-term solution.",
+        "Zenith provides sewer line replacement services designed to restore reliable wastewater drainage from your home to the approved connection point.",
+      ],
+      bulletsLead: "Sewer replacement projects may include:",
+      bullets: [
+        "Locating and exposing the existing sewer line",
+        "Excavation to access the damaged piping",
+        "Removing deteriorated sewer pipe",
+        "Installing new sewer piping",
+        "Connecting the new pipe to the existing system",
+        "Checking pipe alignment, slope, and connections",
+        "Backfilling and site restoration as included in the approved scope",
+      ],
+      outro: [
+        "Every project is different. Depth, pipe material, soil conditions, access, concrete, landscaping, and street work can affect the scope and cost.",
+      ],
+    },
+    {
+      title: "Trenchless Sewer Repair",
+      href: "/trenchless-sewer-repair",
+      linkLabel: "Trenchless Sewer Repair",
+      paragraphs: [
+        "Traditional sewer repairs may require excavation to access underground piping. When the existing sewer line and site conditions allow, trenchless methods may offer an alternative that reduces the amount of digging required.",
+        "Trenchless sewer solutions may be appropriate for certain pipe conditions and configurations.",
+        "Before recommending a trenchless method, we evaluate the pipe's condition, accessibility, layout, and suitability for the proposed repair.",
+        "Not every sewer line qualifies for trenchless repair. We explain the available options based on the actual condition of the system.",
+      ],
+    },
+    {
+      title: "Sewer Line Inspection",
+      href: "/sewer-line-inspection",
+      linkLabel: "Sewer Line Inspection",
+      paragraphs: [
+        "A sewer camera inspection helps identify problems inside an underground sewer pipe without immediately excavating the entire line.",
+      ],
+      bulletsLead: "Camera inspections can help locate:",
+      bullets: [
+        "Cracks and breaks",
+        "Root intrusion",
+        "Pipe separation",
+        "Standing water or improper slope",
+        "Heavy buildup and obstructions",
+        "Deteriorated pipe sections",
+        "Potential structural problems",
+      ],
+      outro: [
+        "A sewer inspection can help homeowners understand the condition of their sewer system before deciding whether cleaning, repair, or replacement is appropriate.",
+      ],
+    },
+    {
+      title: "Sewer Cleanout Installation",
+      href: "/sewer-cleanout-installation",
+      linkLabel: "Sewer Cleanout Installation",
+      paragraphs: [
+        "A sewer cleanout provides an accessible point for inspecting and servicing the main sewer line.",
+        "If your property does not have an accessible cleanout, installing one may make future maintenance and sewer service easier.",
+        "Our sewer cleanout installation services may include excavation, installation of approved fittings and piping, connection to the existing sewer line, and restoration according to the approved project scope.",
+      ],
+    },
+  ],
+  relatedLinks: [
+    { label: "Sewer Camera Inspection", href: "/sewer-camera-inspection" },
+    { label: "Drain Cleaning", href: "/drain-cleaning" },
+    { label: "Hydro Jetting", href: "/hydro-jetting" },
+    { label: "Plumbing Services", href: "/plumbing" },
+  ],
+  signs: {
+    heading: "Signs You May Need Sewer Line Repair or Replacement",
+    lead: [
+      "Sewer line problems can develop underground before obvious damage appears inside the home. Recognizing the warning signs early may help prevent more extensive repairs.",
+      "Watch for:",
+    ],
+    items: [
+      { title: "Frequent Sewer Backups", body: "Repeated backups may indicate a problem with the main sewer line rather than an isolated fixture drain." },
+      { title: "Slow Drains Throughout the Home", body: "When multiple sinks, tubs, and toilets drain slowly, the main sewer system may need inspection." },
+      { title: "Sewer Odors", body: "Persistent sewage smells may indicate a damaged pipe, drainage issue, or problem with the sewer system." },
+      { title: "Unusual Yard Conditions", body: "Wet soil, sinking areas, or unusually green grass along the sewer route may indicate an underground leak." },
+      { title: "Gurgling Toilets and Drains", body: "Bubbling or gurgling can occur when air is displaced by a drainage obstruction or other system problem." },
+      { title: "Recurring Drain Problems", body: "If the same blockage keeps returning after cleaning, a camera inspection may help identify the underlying cause." },
+    ],
+  },
+  process: {
+    heading: "Our Sewer Service Process",
+    lead: "We believe homeowners should understand the condition of their sewer line and the work being recommended.",
+    steps: [
+      { title: "Initial Evaluation", body: "We discuss the symptoms, location, and history of the sewer problem." },
+      { title: "Sewer Inspection", body: "When appropriate, we use camera inspection or other diagnostic methods to evaluate the pipe." },
+      { title: "Findings and Recommendations", body: "We explain what we find and discuss repair, replacement, or other suitable options." },
+      { title: "Clear Project Pricing", body: "You receive the proposed scope and pricing before authorized work begins." },
+      { title: "Professional Sewer Work", body: "Our team performs the approved repair or installation according to the project requirements and applicable codes." },
+      { title: "Final Evaluation", body: "We check the completed work as appropriate and explain the results and any remaining recommendations." },
+    ],
+  },
+  listSections: [
+    {
+      heading: "Main Sewer Line Problems",
+      lead: [
+        "The main sewer line carries wastewater away from your home. When this line becomes damaged or obstructed, multiple plumbing fixtures may be affected.",
+        "Common warning signs include:",
+      ],
+      items: [
+        "Multiple drains backing up at the same time",
+        "Toilets bubbling or gurgling",
+        "Sewage backing up into a shower or bathtub",
+        "Strong sewer odors inside or outside the property",
+        "Repeated main line blockages",
+        "Wet or unusually green areas in the yard",
+      ],
+      outro: "If you notice these problems, professional evaluation can help determine whether the issue is a blockage, damaged pipe, root intrusion, or another sewer system problem.",
+    },
+    {
+      heading: "What Affects the Cost of Sewer Line Repair or Replacement?",
+      lead: [
+        "Every sewer project has different conditions. The final cost depends on the work needed to safely access and restore the sewer system.",
+        "Factors that may affect pricing include:",
+      ],
+      items: [
+        "Total length of sewer pipe requiring repair or replacement",
+        "Depth of the existing sewer line",
+        "Soil conditions and excavation difficulty",
+        "Pipe material, diameter, and condition",
+        "Accessibility of the damaged section",
+        "Concrete or flooring removal and replacement",
+        "Landscaping, trees, and other obstacles",
+        "Sidewalk, driveway, street, or asphalt restoration",
+        "Permits, inspections, and applicable local requirements",
+      ],
+      outro: "After evaluating the project, Zenith can explain the recommended scope and provide a written estimate.",
+    },
+  ],
+  why: {
+    heading: "Why Choose Zenith Plumbing, Drain, Sewer & HVAC?",
+    lead: "Sewer work is a major decision. Here's what you can expect from Zenith.",
+    points: [
+      { title: "Professional Evaluation", body: "We focus on identifying the actual cause of sewer problems before recommending work." },
+      { title: "Clear Recommendations", body: "We explain the available options so you can make an informed decision." },
+      { title: "Upfront Pricing", body: "We provide the proposed scope and price before work begins." },
+      { title: "Complete Sewer Solutions", body: "From sewer inspections and cleanout installation to major sewer line repairs and replacements, we offer solutions for different project needs." },
+      { title: "Respect for Your Property", body: "We take care to protect work areas and maintain an organized jobsite." },
+      { title: "One Company for Your Home", body: "In addition to sewer services, Zenith provides plumbing, drain cleaning, water heater, heating, and air conditioning services." },
+    ],
+  },
+  areas: {
+    heading: "Sewer Services in Denver Metro & Northern Colorado",
+    lead: "Zenith provides sewer line repair, sewer replacement, and inspection services throughout Denver Metro and Northern Colorado.",
+    outro: "Contact our team to confirm availability in your area.",
+  },
+  faqHeading: "Frequently Asked Questions About Sewer Services",
+  replacesFaqs: ["How do I know if my sewer line is damaged?", "Who is responsible for the sewer line?"],
+  faqs: () => [
+    { q: "How do I know if my sewer line needs repair?", a: "Repeated sewer backups, multiple slow drains, sewer odors, gurgling toilets, and wet areas in your yard can indicate a sewer line problem. A professional evaluation and camera inspection can help identify the cause." },
+    { q: "How much does sewer line replacement cost in Denver?", a: "The cost depends on the length and depth of the sewer line, excavation conditions, pipe material, access, and restoration requirements. Concrete, asphalt, landscaping, and street work can increase project costs. An on-site evaluation is the best way to determine an accurate estimate." },
+    { q: "Is sewer line repair better than replacement?", a: "It depends on the pipe's condition. A localized repair may be suitable when the damage is limited to one section. Extensive deterioration, multiple damaged sections, or recurring failures may make replacement a better long-term option." },
+    { q: "How long does sewer line replacement take?", a: "The timeline depends on the length, depth, accessibility, soil conditions, permits, inspections, and restoration work. Smaller projects may take less time than deep or complex replacements." },
+    { q: "What is a sewer camera inspection?", a: "A sewer camera inspection uses a specialized camera to examine the inside of a sewer pipe. It helps identify cracks, roots, separations, obstructions, and other potential problems." },
+    { q: "Can tree roots damage my sewer line?", a: "Yes. Tree roots can enter small openings or damaged joints in sewer pipes. As roots grow, they may restrict wastewater flow and contribute to pipe damage." },
+    { q: "What is trenchless sewer repair?", a: "Trenchless sewer repair uses specialized methods to rehabilitate or replace certain underground sewer pipes while reducing the need for traditional excavation. Whether it is suitable depends on the pipe and property conditions." },
+    { q: "Do I need a sewer cleanout?", a: "A sewer cleanout provides access to the main sewer line for inspection and maintenance. If your property lacks an accessible cleanout, installation may make future service easier." },
+    { q: "Who is responsible for the sewer line between my house and the street?", a: "Responsibility varies by municipality and utility district. Homeowners are often responsible for at least part of the private sewer service line, but the exact boundary and requirements should be confirmed with the local sewer authority." },
+    { q: "Do sewer repairs require a permit?", a: "Permit requirements depend on the location, type of work, and local authority. Zenith can discuss applicable project requirements during the estimate process." },
+    { q: "Does Zenith provide sewer services in Aurora and Denver?", a: "Yes. Zenith serves Denver, Aurora, and other communities throughout its Denver Metro and Northern Colorado service area. Contact us to confirm service availability for your property." },
+  ],
+  cta: {
+    title: "Schedule Sewer Line Service with Zenith",
+    text: "Do not ignore recurring sewer backups, damaged underground piping, or signs of a failing sewer line. Contact Zenith for sewer line repair, sewer replacement, trenchless solutions, sewer inspections and cleanout installation throughout Denver Metro and Northern Colorado.",
+  },
+};
+
 export const categoryPageContent: Record<string, CategoryPageContent> = {
   plumbing,
   "drain-cleaning": drainCleaning,
+  sewer,
 };
