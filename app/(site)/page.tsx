@@ -11,6 +11,8 @@ import { ServiceArea } from "@/components/ServiceArea";
 import { Reviews } from "@/components/Reviews";
 import { CtaBand } from "@/components/CtaBand";
 import { Icon } from "@/components/Icon";
+import { OfferBadge } from "@/components/OfferBadge";
+import { drainCleaningOffer } from "@/data/offers";
 import { Gallery } from "@/components/Gallery";
 import { getCmsPage, getCmsPages } from "@/lib/cms";
 
@@ -60,6 +62,8 @@ export default async function HomePage() {
         }
         image={cms.heroImage}
       />
+
+      {drainCleaningOffer.active && <OfferBadge offer={drainCleaningOffer} variant="strip" />}
 
       <section className="section">
         <div className="container">

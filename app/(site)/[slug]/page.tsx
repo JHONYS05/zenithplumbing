@@ -25,6 +25,7 @@ import { CtaBand } from "@/components/CtaBand";
 import { ContactForm } from "@/components/ContactForm";
 import { JsonLd } from "@/components/JsonLd";
 import { Icon } from "@/components/Icon";
+import { offerFor } from "@/data/offers";
 import { getContactInfo } from "@/lib/contactInfo";
 
 export function generateStaticParams() {
@@ -68,12 +69,15 @@ export default async function SlugPage({ params }: Props) {
 // ─────────────────────────── Category hub ───────────────────────────
 
 async function CategoryPage({ category, cms }: { category: Category; cms: CmsPage }) {
+  const offer = offerFor(category.slug);
   const children = (await getCatalog()).servicesIn(category.key);
   const childCms = await getCmsPages(children.map((s) => s.slug));
   return (
     <>
-      <JsonLd data={serviceSchema({ name: category.name, description: category.description, path: `/${category.slug}` })} />
-      <Hero title={cms.h1 ?? category.h1} intro={cms.intro ?? category.intro} image={cms.heroImage}>
+      <JsonLd
+        data={serviceSchema({ name: category.name, description: category.description, path: `/${category.slug}`, offer })}
+      />
+      <Hero title={cms.h1 ?? category.h1} intro={cms.intro ?? category.intro} image={cms.heroImage} offer={offer}>
         <Breadcrumbs
           crumbs={[
             { name: "Home", path: "/" },
@@ -115,7 +119,10 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
         </div>
       </section>
 
-      <CtaBand />
+      <CtaBand
+        label={offer ? `Book ${offer.price} ${offer.title}` : undefined}
+        text={offer ? `${offer.price} ${offer.title.toLowerCase()}. ${offer.note}` : undefined}
+      />
     </>
   );
 }
@@ -123,6 +130,7 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
 // ─────────────────────────── Service page ───────────────────────────
 
 async function ServicePage({ service, cms }: { service: Service; cms: CmsPage }) {
+  const offer = offerFor(service.slug);
   const catalog = await getCatalog();
   const category = getCategory(service.category);
   const related = (service.related ?? [])
@@ -133,12 +141,15 @@ async function ServicePage({ service, cms }: { service: Service; cms: CmsPage })
 
   return (
     <>
-      <JsonLd data={serviceSchema({ name: service.name, description: service.description, path: `/${service.slug}` })} />
+      <JsonLd
+        data={serviceSchema({ name: service.name, description: service.description, path: `/${service.slug}`, offer })}
+      />
       <Hero
         title={cms.h1 ?? service.h1}
         intro={cms.intro ?? service.intro}
         ctaLabel={service.ctaLabel}
         image={cms.heroImage}
+        offer={offer}
       >
         <Breadcrumbs
           crumbs={[
@@ -234,7 +245,11 @@ async function ServicePage({ service, cms }: { service: Service; cms: CmsPage })
         </div>
       </section>
 
-      <CtaBand label={service.ctaLabel ?? "Request Service"} title={`Need ${service.name.toLowerCase()}?`} />
+      <CtaBand
+        label={offer ? `Book ${offer.price} ${offer.title}` : (service.ctaLabel ?? "Request Service")}
+        title={`Need ${service.name.toLowerCase()}?`}
+        text={offer ? `${offer.price} ${offer.title.toLowerCase()}. ${offer.note}` : undefined}
+      />
     </>
   );
 }

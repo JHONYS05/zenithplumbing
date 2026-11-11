@@ -3,6 +3,8 @@ import Link from "next/link";
 import type { CmsImage } from "@/lib/cms";
 import { Icon } from "./Icon";
 import { getContactInfo } from "@/lib/contactInfo";
+import type { Offer } from "@/data/offers";
+import { OfferBadge } from "./OfferBadge";
 
 interface HeroProps {
   eyebrow?: string;
@@ -13,9 +15,11 @@ interface HeroProps {
   large?: boolean;
   /** Optional image from the admin. The hero keeps its text-only layout when absent. */
   image?: CmsImage;
+  /** Optional special offer shown above the buttons. */
+  offer?: Offer;
 }
 
-export async function Hero({ eyebrow, title, intro, ctaLabel = "Request Service", children, large, image }: HeroProps) {
+export async function Hero({ eyebrow, title, intro, ctaLabel = "Request Service", children, large, image, offer }: HeroProps) {
   const contact = await getContactInfo();
   return (
     <section className={`hero${large ? " hero-large" : ""}${image ? " hero-with-image" : ""}`}>
@@ -25,6 +29,7 @@ export async function Hero({ eyebrow, title, intro, ctaLabel = "Request Service"
           {eyebrow && <p className="eyebrow">{eyebrow}</p>}
           <h1>{title}</h1>
           {intro && <p className="hero-intro">{intro}</p>}
+          {offer && <OfferBadge offer={offer} />}
           <div className="hero-actions">
             <Link href="/contact" className="btn btn-primary btn-lg">
               {ctaLabel} <Icon name="arrow" size={18} />

@@ -32,7 +32,12 @@ export function localBusinessSchema(
   return schema;
 }
 
-export function serviceSchema(opts: { name: string; description: string; path: string }) {
+export function serviceSchema(opts: {
+  name: string;
+  description: string;
+  path: string;
+  offer?: { title: string; note: string; priceValue: number };
+}) {
   return {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -42,6 +47,16 @@ export function serviceSchema(opts: { name: string; description: string; path: s
     url: absoluteUrl(opts.path),
     provider: { "@id": businessId },
     areaServed: { "@type": "State", name: "Colorado" },
+    ...(opts.offer && {
+      offers: {
+        "@type": "Offer",
+        name: opts.offer.title,
+        description: opts.offer.note,
+        price: opts.offer.priceValue,
+        priceCurrency: "USD",
+        url: absoluteUrl(opts.path),
+      },
+    }),
   };
 }
 
