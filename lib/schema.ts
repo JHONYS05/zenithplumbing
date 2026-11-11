@@ -25,6 +25,20 @@ export function localBusinessSchema(
       name: `${l.city}, CO`,
     })),
   };
+  schema.hasOfferCatalog = {
+    "@type": "OfferCatalog",
+    name: "Home Services",
+    itemListElement: [
+      ["Plumbing Services", "/plumbing"],
+      ["Drain Cleaning", "/drain-cleaning"],
+      ["Sewer Repair and Replacement", "/sewer"],
+      ["Water Heater Services", "/water-heaters"],
+      ["Heating and Air Conditioning", "/hvac"],
+    ].map(([name, path]) => ({
+      "@type": "Offer",
+      itemOffered: { "@type": "Service", name, url: absoluteUrl(path) },
+    })),
+  };
   if (siteConfig.showAddress && address.streetAddress) {
     schema.address = { "@type": "PostalAddress", ...address };
   }

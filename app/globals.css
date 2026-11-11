@@ -449,3 +449,28 @@ html, body { overflow-x: clip; }
 /* Hero subheadline */
 .hero-subtitle { font-family: var(--font-display); font-size: clamp(1.1rem, 2vw, 1.35rem); font-weight: 600; color: var(--gold-light); margin: -4px 0 14px; max-width: 760px; }
 .hero-large h1 { max-width: 900px; }
+
+/* ---------- Homepage content sections ---------- */
+.home-intro > * { max-width: 860px; }
+.home-intro p { color: var(--muted); }
+.home-lead { font-size: 1.12rem; color: var(--ink, inherit) !important; }
+.home-services { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 18px; }
+.home-service { background: var(--card); border: 1px solid var(--line, #e5e2da); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; }
+.home-service h3 { display: flex; align-items: center; gap: 10px; margin: 0 0 8px; font-size: 1.15rem; }
+.home-service h3 svg, .home-service li svg { color: var(--gold); flex-shrink: 0; }
+.home-service > p { color: var(--muted); margin: 0 0 12px; }
+.home-service ul { list-style: none; padding: 0; margin: 0 0 16px; display: grid; gap: 6px; font-size: 0.96rem; }
+.home-service li { display: flex; gap: 8px; align-items: flex-start; }
+.home-service li svg { margin-top: 4px; }
+.home-service-link { margin-top: auto; display: inline-flex; align-items: center; gap: 6px; font-weight: 600; color: var(--gold-deep); }
+.home-why { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 18px; }
+.home-why-item { border-top: 3px solid var(--gold); padding-top: 14px; }
+.home-why-item svg { color: var(--gold); }
+.home-why-item h3 { font-size: 1.05rem; margin: 8px 0 6px; }
+.home-why-item p { color: var(--muted); margin: 0; font-size: 0.96rem; }
+.home-pill-links { margin-top: 18px; }
+.home-steps { list-style: none; counter-reset: step; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 18px; }
+.home-steps li { counter-increment: step; background: var(--card); border-radius: 12px; padding: 20px; border: 1px solid var(--line, #e5e2da); }
+.home-steps li::before { content: counter(step); display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--navy); color: var(--gold); font-weight: 700; margin-bottom: 10px; }
+.home-steps strong { display: block; margin-bottom: 4px; }
+.home-steps p { margin: 0; color: var(--muted); font-size: 0.95rem; }
