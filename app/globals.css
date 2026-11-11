@@ -474,3 +474,6 @@ html, body { overflow-x: clip; }
 .home-steps li::before { content: counter(step); display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--navy); color: var(--gold); font-weight: 700; margin-bottom: 10px; }
 .home-steps strong { display: block; margin-bottom: 4px; }
 .home-steps p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+.home-service > p + p { margin-top: -4px; }
+.home-services-wide { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.check-list + p { margin-top: 16px; }

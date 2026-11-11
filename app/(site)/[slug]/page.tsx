@@ -28,6 +28,7 @@ import { Icon } from "@/components/Icon";
 import { offerFor } from "@/data/offers";
 import { offeringAnchor, offeringsByCategory } from "@/data/plumbingServices";
 import { getContactInfo } from "@/lib/contactInfo";
+import { categoryPageContent } from "@/data/categoryPages";
 
 export function generateStaticParams() {
   return allServiceSlugs().map((slug) => ({ slug }));
@@ -74,6 +75,14 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
   const children = (await getCatalog()).servicesIn(category.key);
   const childCms = await getCmsPages(children.map((s) => s.slug));
   const offerings = offeringsByCategory[category.slug];
+  const extra = categoryPageContent[category.slug];
+  const contact = extra ? await getContactInfo() : undefined;
+  const extraFaqs = extra && contact ? extra.faqs(contact.phone) : [];
+  const extraQs = new Set(extraFaqs.map((f) => f.q));
+  // Keep the category's own FAQs, minus the pricing one the longer list already answers.
+  const faqs = extra
+    ? [...extraFaqs, ...category.faqs.filter((f) => !extraQs.has(f.q) && !/pricing before/i.test(f.q))]
+    : category.faqs;
   return (
     <>
       <JsonLd
@@ -85,7 +94,14 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
           catalog: offerings,
         })}
       />
-      <Hero title={cms.h1 ?? category.h1} intro={cms.intro ?? category.intro} image={cms.heroImage} offer={offer}>
+      <Hero
+        title={cms.h1 ?? category.h1}
+        subtitle={extra?.subtitle}
+        intro={cms.intro ?? category.intro}
+        ctaLabel={extra?.ctaLabel}
+        image={cms.heroImage}
+        offer={offer}
+      >
         <Breadcrumbs
           crumbs={[
             { name: "Home", path: "/" },
@@ -93,6 +109,18 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
           ]}
         />
       </Hero>
+
+      {extra && (
+        <section className="section">
+          <div className="container home-intro">
+            {extra.introParagraphs.map((p, i) => (
+              <p key={i} className={i === 0 ? "home-lead" : undefined}>
+                {p}
+              </p>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="section">
         <div className="container">
@@ -144,21 +172,111 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
         </section>
       )}
 
+      {extra && (
+        <>
+          <section className="section section-tint">
+            <div className="container">
+              <div className="section-head">
+                <h2>{extra.servicesHeading}</h2>
+                <p>{extra.servicesLead}</p>
+              </div>
+              <div className="home-services home-services-wide">
+                {extra.services.map((sv) => (
+                  <article key={sv.title} className="home-service">
+                    <h3>
+                      <Icon name={category.icon} size={22} /> {sv.title}
+                    </h3>
+                    {sv.paragraphs.map((p, i) => (
+                      <p key={i}>{p}</p>
+                    ))}
+                    {sv.href && (
+                      <Link href={sv.href} className="home-service-link">
+                        {sv.linkLabel ?? `Learn about ${sv.title.toLowerCase()}`} <Icon name="arrow" size={16} />
+                      </Link>
+                    )}
+                  </article>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section className="section">
+            <div className="container two-col">
+              {extra.listSections.map((ls) => (
+                <div key={ls.heading}>
+                  <h2>{ls.heading}</h2>
+                  {ls.lead.map((p, i) => (
+                    <p key={i}>{p}</p>
+                  ))}
+                  <ul className="check-list">
+                    {ls.items.map((it) => (
+                      <li key={it}>
+                        <Icon name="check" size={20} /> {it}
+                      </li>
+                    ))}
+                  </ul>
+                  {ls.outro && <p>{ls.outro}</p>}
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {extra.split && (
+            <section className="section">
+              <div className="container">
+                <div className="section-head">
+                  <h2>{extra.split.heading}</h2>
+                  <p>{extra.split.lead}</p>
+                </div>
+                <div className="two-col">
+                  {extra.split.items.map((it) => (
+                    <div key={it.title} className="home-service">
+                      <h3>{it.title}</h3>
+                      <p>{it.body}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
+          )}
+        </>
+      )}
+
       <section className="section section-tint">
         <div className="container content-grid">
           <div className="content">
             <Gallery images={cms.gallery} heading={`Recent ${category.name} Projects`} />
-            <WhyZenith />
-            <ServiceArea serviceName={category.name} />
-            <FAQ faqs={category.faqs} />
+            {extra ? (
+              <section className="section-block">
+                <h2>{extra.why.heading}</h2>
+                <p>{extra.why.lead}</p>
+                <ul className="trust-list">
+                  {extra.why.points.map((pt) => (
+                    <li key={pt.title}>
+                      <Icon name="check" size={22} />
+                      <div>
+                        <strong>{pt.title}</strong>
+                        <p>{pt.body}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            ) : (
+              <WhyZenith />
+            )}
+            <ServiceArea serviceName={category.name} heading={extra?.areas.heading} />
+            {extra && <p>{extra.areas.outro}</p>}
+            <FAQ faqs={faqs} heading={extra?.faqHeading} />
           </div>
           <Sidebar />
         </div>
       </section>
 
       <CtaBand
-        label={offer ? `Book ${offer.price} ${offer.title}` : undefined}
-        text={offer ? `${offer.price} ${offer.title.toLowerCase()}. ${offer.note}` : undefined}
+        title={extra?.cta.title}
+        label={offer ? `Book ${offer.price} ${offer.title}` : extra?.ctaLabel}
+        text={offer ? `${offer.price} ${offer.title.toLowerCase()}. ${offer.note}` : extra?.cta.text}
       />
     </>
   );
