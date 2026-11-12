@@ -252,7 +252,7 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
                     <p key={i}>{p}</p>
                   ))}
                 </div>
-                <div className={`home-why${extra.signs.items.length % 3 === 0 ? " grid-3" : ""}`}>
+                <div className={`home-why${extra.signs.items.length % 3 === 0 ? " grid-3" : extra.signs.items.length === 7 ? " grid-4" : ""}`}>
                   {extra.signs.items.map((it) => (
                     <div key={it.title} className="home-why-item">
                       <Icon name="check" size={22} />
@@ -288,7 +288,7 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
 
           {extra.listSections && (
           <section className="section">
-            <div className="container two-col">
+            <div className={`container${extra.listSections.length > 1 ? " two-col" : " home-intro"}`}>
               {extra.listSections.map((ls) => (
                 <div key={ls.heading}>
                   <h2>{ls.heading}</h2>
