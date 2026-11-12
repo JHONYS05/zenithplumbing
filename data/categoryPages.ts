@@ -29,6 +29,8 @@ export interface CategoryPageContent {
   listSections?: { heading: string; lead: string[]; items: string[]; outro?: string }[];
   signs?: { heading: string; lead: string[]; items: { title: string; body: string }[]; outro?: string };
   process?: { heading: string; lead: string; steps: { title: string; body: string }[]; outro?: string };
+  compare?: { heading: string; lead: string; columns: { heading: string; items: string[] }[]; outro?: string };
+  materials?: { heading: string; lead: string; items: { title: string; body: string }[]; outro?: string };
   split?: { heading: string; lead: string; items: { title: string; body: string }[] };
   why: { heading: string; lead: string; points: { title: string; body: string }[] };
   areas: { heading: string; lead: string; outro: string };
@@ -883,4 +885,314 @@ export const categoryPageContent: Record<string, CategoryPageContent> = {
   "drain-cleaning": drainCleaning,
   sewer,
   hvac,
+};
+
+const pipeRepair: CategoryPageContent = {
+  introParagraphs: [
+    "Zenith Plumbing, Drain, Sewer & HVAC provides professional pipe repair and replacement services throughout Denver Metro and Northern Colorado. We help homeowners with leaking pipes, burst pipes, corroded piping, frozen pipe damage, damaged water lines, and aging plumbing systems.",
+    "Whether you need a localized pipe repair, replacement of a damaged pipe section, or a larger repiping project, our team evaluates the condition of your plumbing and explains the available solutions.",
+  ],
+  servicesHeading: "Complete Pipe Repair & Replacement Services",
+  servicesLead:
+    "Your home's plumbing system depends on properly functioning pipes to deliver water to fixtures and appliances. Zenith provides several pipe repair and replacement solutions depending on the type of pipe, location of the problem, and overall condition of the plumbing system.",
+  services: [
+    {
+      title: "Leaking Pipe Repair",
+      href: "/leak-detection",
+      linkLabel: "Water Leak Detection",
+      paragraphs: [
+        "A leaking pipe can waste water and damage walls, ceilings, floors, cabinets, and other parts of your home. Some leaks are easy to see, while others occur behind walls, underneath floors, or in difficult-to-access areas.",
+      ],
+      bulletsLead: "Our leaking pipe repair services can address:",
+      bullets: [
+        "Pinhole leaks in copper pipes",
+        "Leaking PEX connections and fittings",
+        "Damaged water supply pipes",
+        "Leaking pipe joints and connections",
+        "Corroded pipe sections",
+        "Leaks underneath sinks and cabinets",
+        "Leaking pipes in basements and crawl spaces",
+        "Damaged plumbing inside walls or ceilings",
+      ],
+      outro: [
+        "Depending on the condition of the pipe, the repair may involve replacing a fitting, repairing a connection, or removing and replacing a damaged section.",
+      ],
+    },
+    {
+      title: "Burst Pipe Repair",
+      href: "/emergency-plumber",
+      linkLabel: "Emergency Plumbing",
+      paragraphs: [
+        "A burst pipe can release a significant amount of water into your property in a short period of time. Frozen pipes, corrosion, excessive pressure, and damaged connections can all contribute to pipe failures.",
+      ],
+      bulletsLead: "Our burst pipe repair service may include:",
+      bullets: [
+        "Identifying the damaged pipe section",
+        "Shutting off the affected water supply",
+        "Removing damaged piping",
+        "Installing replacement pipe and fittings",
+        "Reconnecting the affected plumbing",
+        "Restoring water service",
+        "Testing repaired connections for leaks",
+      ],
+      outro: [
+        "If a pipe bursts, shut off your main water supply if it is safe to do so. If water is near electrical equipment, avoid the area and contact appropriate emergency assistance.",
+        "For urgent plumbing problems, call Zenith at {phone}.",
+      ],
+    },
+    {
+      title: "Pipe Replacement",
+      paragraphs: [
+        "Sometimes repairing a small section of pipe is not enough. If a pipe has extensive corrosion, repeated leaks, or significant deterioration, replacing the affected section may provide a more reliable solution.",
+      ],
+      bulletsLead: "Pipe replacement projects may include:",
+      bullets: [
+        "Removing damaged or deteriorated pipe",
+        "Replacing failed pipe sections",
+        "Installing new plumbing fittings and connections",
+        "Updating outdated piping where appropriate",
+        "Reconnecting existing plumbing fixtures",
+        "Testing the completed piping system",
+      ],
+      outro: [
+        "The replacement material and installation method depend on the existing plumbing, application, accessibility, and applicable plumbing requirements.",
+      ],
+    },
+    {
+      title: "Partial Repiping",
+      paragraphs: [
+        "Partial repiping involves replacing selected sections of a plumbing system rather than replacing every water supply pipe throughout the property.",
+      ],
+      bulletsLead: "This may be appropriate when:",
+      bullets: [
+        "A specific area has recurring leaks",
+        "Several pipes in one section are deteriorated",
+        "A bathroom or kitchen requires updated piping",
+        "A plumbing renovation requires new water supply lines",
+        "Existing pipe material is damaged in certain areas",
+        "The remaining plumbing system is still in acceptable condition",
+      ],
+      outro: [
+        "A professional evaluation helps determine whether a partial repipe is suitable or whether a more extensive replacement should be considered.",
+      ],
+    },
+    {
+      title: "Whole-House Repiping",
+      href: "/plumbing#whole-house-repiping",
+      linkLabel: "Whole-House Repiping",
+      paragraphs: [
+        "If your home's plumbing system has widespread corrosion, repeated leaks, or outdated piping, a whole-house repipe may be worth considering. It replaces the home's existing water supply piping with new piping material selected for the property.",
+      ],
+      bulletsLead: "A whole-house repiping project may involve:",
+      bullets: [
+        "Evaluating the existing water supply system",
+        "Planning new pipe routes",
+        "Selecting suitable replacement materials",
+        "Accessing piping through walls, ceilings, basements, or crawl spaces",
+        "Removing or abandoning existing piping as appropriate",
+        "Installing new hot and cold water supply lines",
+        "Reconnecting plumbing fixtures and appliances",
+        "Testing the new plumbing system",
+      ],
+      outro: [
+        "The amount of wall or ceiling access required depends on the home's layout and existing pipe locations. Drywall repair, painting, and finish restoration are identified in the project estimate.",
+      ],
+    },
+    {
+      title: "Copper Pipe Repair",
+      paragraphs: [
+        "Copper piping is commonly used in residential water supply systems. Although copper is durable, it can develop pinhole leaks, corrosion, damaged joints, and other problems over time.",
+      ],
+      bulletsLead: "Our copper pipe repair services may address:",
+      bullets: [
+        "Pinhole leaks",
+        "Corroded copper sections",
+        "Failed soldered connections",
+        "Damaged fittings",
+        "Leaking joints",
+        "Pipe sections damaged by freezing",
+      ],
+      outro: [
+        "Depending on the condition of the piping, we can evaluate whether a localized copper pipe repair or replacement section is appropriate.",
+      ],
+    },
+    {
+      title: "PEX Pipe Repair & Installation",
+      href: "/plumbing#pex-pipe-installation",
+      linkLabel: "PEX Pipe Installation",
+      paragraphs: [
+        "PEX is a flexible plumbing pipe material used in many residential water supply systems. It can be suitable for new plumbing installations, repairs, and repiping projects.",
+      ],
+      bulletsLead: "Our PEX services may include:",
+      bullets: [
+        "PEX pipe installation",
+        "Replacement of damaged PEX sections",
+        "PEX fitting and connection repairs",
+        "Hot and cold water supply piping",
+        "Partial repiping projects",
+        "Whole-house repiping",
+      ],
+      outro: [
+        "The correct pipe type, fittings, and installation method depend on the plumbing application and applicable code requirements.",
+      ],
+    },
+    {
+      title: "Frozen Pipe Repair",
+      paragraphs: [
+        "Colorado's winter temperatures can expose plumbing to freezing conditions, especially in unheated areas, exterior walls, crawl spaces, garages, and other vulnerable locations.",
+        "When water freezes inside a pipe, expansion can cause cracks or ruptures. Sometimes the leak only becomes visible after the pipe begins to thaw.",
+      ],
+      bulletsLead: "Our frozen pipe repair service may include:",
+      bullets: [
+        "Identifying the affected piping",
+        "Evaluating the pipe for cracks or damage",
+        "Replacing split or damaged sections",
+        "Repairing affected fittings and connections",
+        "Checking the system for additional leaks",
+        "Recommending ways to reduce future freezing risks",
+      ],
+      outro: ["Do not use an open flame to thaw frozen pipes. If you suspect a frozen pipe, contact a plumbing professional."],
+    },
+  ],
+  relatedLinks: [
+    { label: "Water Line Replacement", href: "/plumbing#water-line-replacement" },
+    { label: "Pipe Installation", href: "/plumbing#pipe-installation" },
+    { label: "Plumbing Repair", href: "/plumbing-repair" },
+    { label: "Main Water Shut-Off Valve", href: "/plumbing#main-water-shut-off-valve" },
+    { label: "Plumbing Services", href: "/plumbing" },
+  ],
+  signs: {
+    heading: "Signs Your Home Needs Pipe Repair or Replacement",
+    lead: [
+      "Plumbing pipe problems can develop gradually or occur suddenly. Recognizing the warning signs can help you address problems before additional damage occurs.",
+    ],
+    items: [
+      { title: "Frequent Water Leaks", body: "Repeated leaks in the same area or in different parts of the home may indicate aging or deteriorating plumbing." },
+      { title: "Low Water Pressure", body: "A noticeable drop in water pressure throughout multiple fixtures may be associated with pipe corrosion, restrictions, leaks, or other plumbing problems." },
+      { title: "Discolored Water", body: "Brown, orange, or rust-colored water can sometimes indicate corrosion in plumbing pipes or other components. A professional evaluation can help identify the source." },
+      { title: "Visible Pipe Corrosion", body: "Green, white, or rust-colored buildup around exposed pipes and fittings may indicate corrosion or a deteriorating connection." },
+      { title: "Unexplained Water Damage", body: "Wet drywall, ceiling stains, bubbling paint, damp flooring, or water underneath cabinets may indicate a hidden plumbing leak." },
+      { title: "Frozen or Burst Pipes", body: "Pipes exposed to freezing temperatures may crack or split, resulting in leaks when the ice thaws." },
+      { title: "Older Plumbing Materials", body: "Some older homes have galvanized steel or polybutylene piping. These materials may warrant an evaluation if the plumbing has recurring leaks, corrosion, or performance problems." },
+    ],
+  },
+  compare: {
+    heading: "Pipe Repair vs. Pipe Replacement: Which Do You Need?",
+    lead: "Not every damaged pipe requires a complete replacement. The best solution depends on the location of the damage and the condition of the surrounding plumbing.",
+    columns: [
+      {
+        heading: "Pipe repair may be appropriate when:",
+        items: [
+          "The leak is isolated to one section.",
+          "The surrounding piping is in good condition.",
+          "The pipe material remains suitable for continued use.",
+          "The damage is limited to a fitting or connection.",
+          "There are no signs of widespread deterioration.",
+        ],
+      },
+      {
+        heading: "Pipe replacement may be appropriate when:",
+        items: [
+          "Multiple pipe sections are leaking.",
+          "Corrosion is widespread.",
+          "Pipes have recurring failures.",
+          "Existing piping is deteriorating.",
+          "The cost of repeated repairs is becoming significant.",
+          "The existing pipe material is no longer suitable for the application.",
+        ],
+      },
+    ],
+    outro: "Our goal is to evaluate the actual condition of your plumbing and explain the available options before recommending work.",
+  },
+  materials: {
+    heading: "Choosing the Right Pipe Material",
+    lead: "Different plumbing materials have different applications, installation requirements, and performance characteristics.",
+    items: [
+      { title: "PEX Piping", body: "PEX is flexible and commonly used for residential hot and cold water supply systems. It can simplify installation in certain homes and reduce the number of connections required." },
+      { title: "Copper Piping", body: "Copper is a long-established water supply material known for its durability. Proper installation and suitable water conditions are important for long-term performance." },
+      { title: "CPVC Piping", body: "CPVC is used in certain hot and cold water supply applications. Its suitability depends on the system design, installation requirements, and applicable codes." },
+      { title: "PVC Piping", body: "PVC is commonly used in drain, waste, and vent plumbing applications. It is not interchangeable with every water supply pipe material, so the intended use must be considered." },
+    ],
+    outro: "Zenith can help evaluate the existing system and discuss suitable replacement materials for your project.",
+  },
+  process: {
+    heading: "Our Pipe Repair Process",
+    lead: "We believe homeowners should understand what is wrong with their plumbing and what work is necessary to address it.",
+    steps: [
+      { title: "Evaluate the Problem", body: "We discuss the symptoms, leak location, plumbing history, and any visible damage." },
+      { title: "Inspect Accessible Piping", body: "We examine accessible pipes, connections, fittings, and surrounding plumbing conditions." },
+      { title: "Identify the Recommended Solution", body: "We determine whether the problem calls for a localized repair, section replacement, partial repiping, or a larger project." },
+      { title: "Explain the Scope and Pricing", body: "We explain the recommended work, materials, access requirements, and pricing before authorized work begins." },
+      { title: "Complete the Repair or Replacement", body: "Our team performs the approved plumbing work using appropriate materials and installation methods." },
+      { title: "Test the Plumbing System", body: "We check the completed work for leaks and verify proper operation of the affected plumbing system." },
+    ],
+  },
+  listSections: [
+    {
+      heading: "What Affects Pipe Repair and Replacement Costs?",
+      lead: [
+        "The price of pipe repair or replacement depends on the location, accessibility, pipe material, and amount of work required.",
+        "Factors that may affect your estimate include:",
+      ],
+      items: [
+        "Type and diameter of the existing pipe",
+        "Length of pipe requiring repair or replacement",
+        "Accessibility behind walls, ceilings, or floors",
+        "Crawl space or basement access",
+        "Number of fittings and connections",
+        "Water shutoff and system drainage requirements",
+        "Concrete or flooring access",
+        "Wall or ceiling openings",
+        "Replacement material",
+        "Permit and inspection requirements",
+        "Restoration work included in the project",
+      ],
+      outro: "A simple accessible pipe repair is different from replacing piping behind finished walls or completing a whole-house repipe. We provide project-specific pricing after evaluating the work.",
+    },
+  ],
+  why: {
+    heading: "Why Choose Zenith for Pipe Repair in Denver?",
+    lead: "Here's what you can expect when Zenith works on your plumbing.",
+    points: [
+      { title: "Professional Plumbing Evaluation", body: "We evaluate the plumbing problem before recommending a repair or replacement." },
+      { title: "Repair and Replacement Options", body: "We explain when a localized repair may be sufficient and when a larger piping project should be considered." },
+      { title: "Upfront Project Pricing", body: "You receive the proposed work and pricing before authorized work begins." },
+      { title: "Quality Plumbing Materials", body: "We select suitable piping materials and fittings based on the application and project requirements." },
+      { title: "Respect for Your Property", body: "We take care to protect work areas and maintain an organized jobsite." },
+      { title: "Complete Home Services", body: "Zenith also provides plumbing repairs, water heaters, drain cleaning, sewer services, heating, and air conditioning." },
+    ],
+  },
+  areas: {
+    heading: "Pipe Repair Services in Denver Metro & Northern Colorado",
+    lead: "Zenith provides pipe repair and replacement services throughout Denver Metro and Northern Colorado.",
+    outro: "Contact our team to confirm service availability in your area.",
+  },
+  faqHeading: "Frequently Asked Questions About Pipe Repair",
+  replacesFaqs: ["Should I repair one section or repipe the house?"],
+  faqs: () => [
+    { q: "How much does pipe repair cost in Denver?", a: "The cost depends on the pipe material, location of the leak, accessibility, amount of damaged piping, and whether walls or floors need to be opened. An accessible pipe repair will generally involve a different scope than a concealed pipe replacement. We provide pricing after evaluating the project." },
+    { q: "How do I know if a pipe needs to be replaced?", a: "Recurring leaks, widespread corrosion, multiple damaged sections, persistent water pressure problems, and deteriorating pipe materials may indicate that replacement should be considered. An inspection can help determine whether a localized repair is still appropriate." },
+    { q: "Can a leaking pipe be repaired without replacing the entire plumbing system?", a: "Yes. If the damage is limited to one section and the surrounding piping is in good condition, a localized repair may be sufficient." },
+    { q: "What causes pipes to leak?", a: "Common causes include corrosion, aging materials, freezing temperatures, excessive pressure, damaged fittings, poor connections, and physical damage." },
+    { q: "What should I do if a pipe bursts?", a: "If it is safe, shut off the main water supply to reduce additional water damage. Keep away from water near electrical equipment. Then contact a plumbing professional for repair." },
+    { q: "Can frozen pipes be repaired?", a: "Yes. If a frozen pipe has cracked or split, the damaged section may need to be replaced. The surrounding plumbing should also be checked for additional damage." },
+    { q: "Is PEX better than copper?", a: "Both materials can be appropriate for residential water supply systems. PEX is flexible and often easier to route through existing structures, while copper is a durable traditional material. The right choice depends on the home, application, water conditions, budget, and installation requirements." },
+    { q: "How long does pipe replacement take?", a: "A small pipe section may be replaced in a few hours, depending on accessibility. Larger projects and whole-house repiping can take considerably longer. The timeline depends on the property layout, pipe routing, access, and project scope." },
+    { q: "Can you replace pipes behind walls?", a: "Yes. Some pipe repairs and replacements require opening walls or ceilings to access the damaged piping. The access and restoration requirements are explained in the estimate." },
+    { q: "What is partial repiping?", a: "Partial repiping replaces selected portions of a home's water supply piping rather than replacing the entire system. It may be suitable when the problem is limited to a specific area." },
+    { q: "What is whole-house repiping?", a: "Whole-house repiping replaces the home's water supply piping throughout the property. It may be considered when the existing plumbing has widespread deterioration or repeated leaks." },
+    { q: "Do old galvanized pipes need to be replaced?", a: "Not every older galvanized pipe automatically requires immediate replacement. However, galvanized piping can corrode internally over time and may contribute to reduced water flow, discoloration, and leaks. A plumbing evaluation can help determine its condition." },
+    { q: "Does low water pressure mean my pipes are damaged?", a: "Not necessarily. Low pressure can result from several causes, including a pressure regulator problem, valve restriction, fixture issue, leaks, or pipe corrosion. Proper diagnosis is important before deciding on repairs." },
+    { q: "Do pipe repairs require a plumbing permit?", a: "Some plumbing repairs and replacement projects require permits and inspections, depending on the scope and local jurisdiction. Requirements should be confirmed for the specific project." },
+    { q: "Does Zenith provide pipe repair in Aurora and Denver?", a: "Yes. Zenith serves Denver, Aurora, and communities throughout its Denver Metro and Northern Colorado service area. Contact us to confirm availability for your property." },
+  ],
+  cta: {
+    title: "Schedule Pipe Repair & Replacement with Zenith",
+    text: "Do not let a small pipe leak turn into a major plumbing problem. Whether you need a leaking pipe repaired, a burst pipe replaced, or an evaluation of aging plumbing, Zenith is ready to help throughout Denver Metro and Northern Colorado.",
+  },
+};
+
+/** Extra long-form content for individual service pages, keyed by service slug. */
+export const servicePageContent: Record<string, CategoryPageContent> = {
+  "pipe-repair": pipeRepair,
 };

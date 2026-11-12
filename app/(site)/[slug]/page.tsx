@@ -28,7 +28,8 @@ import { Icon } from "@/components/Icon";
 import { offerFor } from "@/data/offers";
 import { offeringAnchor, offeringsByCategory } from "@/data/plumbingServices";
 import { getContactInfo } from "@/lib/contactInfo";
-import { categoryPageContent } from "@/data/categoryPages";
+import { categoryPageContent, servicePageContent } from "@/data/categoryPages";
+import { ExtraBody, ExtraIntro, ExtraWhy } from "@/components/ExtraSections";
 
 export function generateStaticParams() {
   return allServiceSlugs().map((slug) => ({ slug }));
@@ -58,7 +59,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     path: `/${slug}`,
     keywords: page.keywords,
   });
-  const og = categoryPageContent[slug]?.og;
+  const og = (categoryPageContent[slug] ?? servicePageContent[slug])?.og;
   if (!og) return meta;
   return {
     ...meta,
@@ -122,19 +123,7 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
         />
       </Hero>
 
-      {extra && (
-        <section className="section">
-          <div className="container home-intro">
-            {extra.introHeading && <h2>{extra.introHeading}</h2>}
-            {extra.introSubheading && <p className="intro-subheading">{extra.introSubheading}</p>}
-            {extra.introParagraphs.map((p, i) => (
-              <p key={i} className={i === 0 ? "home-lead" : undefined}>
-                {p}
-              </p>
-            ))}
-          </div>
-        </section>
-      )}
+      {extra && <ExtraIntro extra={extra} />}
 
       <section className="section">
         <div className="container">
@@ -186,170 +175,14 @@ async function CategoryPage({ category, cms }: { category: Category; cms: CmsPag
         </section>
       )}
 
-      {extra && (
-        <>
-          <section className="section section-tint">
-            <div className="container">
-              <div className="section-head">
-                <h2>{extra.servicesHeading}</h2>
-                <p>{extra.servicesLead}</p>
-              </div>
-              <div className={`home-services home-services-wide${extra.services.length % 3 === 0 || extra.services.length === 5 ? " grid-3" : ""}`}>
-                {extra.services.map((sv) => (
-                  <article key={sv.title} className="home-service">
-                    <h3>
-                      <Icon name={category.icon} size={22} /> {sv.title}
-                    </h3>
-                    {sv.paragraphs.map((p, i) => (
-                      <p key={i}>{p}</p>
-                    ))}
-                    {sv.bullets && (
-                      <>
-                        {sv.bulletsLead && <p className="home-service-lead">{sv.bulletsLead}</p>}
-                        <ul>
-                          {sv.bullets.map((b) => (
-                            <li key={b}>
-                              <Icon name="check" size={16} /> {b}
-                            </li>
-                          ))}
-                        </ul>
-                      </>
-                    )}
-                    {sv.outro?.map((p, i) => (
-                      <p key={`o${i}`}>{p}</p>
-                    ))}
-                    {sv.href && (
-                      <Link href={sv.href} className="home-service-link">
-                        {sv.linkLabel ?? `Learn about ${sv.title.toLowerCase()}`} <Icon name="arrow" size={16} />
-                      </Link>
-                    )}
-                  </article>
-                ))}
-              </div>
-              {extra.relatedLinks && (
-                <div className="related-links">
-                  <strong>Related services:</strong>
-                  <ul className="area-list">
-                    {extra.relatedLinks.map((l) => (
-                      <li key={l.href}>
-                        <Link href={l.href}>
-                          <Icon name="arrow" size={14} /> {l.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </div>
-          </section>
-
-          {extra.signs && (
-            <section className="section">
-              <div className="container">
-                <div className="section-head">
-                  <h2>{extra.signs.heading}</h2>
-                  {extra.signs.lead.map((p, i) => (
-                    <p key={i}>{p}</p>
-                  ))}
-                </div>
-                <div className={`home-why${extra.signs.items.length % 3 === 0 ? " grid-3" : extra.signs.items.length === 7 ? " grid-4" : ""}`}>
-                  {extra.signs.items.map((it) => (
-                    <div key={it.title} className="home-why-item">
-                      <Icon name="check" size={22} />
-                      <h3>{it.title}</h3>
-                      <p>{it.body}</p>
-                    </div>
-                  ))}
-                </div>
-                {extra.signs.outro && <p className="signs-warning">{extra.signs.outro}</p>}
-              </div>
-            </section>
-          )}
-
-          {extra.process && (
-            <section className="section section-tint">
-              <div className="container">
-                <div className="section-head">
-                  <h2>{extra.process.heading}</h2>
-                  <p>{extra.process.lead}</p>
-                </div>
-                <ol className={`home-steps${extra.process.steps.length === 6 ? " grid-3" : ""}`}>
-                  {extra.process.steps.map((st) => (
-                    <li key={st.title}>
-                      <strong>{st.title}</strong>
-                      <p>{st.body}</p>
-                    </li>
-                  ))}
-                </ol>
-                {extra.process.outro && <p className="process-outro">{extra.process.outro}</p>}
-              </div>
-            </section>
-          )}
-
-          {extra.listSections && (
-          <section className="section">
-            <div className={`container${extra.listSections.length > 1 ? " two-col" : " home-intro"}`}>
-              {extra.listSections.map((ls) => (
-                <div key={ls.heading}>
-                  <h2>{ls.heading}</h2>
-                  {ls.lead.map((p, i) => (
-                    <p key={i}>{p}</p>
-                  ))}
-                  <ul className="check-list">
-                    {ls.items.map((it) => (
-                      <li key={it}>
-                        <Icon name="check" size={20} /> {it}
-                      </li>
-                    ))}
-                  </ul>
-                  {ls.outro && <p>{ls.outro}</p>}
-                </div>
-              ))}
-            </div>
-          </section>
-          )}
-
-          {extra.split && (
-            <section className="section">
-              <div className="container">
-                <div className="section-head">
-                  <h2>{extra.split.heading}</h2>
-                  <p>{extra.split.lead}</p>
-                </div>
-                <div className="two-col">
-                  {extra.split.items.map((it) => (
-                    <div key={it.title} className="home-service">
-                      <h3>{it.title}</h3>
-                      <p>{it.body}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </section>
-          )}
-        </>
-      )}
+      {extra && contact && <ExtraBody extra={extra} icon={category.icon} phone={contact.phone} />}
 
       <section className="section section-tint">
         <div className="container content-grid">
           <div className="content">
             <Gallery images={cms.gallery} heading={`Recent ${category.name} Projects`} />
             {extra ? (
-              <section className="section-block">
-                <h2>{extra.why.heading}</h2>
-                <p>{extra.why.lead}</p>
-                <ul className="trust-list">
-                  {extra.why.points.map((pt) => (
-                    <li key={pt.title}>
-                      <Icon name="check" size={22} />
-                      <div>
-                        <strong>{pt.title}</strong>
-                        <p>{pt.body}</p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </section>
+              <ExtraWhy extra={extra} />
             ) : (
               <WhyZenith />
             )}
@@ -385,6 +218,13 @@ async function ServicePage({ service, cms }: { service: Service; cms: CmsPage })
     .filter((s): s is Service => Boolean(s));
   const siblings = catalog.servicesIn(service.category).filter((s) => s.slug !== service.slug);
   const relatedCms = await getCmsPages(related.map((r) => r.slug));
+  const extra = servicePageContent[service.slug];
+  const contact = extra ? await getContactInfo() : undefined;
+  const extraFaqs = extra && contact ? extra.faqs(contact.phone) : [];
+  const extraQs = new Set(extraFaqs.map((f) => f.q));
+  const faqs = extra
+    ? [...extraFaqs, ...service.faqs.filter((f) => !extraQs.has(f.q) && !extra.replacesFaqs?.includes(f.q))]
+    : service.faqs;
 
   return (
     <>
@@ -393,8 +233,9 @@ async function ServicePage({ service, cms }: { service: Service; cms: CmsPage })
       />
       <Hero
         title={cms.h1 ?? service.h1}
+        subtitle={extra?.subtitle}
         intro={cms.intro ?? service.intro}
-        ctaLabel={service.ctaLabel}
+        ctaLabel={extra?.ctaLabel ?? service.ctaLabel}
         image={cms.heroImage}
         offer={offer}
       >
@@ -407,10 +248,13 @@ async function ServicePage({ service, cms }: { service: Service; cms: CmsPage })
         />
       </Hero>
 
+      {extra && <ExtraIntro extra={extra} />}
+      {extra && contact && <ExtraBody extra={extra} icon={category.icon} phone={contact.phone} />}
+
       <section className="section">
         <div className="container content-grid">
           <article className="content">
-            {service.signs.length > 0 && (
+            {!extra && service.signs.length > 0 && (
               <section className="section-block">
                 <h2>{service.signsHeading ?? `Signs You Need ${service.name}`}</h2>
                 <ul className="check-list">
@@ -423,7 +267,7 @@ async function ServicePage({ service, cms }: { service: Service; cms: CmsPage })
               </section>
             )}
 
-            {service.process.length > 0 && (
+            {!extra && service.process.length > 0 && (
               <section className="section-block">
                 <h2>{service.processHeading ?? `Our ${service.name} Process`}</h2>
                 <ol className="steps">
@@ -452,9 +296,10 @@ async function ServicePage({ service, cms }: { service: Service; cms: CmsPage })
             ))}
 
             <Gallery images={cms.gallery} heading={`Recent ${service.name} Projects`} />
-            <WhyZenith />
-            <ServiceArea heading={`${service.name} Service Areas`} serviceName={service.name} />
-            <FAQ faqs={service.faqs} />
+            {extra ? <ExtraWhy extra={extra} /> : <WhyZenith />}
+            <ServiceArea heading={extra?.areas.heading ?? `${service.name} Service Areas`} serviceName={service.name} />
+            {extra && <p>{extra.areas.outro}</p>}
+            <FAQ faqs={faqs} heading={extra?.faqHeading} />
 
             {related.length > 0 && (
               <section className="section-block">
@@ -493,9 +338,9 @@ async function ServicePage({ service, cms }: { service: Service; cms: CmsPage })
       </section>
 
       <CtaBand
-        label={offer ? `Book ${offer.price} ${offer.title}` : (service.ctaLabel ?? "Request Service")}
-        title={`Need ${service.name.toLowerCase()}?`}
-        text={offer ? `${offer.price} ${offer.title.toLowerCase()}. ${offer.note}` : undefined}
+        label={offer ? `Book ${offer.price} ${offer.title}` : (extra?.ctaLabel ?? service.ctaLabel ?? "Request Service")}
+        title={extra?.cta.title ?? `Need ${service.name.toLowerCase()}?`}
+        text={offer ? `${offer.price} ${offer.title.toLowerCase()}. ${offer.note}` : extra?.cta.text}
       />
     </>
   );
