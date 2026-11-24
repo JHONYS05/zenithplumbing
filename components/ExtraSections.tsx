@@ -88,13 +88,17 @@ export function ExtraBody({ extra, icon, phone }: Props & { icon: string; phone:
         </section>
       )}
 
-      <section className="section section-tint">
+      <section className={`section section-tint${extra.services.length === 0 ? " section-compact" : ""}`}>
         <div className="container">
-          <div className="section-head">
-            <h2>{extra.servicesHeading}</h2>
-            <p>{extra.servicesLead}</p>
-          </div>
-          <ServiceCards items={extra.services} icon={icon} fill={fill} />
+          {extra.services.length > 0 && (
+            <>
+              <div className="section-head">
+                <h2>{extra.servicesHeading}</h2>
+                <p>{extra.servicesLead}</p>
+              </div>
+              <ServiceCards items={extra.services} icon={icon} fill={fill} />
+            </>
+          )}
           {extra.relatedLinks && (
             <div className="related-links">
               <strong>Related services:</strong>

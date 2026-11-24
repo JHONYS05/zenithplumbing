@@ -2537,6 +2537,191 @@ const sewerCameraInspection: CategoryPageContent = {
   },
 };
 
+const sewerRepair: CategoryPageContent = {
+  og: {
+    title: "Sewer Line Repair Denver CO | Sewer Pipe Repair | Zenith",
+    description: "Professional sewer line repair for damaged pipes, broken joints and root intrusion throughout Denver Metro and Northern Colorado.",
+  },
+  introParagraphs: [
+    "Our team helps homeowners identify damaged sewer pipes, broken connections, root intrusion, separated joints, and other underground sewer problems. We use sewer camera inspections and appropriate diagnostic methods to locate the issue and determine whether a targeted sewer line repair or a more extensive solution is needed.",
+    "Not every sewer problem requires replacing the entire sewer line. When the damage is limited to a specific section and the remaining pipe is in suitable condition, a spot repair may restore the affected area without the cost of a complete replacement.",
+  ],
+  whatIs: {
+    heading: "Professional Sewer Line Repair Services",
+    paragraphs: [
+      "Your home's sewer line carries wastewater away from the property and toward the municipal sewer connection or applicable approved system. When a section becomes damaged, wastewater may drain slowly, back up into fixtures, or escape underground.",
+      "Zenith evaluates the condition and location of the problem before recommending a repair approach. Our goal is to address the actual cause of the sewer issue and explain the available options before work begins.",
+    ],
+    itemsLead: "Our sewer repair services may include:",
+    items: [
+      "Repairing cracked or broken sewer pipe sections",
+      "Replacing separated or damaged pipe joints",
+      "Repairing localized root intrusion damage",
+      "Correcting damaged connections",
+      "Repairing accessible sections of underground sewer piping",
+      "Excavating and replacing a damaged section of sewer line",
+      "Addressing recurring sewer problems after camera inspection",
+      "Evaluating sewer lines with suspected leaks or structural damage",
+    ],
+    outro: "The appropriate repair depends on the pipe material, depth, accessibility, condition of the surrounding line, and location of the damage.",
+  },
+  servicesHeading: "",
+  servicesLead: "",
+  services: [],
+  relatedLinks: [
+    { label: "Sewer Line Replacement", href: "/sewer-replacement" },
+    { label: "Trenchless Sewer Repair", href: "/trenchless-sewer-repair" },
+    { label: "Sewer Camera Inspection", href: "/sewer-camera-inspection" },
+    { label: "Sewer Line Inspection", href: "/sewer-line-inspection" },
+    { label: "Main Sewer Line Cleaning", href: "/main-line-drain-cleaning" },
+    { label: "Professional Hydro Jetting", href: "/hydro-jetting" },
+    { label: "Sewer Cleanout Installation", href: "/sewer-cleanout-installation" },
+  ],
+  signs: {
+    heading: "Signs You May Need Sewer Line Repair",
+    lead: [
+      "Sewer line problems can develop underground before there are obvious signs inside the home. Recognizing the warning signs early may help prevent additional property damage.",
+    ],
+    items: [
+      { title: "Frequent Sewer Backups", body: "If wastewater repeatedly backs up into a basement floor drain, shower, bathtub, or lower-level plumbing fixture, there may be a problem in the main sewer line. A recurring backup can indicate a blockage, damaged pipe, root intrusion, or another sewer system issue." },
+      { title: "Multiple Slow Drains", body: "One slow sink may indicate a localized drain clog. When several fixtures throughout the home drain slowly at the same time, the main sewer line should be evaluated." },
+      { title: "Sewer Odors Around the Property", body: "Persistent sewage odors inside or outside the home may indicate a damaged pipe, leaking connection, or other drainage problem. A professional inspection can help identify the source." },
+      { title: "Wet or Soggy Areas in the Yard", body: "Unusually wet soil, standing water, or consistently green patches near the sewer route may be signs of an underground leak. These conditions can also have other causes, so proper diagnosis is important." },
+      { title: "Recurring Tree Root Problems", body: "Tree roots can enter sewer pipes through cracks, loose joints, and deteriorated connections. Removing roots may temporarily improve drainage, but recurring root intrusion can indicate that the pipe itself needs repair." },
+      { title: "Gurgling Plumbing Fixtures", body: "Gurgling sounds from toilets, sinks, or floor drains may indicate restricted drainage or air movement caused by a sewer line problem." },
+      { title: "Sewage Coming Back Through a Floor Drain", body: "A basement floor drain backing up with wastewater can indicate a main sewer blockage or another issue downstream. Stop using affected fixtures and arrange an evaluation." },
+    ],
+  },
+  causes: {
+    heading: "Common Causes of Sewer Line Damage",
+    lead: "Underground sewer piping can deteriorate or become damaged over time. Identifying the cause helps determine the most appropriate repair.",
+    items: [
+      { title: "Tree Root Intrusion", body: "Tree roots naturally seek moisture and may enter sewer piping through small openings or deteriorated joints. As roots grow, they can obstruct wastewater flow and contribute to pipe damage." },
+      { title: "Cracked or Broken Sewer Pipes", body: "Soil movement, aging materials, ground pressure, and other conditions can cause sewer pipes to crack or break. A damaged section may need to be excavated and repaired." },
+      { title: "Separated Pipe Joints", body: "Sewer pipe connections can shift or separate over time. Gaps between sections may allow wastewater to escape or soil to enter the pipe." },
+      { title: "Aging Sewer Pipe Materials", body: "Older sewer systems may contain clay, cast iron, Orangeburg, or other materials that can deteriorate with age. The condition of the entire accessible line should be evaluated before choosing between repair and replacement." },
+      { title: "Shifting Soil and Ground Movement", body: "Changes in soil conditions, settlement, freeze-thaw cycles, and nearby excavation can place stress on underground sewer piping." },
+      { title: "Improper Slope or Pipe Sagging", body: "A section of sewer pipe that has settled or developed a low spot may hold wastewater and debris. This condition is sometimes called a belly or sag. The repair approach depends on the extent and location of the affected section." },
+    ],
+  },
+  compare: {
+    heading: "Sewer Spot Repair vs. Full Sewer Line Replacement",
+    lead: "A sewer spot repair addresses a specific damaged section of pipe. Full sewer line replacement addresses a larger portion or the entire sewer line when the existing pipe is extensively deteriorated or has multiple areas of damage.",
+    columns: [
+      {
+        heading: "When a Sewer Spot Repair May Be Appropriate",
+        itemsLead: "A targeted repair may be worth considering when:",
+        items: [
+          "Damage is limited to one identifiable section.",
+          "The remaining accessible pipe is in suitable condition.",
+          "The problem is caused by a localized crack or separated joint.",
+          "The damaged area can be accessed and repaired.",
+          "A professional evaluation supports repairing rather than replacing the line.",
+        ],
+      },
+      {
+        heading: "When Sewer Line Replacement May Be Better",
+        itemsLead: "Replacement may be a better long-term option when:",
+        items: [
+          "Multiple sections of the line are damaged.",
+          "The pipe has extensive deterioration.",
+          "The line has collapsed or has significant structural failure.",
+          "Repeated repairs have not resolved the problem.",
+          "The remaining pipe is in poor overall condition.",
+        ],
+      },
+    ],
+    outro: [
+      "The right choice depends on inspection findings, pipe condition, repair accessibility, and the expected performance of the remaining line. If the inspection indicates that a larger portion of the system needs to be replaced, see our Sewer Line Replacement service.",
+    ],
+  },
+  process: {
+    heading: "Our Sewer Line Repair Process",
+    lead: "Zenith follows a diagnostic process to help homeowners understand the problem and the available repair options.",
+    steps: [
+      { title: "Evaluate the Sewer Problem", body: "We discuss the symptoms, previous backups, drain problems, and any known history of sewer repairs. This information helps determine the appropriate inspection approach." },
+      { title: "Perform a Sewer Camera Inspection When Appropriate", body: "A sewer camera can help identify visible cracks, roots, separated joints, blockages, and other conditions inside accessible portions of the pipe." },
+      { title: "Locate the Damaged Section", body: "When appropriate, electronic locating equipment can help identify the approximate location and depth of the affected area. Actual locating accuracy depends on site conditions and equipment access." },
+      { title: "Explain the Repair Options", body: "We explain whether a localized sewer spot repair, a larger repair, or full sewer line replacement may be appropriate. You receive the recommended scope and pricing before authorized work begins." },
+      { title: "Access and Repair the Damaged Pipe", body: "Depending on the pipe's location and depth, the work may require excavation, removal of the damaged section, preparation of the pipe ends, and installation of suitable replacement piping and connections." },
+      { title: "Test and Restore the Work Area", body: "After the repair, the affected section is evaluated to confirm proper drainage and connection. The excavation is backfilled, and the work area is addressed according to the agreed scope." },
+    ],
+  },
+  split: {
+    heading: "Does Sewer Line Repair Require Excavation?",
+    lead: "Some sewer repairs require excavation to reach the damaged pipe. The amount of digging depends on the sewer line's depth, location, material, and accessibility.",
+    items: [
+      {
+        title: "Excavation Repairs",
+        body: "A localized repair may require opening only the area around the damaged section. However, deeper lines, concrete, asphalt, landscaping, utility conflicts, and difficult access can increase the work involved.",
+      },
+      {
+        title: "Trenchless Sewer Repair Options",
+        body: "Depending on the existing sewer system and the type of damage, a trenchless method may offer another approach with less surface disruption. Trenchless methods are not appropriate for every sewer problem: the pipe must meet the requirements of the selected method, and a camera inspection or other evaluation may be needed first.",
+      },
+    ],
+    outro: ["Zenith evaluates the site and explains the expected access and repair requirements before work begins."],
+  },
+  listSections: [
+    {
+      heading: "What Affects the Cost of Sewer Line Repair?",
+      lead: [
+        "The cost of sewer line repair varies based on the actual condition of the pipe and the work required to access and repair it. An inspection and site evaluation help establish an accurate scope.",
+        "Common cost factors include:",
+      ],
+      items: [
+        "Depth of the sewer line: deeper pipes generally require more excavation and additional safety measures.",
+        "Length of damaged pipe: a short spot repair may require less material and labor than a longer repair.",
+        "Pipe material and diameter: existing pipe material, size, and connection requirements affect the repair.",
+        "Location of the damage: a sewer line beneath a yard may have different access requirements than one beneath a driveway, sidewalk, or concrete floor.",
+        "Surface removal and restoration: concrete, asphalt, landscaping, rocks, and other obstacles can affect the overall project.",
+        "Utility conflicts and access: nearby utilities, structures, and limited equipment access may add complexity.",
+        "Testing and inspection: camera inspections, locating, and post-repair testing may be part of the project scope.",
+      ],
+      outro: "Zenith explains the recommended work and pricing before proceeding. Contact us to schedule an evaluation of your sewer line.",
+    },
+  ],
+  why: {
+    heading: "Why Choose Zenith for Sewer Line Repair?",
+    lead: "Choosing the right contractor matters when dealing with an underground sewer problem. You need a clear explanation of the damage, a practical repair recommendation, and an understanding of what the project involves.",
+    points: [
+      { title: "Diagnosis Before Recommendations", body: "We focus on identifying the cause of the sewer problem before recommending a repair. Camera inspection and locating equipment may be used when appropriate." },
+      { title: "Repair Options Explained Clearly", body: "Not every damaged sewer line needs complete replacement. We explain the findings and discuss the available options based on the condition of the pipe." },
+      { title: "Upfront Project Pricing", body: "You receive an explanation of the proposed scope and pricing before authorized work begins." },
+      { title: "Respect for Your Property", body: "Sewer repairs can involve excavation and disruption to the work area. We work to protect surrounding surfaces, maintain an organized jobsite, and address cleanup and restoration according to the agreed scope." },
+      { title: "Plumbing, Drain and Sewer Services", body: "Zenith provides plumbing, drain cleaning, sewer, water heater, and HVAC services for homes throughout the Denver Metro and Northern Colorado areas." },
+    ],
+  },
+  areas: {
+    heading: "Sewer Line Repair Service Areas",
+    lead: "Zenith provides sewer line repair services across Denver Metro and Northern Colorado, including:",
+    outro: "If you are located near one of these communities and need help with a damaged sewer line, contact Zenith to confirm service availability in your area.",
+  },
+  faqHeading: "Frequently Asked Questions About Sewer Line Repair",
+  replacesFaqs: ["What causes sewer line damage?", "When is a repair better than a replacement?"],
+  faqs: () => [
+    { q: "How do I know if my sewer line is damaged?", a: "Common warning signs include recurring sewer backups, multiple slow drains, sewage odors, wet areas in the yard, and repeated root blockages. A sewer camera inspection can help identify visible problems inside accessible sections of the pipe." },
+    { q: "Can a sewer line be repaired without replacing the entire pipe?", a: "Yes. If the damage is limited to one section and the remaining pipe is in suitable condition, a localized sewer spot repair may be possible." },
+    { q: "What is a sewer spot repair?", a: "A sewer spot repair is a targeted repair that removes and replaces or corrects a damaged section of an existing sewer line rather than replacing the entire line." },
+    { q: "How much does sewer line repair cost in Denver?", a: "The cost depends on the depth, length, pipe material, damage, access, and surface restoration required. An evaluation is needed to provide an accurate project price." },
+    { q: "Does sewer line repair require digging?", a: "Many traditional sewer repairs require excavation to access the damaged pipe. Depending on the pipe and type of damage, a trenchless repair method may be an alternative." },
+    { q: "Can tree roots damage a sewer line?", a: "Yes. Roots can enter through cracks and separated joints, obstruct drainage, and contribute to pipe deterioration. Repeated root intrusion may indicate that the affected section needs repair." },
+    { q: "Will a sewer camera inspection show where the damage is?", a: "A camera can help identify visible conditions inside accessible portions of the pipe. Electronic locating equipment may help estimate the location and depth of a problem, depending on site conditions." },
+    { q: "Can a cracked sewer pipe be repaired?", a: "A cracked section may be repairable depending on the pipe material, severity of the damage, location, and condition of the surrounding line." },
+    { q: "What happens if a sewer line is not repaired?", a: "An unresolved sewer problem may lead to recurring backups, wastewater leakage, property damage, odors, and worsening pipe deterioration. The potential consequences depend on the nature and location of the damage." },
+    { q: "Is sewer line repair covered by homeowners insurance?", a: "Coverage depends on your specific policy, the cause of the damage, and any applicable exclusions. Contact your insurance provider to understand your coverage before assuming a repair will be covered." },
+    { q: "How long does sewer line repair take?", a: "The timeline depends on the depth and location of the pipe, length of the damaged section, excavation requirements, site access, and restoration work. A project schedule can be discussed after evaluating the job." },
+    { q: "Can you repair a sewer line under concrete?", a: "It may be possible, but access can require concrete cutting and removal. The repair method depends on the pipe location, depth, and whether an appropriate alternative is available." },
+    { q: "What is the difference between sewer repair and sewer replacement?", a: "Sewer repair addresses a specific damaged area or limited section. Sewer replacement involves replacing a larger portion or the entire line when the existing pipe is extensively damaged or deteriorated." },
+    { q: "Do you provide sewer line repair in Aurora and surrounding cities?", a: "Zenith serves Aurora, Denver, Lakewood, Littleton, Centennial, Arvada, Westminster, Thornton, Longmont, Boulder, Morrison, and surrounding communities. Contact us to confirm availability for your address." },
+    { q: "Should I clean the sewer line before repairing it?", a: "A blockage may need to be cleared to inspect the pipe properly. However, cleaning does not repair a cracked, separated, or collapsed pipe. A camera inspection can help determine whether the problem is a blockage, structural damage, or both." },
+  ],
+  cta: {
+    title: "Schedule Sewer Line Repair With Zenith",
+    text: "A damaged sewer line should be evaluated before the problem becomes more extensive. Whether you are experiencing recurring backups, suspected root intrusion, a broken sewer pipe, or a damaged underground connection, Zenith can help you understand the condition of your sewer line and the available repair options.",
+  },
+};
+
 /** Extra long-form content for individual service pages, keyed by service slug. */
 export const servicePageContent: Record<string, CategoryPageContent> = {
   "pipe-repair": pipeRepair,
@@ -2546,4 +2731,5 @@ export const servicePageContent: Record<string, CategoryPageContent> = {
   "main-line-drain-cleaning": mainLineDrainCleaning,
   "hydro-jetting": hydroJetting,
   "sewer-camera-inspection": sewerCameraInspection,
+  "sewer-repair": sewerRepair,
 };
