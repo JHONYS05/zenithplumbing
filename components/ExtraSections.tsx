@@ -8,6 +8,46 @@ import type { CategoryPageContent } from "@/data/categoryPages";
  */
 type Props = { extra: CategoryPageContent };
 
+type Card = CategoryPageContent["services"][number];
+
+function ServiceCards({ items, icon, fill }: { items: Card[]; icon: string; fill: (t: string) => string }) {
+  return (
+    <div className={`home-services home-services-wide${items.length % 3 === 0 || items.length === 5 ? " grid-3" : ""}`}>
+      {items.map((sv) => (
+        <article key={sv.title} className="home-service">
+          <h3>
+            <Icon name={icon} size={22} /> {sv.title}
+          </h3>
+          {sv.paragraphs.map((p, i) => (
+            <p key={i}>{p}</p>
+          ))}
+          {sv.bullets && (
+            <>
+              {sv.bulletsLead && <p className="home-service-lead">{sv.bulletsLead}</p>}
+              <ul>
+                {sv.bullets.map((b) => (
+                  <li key={b}>
+                    <Icon name="check" size={16} /> {b}
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+          {sv.outro?.map((p, i) => (
+            <p key={`o${i}`}>{fill(p)}</p>
+          ))}
+          {sv.href && (
+            <Link href={sv.href} className="home-service-link">
+              {sv.linkLabel ?? `Learn about ${sv.title.toLowerCase()}`} <Icon name="arrow" size={16} />
+            </Link>
+          )}
+        </article>
+      ))}
+    </div>
+  );
+}
+
+
 export function ExtraIntro({ extra }: Props) {
   return (
     <section className="section">
@@ -34,38 +74,7 @@ export function ExtraBody({ extra, icon, phone }: Props & { icon: string; phone:
             <h2>{extra.servicesHeading}</h2>
             <p>{extra.servicesLead}</p>
           </div>
-          <div className={`home-services home-services-wide${extra.services.length % 3 === 0 || extra.services.length === 5 ? " grid-3" : ""}`}>
-            {extra.services.map((sv) => (
-              <article key={sv.title} className="home-service">
-                <h3>
-                  <Icon name={icon} size={22} /> {sv.title}
-                </h3>
-                {sv.paragraphs.map((p, i) => (
-                  <p key={i}>{p}</p>
-                ))}
-                {sv.bullets && (
-                  <>
-                    {sv.bulletsLead && <p className="home-service-lead">{sv.bulletsLead}</p>}
-                    <ul>
-                      {sv.bullets.map((b) => (
-                        <li key={b}>
-                          <Icon name="check" size={16} /> {b}
-                        </li>
-                      ))}
-                    </ul>
-                  </>
-                )}
-                {sv.outro?.map((p, i) => (
-                  <p key={`o${i}`}>{fill(p)}</p>
-                ))}
-                {sv.href && (
-                  <Link href={sv.href} className="home-service-link">
-                    {sv.linkLabel ?? `Learn about ${sv.title.toLowerCase()}`} <Icon name="arrow" size={16} />
-                  </Link>
-                )}
-              </article>
-            ))}
-          </div>
+          <ServiceCards items={extra.services} icon={icon} fill={fill} />
           {extra.relatedLinks && (
             <div className="related-links">
               <strong>Related services:</strong>
@@ -82,6 +91,25 @@ export function ExtraBody({ extra, icon, phone }: Props & { icon: string; phone:
           )}
         </div>
       </section>
+
+      {extra.causes && (
+        <section className="section">
+          <div className="container">
+            <div className="section-head">
+              <h2>{extra.causes.heading}</h2>
+              <p>{extra.causes.lead}</p>
+            </div>
+            <div className={`home-why${extra.causes.items.length === 7 || extra.causes.items.length === 4 ? " grid-4" : extra.causes.items.length % 3 === 0 ? " grid-3" : ""}`}>
+              {extra.causes.items.map((it) => (
+                <div key={it.title} className="home-why-item">
+                  <h3>{it.title}</h3>
+                  <p>{it.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {extra.signs && (
         <section className="section">
@@ -168,6 +196,18 @@ export function ExtraBody({ extra, icon, phone }: Props & { icon: string; phone:
               ))}
             </ol>
             {extra.process.outro && <p className="process-outro">{extra.process.outro}</p>}
+          </div>
+        </section>
+      )}
+
+      {extra.equipment && (
+        <section className="section">
+          <div className="container">
+            <div className="section-head">
+              <h2>{extra.equipment.heading}</h2>
+              <p>{extra.equipment.lead}</p>
+            </div>
+            <ServiceCards items={extra.equipment.items} icon={icon} fill={fill} />
           </div>
         </section>
       )}

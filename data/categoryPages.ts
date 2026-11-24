@@ -29,6 +29,8 @@ export interface CategoryPageContent {
   listSections?: { heading: string; lead: string[]; items: string[]; outro?: string }[];
   signs?: { heading: string; lead: string[]; items: { title: string; body: string }[]; outro?: string };
   process?: { heading: string; lead: string; steps: { title: string; body: string }[]; outro?: string };
+  causes?: { heading: string; lead: string; items: { title: string; body: string }[] };
+  equipment?: { heading: string; lead: string; items: CategoryPageContent["services"] };
   compare?: { heading: string; lead: string; columns: { heading: string; items: string[] }[]; outro?: string };
   materials?: { heading: string; lead: string; items: { title: string; body: string }[]; outro?: string };
   split?: { heading: string; lead: string; items: { title: string; body: string }[] };
@@ -1192,7 +1194,249 @@ const pipeRepair: CategoryPageContent = {
   },
 };
 
+const cloggedDrainRepair: CategoryPageContent = {
+  introParagraphs: [
+    "Zenith Plumbing, Drain, Sewer & HVAC provides professional clogged drain repair and drain cleaning services throughout Denver Metro and Northern Colorado. We help homeowners clear stubborn blockages, address recurring drain problems, and identify conditions that may be affecting proper drainage.",
+    "From everyday sink clogs to more difficult drain blockages, our team evaluates the problem and selects an appropriate cleaning method for the affected line.",
+  ],
+  servicesHeading: "Professional Clogged Drain Repair Services",
+  servicesLead:
+    "Different drains can become clogged for different reasons. Kitchen sinks commonly collect grease and food residue, while bathroom drains often accumulate hair, soap, and other debris. Main drain blockages may affect multiple fixtures throughout the home. Zenith provides drain-clearing solutions based on the location and severity of the blockage.",
+  services: [
+    {
+      title: "Kitchen Sink Clog Repair",
+      href: "/kitchen-drain-cleaning",
+      linkLabel: "Kitchen Drain Cleaning",
+      paragraphs: [
+        "Kitchen sink clogs commonly develop from grease, cooking oils, food particles, soap residue, and buildup inside the drain piping.",
+      ],
+      bulletsLead: "Common signs of a kitchen drain blockage include:",
+      bullets: [
+        "Water draining slowly from the sink",
+        "Standing water inside the basin",
+        "Gurgling sounds when water drains",
+        "Unpleasant odors coming from the kitchen drain",
+        "Water backing up into the sink",
+        "Recurring clogs after temporary clearing",
+      ],
+      outro: [
+        "Our technicians evaluate the affected drain and use appropriate equipment to remove the blockage. If the problem continues returning, additional inspection may help identify buildup or a deeper restriction.",
+      ],
+    },
+    {
+      title: "Bathroom Sink Drain Clog Repair",
+      href: "/bathroom-drain-cleaning",
+      linkLabel: "Bathroom Drain Cleaning",
+      paragraphs: ["Bathroom sinks can become clogged by hair, toothpaste, soap residue, and other everyday debris."],
+      bulletsLead: "Signs of a bathroom sink clog include:",
+      bullets: [
+        "Slow-draining water",
+        "Water collecting around the drain",
+        "Unpleasant drain odors",
+        "Gurgling sounds",
+        "Frequent blockages",
+        "Water backing up after running the faucet",
+      ],
+      outro: ["Professional drain cleaning can help remove accumulated debris and restore proper drainage."],
+    },
+    {
+      title: "Shower and Bathtub Drain Clog Repair",
+      href: "/bathroom-drain-cleaning",
+      linkLabel: "Bathroom Drain Cleaning",
+      paragraphs: [
+        "Shower and bathtub drains frequently collect hair, soap residue, shampoo buildup, and other materials.",
+        "When the drain becomes restricted, water may accumulate around your feet while showering or remain in the bathtub after use.",
+        "Zenith can evaluate shower and bathtub drainage problems and use suitable drain-cleaning equipment to address the blockage.",
+      ],
+    },
+    {
+      title: "Toilet Clog Repair",
+      paragraphs: [
+        "Toilet clogs may result from excessive toilet paper, foreign objects, buildup, or problems farther down the drain system.",
+      ],
+      bulletsLead: "Common warning signs include:",
+      bullets: [
+        "Toilet water rising when flushed",
+        "Repeated toilet backups",
+        "Slow flushing",
+        "Gurgling sounds",
+        "Water backing up into nearby fixtures",
+      ],
+      outro: [
+        "A plunger may resolve some minor toilet clogs. Persistent or recurring blockages may require professional evaluation and appropriate drain-clearing equipment.",
+        "Do not repeatedly flush a toilet that is overflowing or close to overflowing.",
+      ],
+    },
+    {
+      title: "Main Drain and Multiple Fixture Blockages",
+      href: "/main-line-drain-cleaning",
+      linkLabel: "Main Line Drain Cleaning",
+      paragraphs: [
+        "When several plumbing fixtures become slow or back up at the same time, the problem may involve a shared drain line or the main sewer line.",
+      ],
+      bulletsLead: "Warning signs include:",
+      bullets: [
+        "Multiple sinks draining slowly",
+        "Toilets bubbling when other fixtures are used",
+        "Water backing up into showers or bathtubs",
+        "Basement floor drain backups",
+        "Repeated blockages throughout the home",
+      ],
+      outro: [
+        "These symptoms may indicate a blockage farther downstream. A professional evaluation can help determine whether the problem is in an individual fixture drain, a branch drain, or the main sewer line.",
+      ],
+    },
+  ],
+  relatedLinks: [
+    { label: "Drain Cleaning Services", href: "/drain-cleaning" },
+    { label: "Sewer Line Repair", href: "/sewer-repair" },
+    { label: "Plumbing Repairs", href: "/plumbing-repair" },
+    { label: "Emergency Plumbing", href: "/emergency-plumber" },
+  ],
+  causes: {
+    heading: "What Causes Drains to Become Clogged?",
+    lead: "Drain blockages develop when materials accumulate inside the piping or become trapped in a drain opening. Common causes include:",
+    items: [
+      { title: "Grease and Cooking Oils", body: "Grease can stick to the inside of kitchen drain pipes and collect additional food particles over time." },
+      { title: "Hair and Soap Residue", body: "Hair combines with soap and other debris, creating restrictions in bathroom sinks, showers, and tubs." },
+      { title: "Food Waste", body: "Food particles and improper disposal practices can contribute to kitchen sink blockages." },
+      { title: "Foreign Objects", body: "Items that should not enter the plumbing system can become lodged in drain piping." },
+      { title: "Mineral and Soap Buildup", body: "Deposits can gradually restrict water flow, particularly in frequently used drains." },
+      { title: "Pipe Problems", body: "Damaged, misaligned, or improperly sloped piping can contribute to recurring drainage problems." },
+      { title: "Main Line Obstructions", body: "Blockages in shared drainage piping can affect multiple fixtures throughout the property." },
+    ],
+  },
+  signs: {
+    heading: "Signs You Need Professional Clogged Drain Repair",
+    lead: [
+      "A slow drain may seem like a minor inconvenience, but recurring symptoms can indicate a more serious blockage.",
+      "Watch for these warning signs:",
+    ],
+    items: [
+      { title: "Slow-Draining Water", body: "Water takes noticeably longer than usual to leave the sink, shower, or bathtub." },
+      { title: "Standing Water", body: "Water remains in the fixture instead of draining normally." },
+      { title: "Recurring Clogs", body: "The same drain repeatedly becomes blocked after temporary clearing." },
+      { title: "Gurgling Sounds", body: "Air movement in the drain may produce bubbling or gurgling noises." },
+      { title: "Unpleasant Odors", body: "Accumulated debris or drainage problems may produce foul smells." },
+      { title: "Multiple Affected Fixtures", body: "Several drains backing up together may indicate a shared-line or main-line problem." },
+      { title: "Water Backups", body: "Wastewater returning through a different fixture requires prompt attention." },
+    ],
+    outro: "If sewage is backing up into your home, stop using affected plumbing fixtures and arrange professional evaluation promptly.",
+  },
+  process: {
+    heading: "Our Clogged Drain Repair Process",
+    lead: "We use a practical approach to identify the blockage, select suitable equipment, and check the drainage after cleaning.",
+    steps: [
+      { title: "Evaluate the Symptoms", body: "We determine which fixtures are affected and ask about the history of the blockage." },
+      { title: "Locate the Problem", body: "We evaluate whether the restriction appears to be in an individual fixture drain, branch line, or larger shared drainage system." },
+      { title: "Select the Appropriate Equipment", body: "Depending on the pipe and blockage, we may use a drain auger, cable machine, or another suitable cleaning method." },
+      { title: "Clear the Blockage", body: "We work to remove the obstruction while using equipment appropriate for the affected piping." },
+      { title: "Check Drainage Performance", body: "We run water and evaluate whether the affected drain is flowing properly after cleaning." },
+      { title: "Discuss Recurring Problems", body: "If a blockage returns or the symptoms suggest an underlying pipe issue, we may recommend further inspection, including a sewer camera inspection when appropriate." },
+    ],
+  },
+  equipment: {
+    heading: "Professional Drain Cleaning Equipment",
+    lead: "Different drain problems require different cleaning methods. Using the correct equipment is important for effective service and protecting the plumbing system.",
+    items: [
+      {
+        title: "Drain Auger and Cable Machine",
+        paragraphs: [
+          "A drain auger or cable machine uses a flexible cable and appropriate cutting or clearing head to break through or remove obstructions in drain piping.",
+          "It may be suitable for many common sink, shower, bathtub, and drain-line blockages, depending on the pipe configuration and obstruction.",
+        ],
+      },
+      {
+        title: "Hydro Jetting",
+        href: "/hydro-jetting",
+        linkLabel: "Hydro Jetting",
+        paragraphs: [
+          "Hydro jetting uses specialized equipment to direct high-pressure water through suitable drain and sewer piping. It can help remove grease, sludge, and other accumulated material.",
+          "Hydro jetting is not appropriate for every pipe or every blockage. The pipe condition, material, access, and obstruction should be evaluated before recommending this method.",
+        ],
+      },
+      {
+        title: "Sewer Camera Inspection",
+        href: "/sewer-camera-inspection",
+        linkLabel: "Sewer Camera Inspection",
+        paragraphs: [
+          "A sewer camera inspection helps evaluate the inside of a drain or sewer pipe when recurring blockages or other symptoms suggest an underlying problem.",
+        ],
+        bulletsLead: "It can help identify:",
+        bullets: [
+          "Root intrusion",
+          "Cracks or damaged pipe sections",
+          "Separated pipe connections",
+          "Heavy buildup",
+          "Standing water",
+          "Other visible obstructions",
+        ],
+        outro: ["Camera inspection can help determine whether a recurring clog is related to a pipe condition rather than ordinary debris."],
+      },
+    ],
+  },
+  listSections: [
+    {
+      heading: "Can You Fix a Clogged Drain Yourself?",
+      lead: [
+        "Some minor drain blockages can be addressed with a plunger or by cleaning an accessible drain stopper. However, repeated use of unsuitable tools or chemical drain cleaners can create additional problems.",
+        "Before attempting a simple drain-clearing step:",
+      ],
+      items: [
+        "Remove visible debris from an accessible drain opening.",
+        "Use a plunger appropriate for the fixture.",
+        "Avoid mixing different drain-cleaning chemicals.",
+        "Follow product safety directions.",
+        "Stop if water backs up into other fixtures.",
+        "Contact a professional if the clog persists or returns.",
+      ],
+      outro: "If chemical drain cleaner has already been used, tell your technician before service so appropriate precautions can be taken.",
+    },
+  ],
+  why: {
+    heading: "Why Choose Zenith for Clogged Drain Repair?",
+    lead: "Here's what you can expect when Zenith clears your drain.",
+    points: [
+      { title: "Diagnosis Before Recommendations", body: "We evaluate the symptoms and determine what type of blockage may be affecting your drain." },
+      { title: "Appropriate Cleaning Methods", body: "We select equipment based on the drain, piping, and obstruction." },
+      { title: "Clear Options and Pricing", body: "We explain the proposed service and pricing before authorized work begins." },
+      { title: "Recurring Clog Evaluation", body: "When blockages return, we can discuss whether further inspection is appropriate." },
+      { title: "Respect for Your Home", body: "We take care to protect work areas and maintain an organized jobsite." },
+      { title: "Complete Home Services", body: "Zenith also provides plumbing, sewer, water heater, heating, and air conditioning services." },
+    ],
+  },
+  areas: {
+    heading: "Clogged Drain Repair in Denver Metro and Northern Colorado",
+    lead: "Zenith provides clogged drain repair throughout Denver Metro and Northern Colorado.",
+    outro: "Contact our team to confirm service availability in your area.",
+  },
+  faqHeading: "Frequently Asked Questions About Clogged Drain Repair",
+  replacesFaqs: ["Are chemical drain cleaners safe to use?", "Why are several drains clogged at the same time?"],
+  faqs: (phone) => [
+    { q: "How much does clogged drain repair cost in Denver?", a: "The price depends on the location of the clog, the severity of the blockage, the equipment required, and whether the problem involves an individual fixture or a larger drain line. Zenith offers $69 drain cleaning when there is an accessible cleanout. Ask us to confirm eligibility and the total price for your specific situation." },
+    { q: "Why does my drain keep getting clogged?", a: "Recurring clogs may result from grease, hair, soap residue, mineral buildup, foreign objects, or restrictions deeper in the piping. If the same drain repeatedly becomes blocked, further inspection may help identify the cause." },
+    { q: "Are chemical drain cleaners safe for plumbing pipes?", a: "Some chemical cleaners can damage certain pipes, finishes, or plumbing components, especially with repeated or improper use. They may also fail to remove the underlying blockage. Tell your technician if chemicals have already been used." },
+    { q: "Why are multiple drains clogged at the same time?", a: "Several affected fixtures may indicate a restriction in a shared branch drain or main sewer line. A professional evaluation can help locate the problem." },
+    { q: "How do I know if the clog is in my main sewer line?", a: "Common signs include multiple slow drains, toilets gurgling when other fixtures are used, sewage backing up into tubs or showers, and basement floor drain backups. These symptoms warrant evaluation of the larger drainage system." },
+    { q: "Can a drain auger remove tough clogs?", a: "A properly selected drain auger can clear many common blockages. The correct cable and attachment depend on the pipe size, configuration, and obstruction." },
+    { q: "What is hydro jetting?", a: "Hydro jetting uses specialized high-pressure water equipment to clean suitable drain and sewer pipes. It may help remove grease, sludge, and accumulated debris. The pipe should be evaluated before this method is used." },
+    { q: "Is hydro jetting safe for older pipes?", a: "Not necessarily in every situation. The condition and material of the pipe must be considered before recommending high-pressure cleaning. A different cleaning method may be more appropriate for damaged or deteriorated piping." },
+    { q: "Why does my kitchen sink drain slowly?", a: "Grease, food particles, soap residue, and other debris can accumulate inside kitchen drain piping and restrict water flow." },
+    { q: "What causes shower drains to clog?", a: "Hair, soap residue, shampoo, and other debris commonly accumulate around the drain opening or farther inside the piping." },
+    { q: "Can a clogged drain cause bad odors?", a: "Yes. Accumulated debris and drainage problems can contribute to unpleasant smells. Persistent sewer odors may indicate a different plumbing or sewer issue and should be evaluated." },
+    { q: "Should I keep using water if my drain is backing up?", a: "Avoid using the affected fixtures if water is backing up. If multiple fixtures are affected or sewage is returning into the home, stop using the plumbing system and arrange professional service." },
+    { q: "How often should drains be professionally cleaned?", a: "There is no single schedule that applies to every home. Professional cleaning is generally based on actual drainage problems, usage, and the condition of the plumbing system." },
+    { q: "Does Zenith provide clogged drain repair in Aurora and Denver?", a: "Yes. Zenith serves Denver, Aurora, and other communities throughout its Denver Metro and Northern Colorado service area. Contact us to confirm availability." },
+    { q: "How do I schedule clogged drain repair?", a: `Call Zenith at ${phone} or submit a service request through our website.` },
+  ],
+  cta: {
+    title: "Schedule Clogged Drain Repair with Zenith",
+    text: "Do not let a slow or blocked drain interrupt your home. Whether you have a clogged kitchen sink, blocked shower drain, recurring toilet clog, or a larger drainage problem, Zenith can help throughout Denver Metro and Northern Colorado.",
+  },
+};
+
 /** Extra long-form content for individual service pages, keyed by service slug. */
 export const servicePageContent: Record<string, CategoryPageContent> = {
   "pipe-repair": pipeRepair,
+  "clogged-drain-repair": cloggedDrainRepair,
 };

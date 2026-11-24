@@ -340,7 +340,11 @@ async function ServicePage({ service, cms }: { service: Service; cms: CmsPage })
       <CtaBand
         label={offer ? `Book ${offer.price} ${offer.title}` : (extra?.ctaLabel ?? service.ctaLabel ?? "Request Service")}
         title={extra?.cta.title ?? `Need ${service.name.toLowerCase()}?`}
-        text={offer ? `${offer.price} ${offer.title.toLowerCase()}. ${offer.note}` : extra?.cta.text}
+        text={
+          offer
+            ? `${extra ? `${extra.cta.text} ` : ""}${offer.price} ${offer.title.toLowerCase()}. ${offer.note}`
+            : extra?.cta.text
+        }
       />
     </>
   );
