@@ -68,6 +68,26 @@ export function ExtraBody({ extra, icon, phone }: Props & { icon: string; phone:
   const fill = (t: string) => t.replace("{phone}", phone);
   return (
     <>
+      {extra.whatIs && (
+        <section className="section">
+          <div className="container home-intro">
+            <h2>{extra.whatIs.heading}</h2>
+            {extra.whatIs.paragraphs.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+            {extra.whatIs.itemsLead && <p className="home-service-lead">{extra.whatIs.itemsLead}</p>}
+            <ul className="check-list">
+              {extra.whatIs.items.map((it) => (
+                <li key={it}>
+                  <Icon name="check" size={20} /> {it}
+                </li>
+              ))}
+            </ul>
+            {extra.whatIs.outro && <p className="signs-warning">{extra.whatIs.outro}</p>}
+          </div>
+        </section>
+      )}
+
       <section className="section section-tint">
         <div className="container">
           <div className="section-head">
@@ -91,6 +111,19 @@ export function ExtraBody({ extra, icon, phone }: Props & { icon: string; phone:
           )}
         </div>
       </section>
+
+      {extra.cardGroups?.map((g, gi) => (
+        <section key={g.heading} className={`section${gi % 2 === 1 ? " section-tint" : ""}`}>
+          <div className="container">
+            <div className="section-head">
+              <h2>{g.heading}</h2>
+              <p>{g.lead}</p>
+            </div>
+            <ServiceCards items={g.items} icon={icon} fill={fill} />
+            {g.outro && <p className="process-outro">{g.outro}</p>}
+          </div>
+        </section>
+      ))}
 
       {extra.signsList && (
         <section className="section">
@@ -162,6 +195,8 @@ export function ExtraBody({ extra, icon, phone }: Props & { icon: string; phone:
               {extra.compare.columns.map((col) => (
                 <div key={col.heading} className="home-service">
                   <h3>{col.heading}</h3>
+                  {col.lead && <p>{col.lead}</p>}
+                  {col.itemsLead && <p className="home-service-lead">{col.itemsLead}</p>}
                   <ul>
                     {col.items.map((it) => (
                       <li key={it}>
@@ -172,7 +207,11 @@ export function ExtraBody({ extra, icon, phone }: Props & { icon: string; phone:
                 </div>
               ))}
             </div>
-            {extra.compare.outro && <p className="process-outro">{extra.compare.outro}</p>}
+            {extra.compare.outro?.map((p, i) => (
+              <p key={i} className="process-outro">
+                {p}
+              </p>
+            ))}
           </div>
         </section>
       )}

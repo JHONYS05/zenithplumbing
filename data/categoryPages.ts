@@ -32,7 +32,18 @@ export interface CategoryPageContent {
   signsList?: { heading: string; lead: string; items: string[]; outro?: string };
   causes?: { heading: string; lead: string; items: { title: string; body: string }[] };
   equipment?: { heading: string; lead: string; items: CategoryPageContent["services"] };
-  compare?: { heading: string; lead: string; columns: { heading: string; items: string[] }[]; outro?: string };
+  compare?: {
+    heading: string;
+    lead: string;
+    columns: { heading: string; lead?: string; itemsLead?: string; items: string[] }[];
+    outro?: string[];
+  };
+  /** "What is it?" explainer shown first in the body. */
+  whatIs?: { heading: string; paragraphs: string[]; itemsLead?: string; items: string[]; outro?: string };
+  /** Extra groups of service cards (e.g. Residential / Commercial). */
+  cardGroups?: { heading: string; lead: string; items: CategoryPageContent["services"]; outro?: string }[];
+  /** Headings of the service's older content blocks that this content replaces. */
+  replacesSections?: string[];
   materials?: { heading: string; lead: string; items: { title: string; body: string }[]; outro?: string };
   split?: { heading: string; lead: string; items: { title: string; body: string }[]; outro?: string[] };
   why: { heading: string; lead: string; points: { title: string; body: string }[] };
@@ -1105,7 +1116,7 @@ const pipeRepair: CategoryPageContent = {
         ],
       },
     ],
-    outro: "Our goal is to evaluate the actual condition of your plumbing and explain the available options before recommending work.",
+    outro: ["Our goal is to evaluate the actual condition of your plumbing and explain the available options before recommending work."],
   },
   materials: {
     heading: "Choosing the Right Pipe Material",
@@ -2064,6 +2075,263 @@ const mainLineDrainCleaning: CategoryPageContent = {
   },
 };
 
+const hydroJetting: CategoryPageContent = {
+  og: {
+    title: "Hydro Jetting Denver CO | Zenith",
+    description: "Professional residential and commercial hydro jetting throughout Denver Metro and Northern Colorado.",
+  },
+  introParagraphs: [
+    "Zenith Plumbing, Drain, Sewer & HVAC provides professional hydro jetting services throughout Denver Metro and Northern Colorado. Our team evaluates the condition of the accessible piping, identifies the drainage problem, and determines whether high-pressure water cleaning is an appropriate solution.",
+    "Hydro jetting uses specialized equipment to direct controlled high-pressure water through a pipe. When the pipe is suitable for the process, this can remove accumulated material from the interior walls and help restore drainage capacity.",
+    "Whether you have recurring kitchen drain clogs, grease buildup in a commercial drain, or a restricted main sewer line, Zenith can help determine the right cleaning approach.",
+  ],
+  replacesSections: ["Hydro Jetting vs. Traditional Drain Cleaning"],
+  whatIs: {
+    heading: "What Is Hydro Jetting?",
+    paragraphs: [
+      "Hydro jetting is a professional drain-cleaning method that uses specialized equipment and high-pressure water to clean the inside of drain and sewer pipes.",
+      "Unlike a traditional drain cable, which generally breaks through or retrieves a localized obstruction, hydro jetting can wash accumulated deposits from more of the pipe's interior surface.",
+    ],
+    itemsLead: "Depending on the pipe condition and type of buildup, hydro jetting may help remove:",
+    items: [
+      "Grease and fats accumulated inside drainpipes.",
+      "Sludge and organic debris.",
+      "Soap residue and certain deposits.",
+      "Mineral scale where suitable for the pipe and equipment.",
+      "Certain root obstructions.",
+      "Residue contributing to recurring drainage restrictions.",
+    ],
+    outro: "Hydro jetting is not appropriate for every pipe or blockage. A professional evaluation helps determine whether the piping can safely handle the equipment and pressure required.",
+  },
+  servicesHeading: "When Does Hydro Jetting Make Sense?",
+  servicesLead:
+    "Hydro jetting may be a good option when ordinary drain cleaning does not fully address the problem or when significant buildup has accumulated inside the pipe.",
+  services: [
+    {
+      title: "Recurring Drain Clogs",
+      href: "/clogged-drain-repair",
+      linkLabel: "Clogged Drain Repair",
+      paragraphs: [
+        "If the same drain keeps clogging shortly after being cleared, material may remain along the pipe walls. Hydro jetting may help remove deposits that a cable does not completely clean away.",
+      ],
+    },
+    {
+      title: "Heavy Grease Buildup",
+      href: "/kitchen-drain-cleaning",
+      linkLabel: "Kitchen Drain Cleaning",
+      paragraphs: [
+        "Kitchen and commercial restaurant drains can accumulate fats, oils, and grease. These materials can cool, harden, and collect inside pipes, reducing the available space for wastewater to flow.",
+        "Hydro jetting may be appropriate for removing certain grease deposits after evaluating the pipe and access conditions.",
+      ],
+    },
+    {
+      title: "Main Sewer Line Buildup",
+      href: "/main-line-drain-cleaning",
+      linkLabel: "Main Line Drain Cleaning",
+      paragraphs: [
+        "A main sewer line can collect sludge, debris, and other deposits that restrict wastewater flow. Hydro jetting may be considered when the line is suitable and the blockage is caused by material that can be removed with water pressure.",
+      ],
+    },
+    {
+      title: "Scale and Mineral Deposits",
+      paragraphs: [
+        "Certain older pipes may develop mineral scale or deposits along the interior surface. Depending on the material and condition of the piping, specialized cleaning may help address these restrictions.",
+      ],
+    },
+    {
+      title: "Certain Root Intrusions",
+      href: "/sewer-repair",
+      linkLabel: "Sewer Line Repair",
+      paragraphs: [
+        "Hydro jetting may remove some lighter root growth inside a sewer line. However, heavy roots or roots entering through damaged pipe joints may require mechanical cutting and sewer repairs. Removing the roots does not repair the opening that allowed them to enter.",
+      ],
+    },
+  ],
+  relatedLinks: [
+    { label: "All Drain Cleaning Services", href: "/drain-cleaning" },
+    { label: "Bathroom Drain Cleaning", href: "/bathroom-drain-cleaning" },
+    { label: "Sewer Camera Inspection", href: "/sewer-camera-inspection" },
+    { label: "Sewer Line Replacement", href: "/sewer-replacement" },
+    { label: "Sewer Cleanout Installation", href: "/sewer-cleanout-installation" },
+  ],
+  cardGroups: [
+    {
+      heading: "Residential Hydro Jetting Services",
+      lead: "Residential drain and sewer systems can develop buildup from everyday household use. Zenith evaluates the affected line and determines whether hydro jetting is suitable for the specific problem.",
+      items: [
+        {
+          title: "Kitchen Drain Hydro Jetting",
+          paragraphs: [
+            "Kitchen drains can collect cooking grease, fats, oils, food residue, and soap deposits. These materials may accumulate over time, especially when grease is repeatedly washed into the plumbing system.",
+            "Hydro jetting may help clean suitable kitchen drain piping when heavy buildup contributes to recurring clogs or slow drainage.",
+          ],
+        },
+        {
+          title: "Main Sewer Line Hydro Jetting",
+          paragraphs: [
+            "When a main sewer line has significant internal buildup, hydro jetting may help clean the pipe more thoroughly than basic cable clearing alone.",
+            "Before proceeding, the accessible sewer line should be evaluated for cracks, deterioration, separated joints, and other conditions that could make high-pressure cleaning unsuitable.",
+          ],
+        },
+        {
+          title: "Bathroom Drain Hydro Jetting",
+          paragraphs: [
+            "Bathroom drains collect hair, soap residue, and other debris. Most simple bathroom clogs can be addressed using conventional drain-cleaning methods. Hydro jetting may be considered when more extensive buildup exists farther inside a suitable branch line.",
+          ],
+        },
+        {
+          title: "Residential Drain Maintenance",
+          paragraphs: [
+            "Some properties experience repeated drainage restrictions because of grease, sludge, roots, or the condition of their piping. After evaluating the system, we can discuss whether periodic cleaning is appropriate based on the actual condition of the line.",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Commercial Hydro Jetting Services",
+      lead: "Commercial plumbing systems can experience substantial drain buildup due to frequent use and the volume of wastewater passing through the piping. Restaurants, food-service facilities, and other commercial properties may require more specialized drain cleaning when grease and organic material accumulate inside their drainage systems.",
+      items: [
+        {
+          title: "Restaurant Drain Hydro Jetting",
+          paragraphs: [
+            "Restaurant kitchens produce fats, oils, grease, and food-related waste that can collect inside drainpipes. Over time, buildup may cause slow drains, recurring blockages, and unpleasant odors.",
+            "Hydro jetting may be an appropriate cleaning option for suitable commercial drain lines after the system has been evaluated.",
+          ],
+        },
+        {
+          title: "Commercial Kitchen Drain Cleaning",
+          paragraphs: [
+            "Commercial kitchen drains may experience heavier use than typical residential drains. We assess the affected line, identify the type of buildup, and recommend an appropriate cleaning method.",
+          ],
+        },
+        {
+          title: "Commercial Main Drain Cleaning",
+          paragraphs: [
+            "A blockage in a commercial main drain can interrupt normal business operations. Hydro jetting may help address suitable buildup in larger drain systems, depending on pipe condition, access, and the nature of the obstruction.",
+          ],
+        },
+      ],
+      outro: "Commercial service requirements vary by property. Contact Zenith to discuss your facility and the drainage problem.",
+    },
+  ],
+  compare: {
+    heading: "Hydro Jetting vs. Traditional Drain Cleaning",
+    lead: "Both methods are valuable. The right choice depends on the location and type of blockage, pipe condition, and accessibility.",
+    columns: [
+      {
+        heading: "Traditional Drain Snaking",
+        lead: "A drain cable or auger uses a rotating cable and cutting or clearing attachment to break through or retrieve an obstruction.",
+        itemsLead: "It may be suitable for:",
+        items: ["Simple sink clogs.", "Hair blockages.", "Localized drain obstructions.", "Certain root obstructions.", "Routine drain-clearing situations."],
+      },
+      {
+        heading: "Hydro Jetting",
+        lead: "Hydro jetting uses specialized high-pressure water equipment to clean suitable pipe interiors and flush accumulated deposits.",
+        itemsLead: "It may be suitable for:",
+        items: [
+          "Heavy grease buildup.",
+          "Sludge and organic deposits.",
+          "Certain mineral scale.",
+          "Recurring clogs caused by internal buildup.",
+          "Suitable main-line and commercial drain cleaning.",
+        ],
+      },
+    ],
+    outro: [
+      "Which method is better? Neither method is automatically better for every situation. A cable may be the most practical option for a simple localized clog, while hydro jetting may provide a more thorough cleaning when significant buildup is coating the inside of a suitable pipe.",
+      "Our recommendation depends on the actual condition of the plumbing system.",
+    ],
+  },
+  process: {
+    heading: "Our Hydro Jetting Process",
+    lead: "At Zenith, we focus on evaluating the line before selecting a cleaning method. High-pressure water should be used only when the piping and conditions are appropriate.",
+    steps: [
+      { title: "Evaluate the Drainage Problem", body: "We discuss the symptoms, affected fixtures, recurring blockages, and previous drain-cleaning work." },
+      { title: "Locate the Access Point", body: "We identify an appropriate cleanout or other suitable access point for the equipment." },
+      { title: "Inspect the Pipe", body: "When appropriate, we use a sewer camera to evaluate the accessible line and look for visible damage or conditions that could make jetting unsuitable." },
+      { title: "Select the Correct Equipment", body: "We choose the appropriate nozzle, equipment configuration, and pressure based on the pipe and cleaning requirements." },
+      { title: "Perform Hydro Jetting", body: "Controlled high-pressure water is used to break up and flush away suitable buildup." },
+      { title: "Evaluate the Results", body: "We assess drainage and use camera verification when appropriate and available." },
+      { title: "Explain Additional Findings", body: "If the inspection identifies damaged piping, root entry points, or other structural concerns, we explain the recommended options before additional work begins." },
+    ],
+  },
+  listSections: [
+    {
+      heading: "Is Hydro Jetting Safe for Pipes?",
+      lead: [
+        "Hydro jetting can be an effective cleaning method when performed with equipment and pressure appropriate for the piping.",
+        "However, high-pressure water is not suitable for every drain or sewer line. Pipes that are severely deteriorated, cracked, collapsed, or structurally compromised may require repair instead of jetting.",
+        "Before recommending hydro jetting, we consider:",
+      ],
+      items: [
+        "Pipe material and diameter.",
+        "Visible pipe condition.",
+        "Age and deterioration.",
+        "Existing cracks or separated joints.",
+        "Type and location of the blockage.",
+        "Access to the line.",
+        "Appropriate nozzle and pressure requirements.",
+      ],
+      outro: "If the pipe condition raises concerns, we may recommend additional inspection or a different cleaning method.",
+    },
+    {
+      heading: "Signs You May Need Hydro Jetting",
+      lead: ["You may benefit from an evaluation for hydro jetting if you notice:"],
+      items: [
+        "Drain clogs that repeatedly return.",
+        "Heavy grease buildup in kitchen piping.",
+        "Multiple slow drains connected to the same line.",
+        "Recurring main sewer line restrictions.",
+        "Sludge or debris collecting inside the pipe.",
+        "Drainage problems that remain after traditional snaking.",
+        "Commercial kitchen drains that clog frequently.",
+        "Persistent buildup inside a suitable sewer line.",
+      ],
+      outro: "These symptoms do not automatically mean hydro jetting is required. An inspection helps identify the underlying issue and determine the right service.",
+    },
+  ],
+  why: {
+    heading: "Why Choose Zenith for Hydro Jetting?",
+    lead: "Here's what you can expect when Zenith evaluates your line for hydro jetting.",
+    points: [
+      { title: "Evaluation Before Cleaning", body: "We evaluate the drainage problem and consider the condition of the pipe before recommending high-pressure water cleaning." },
+      { title: "Appropriate Equipment and Cleaning Methods", body: "We select equipment based on the type of blockage, pipe access, and the condition of the plumbing system." },
+      { title: "Clear Recommendations and Pricing", body: "We explain the recommended work and pricing before additional service begins, so you can understand your options." },
+      { title: "Residential and Commercial Drain Services", body: "From household kitchen drains to suitable commercial drain and sewer lines, Zenith provides drainage solutions for different property types." },
+      { title: "Complete Drain and Sewer Services", body: "If hydro jetting reveals a deeper issue, we also provide related services, including drain cleaning, sewer camera inspection, sewer line repair, sewer line replacement, and cleanout installation." },
+      { title: "Respect for Your Property", body: "We work to protect the work area, use appropriate care around your property, and leave the workspace clean when the job is complete." },
+    ],
+  },
+  areas: {
+    heading: "Hydro Jetting Service Areas",
+    lead: "Zenith Plumbing, Drain, Sewer & HVAC provides hydro jetting services throughout Denver Metro and Northern Colorado, including:",
+    outro: "If you have recurring drain clogs, grease buildup, or a restricted sewer line, contact Zenith to confirm service availability in your area.",
+  },
+  faqHeading: "Frequently Asked Questions About Hydro Jetting",
+  replacesFaqs: ["Is hydro jetting safe for my pipes?", "Will hydro jetting remove tree roots?"],
+  faqs: () => [
+    { q: "How much does hydro jetting cost in Denver?", a: "The cost depends on the pipe size, location, access, severity of buildup, inspection requirements, and equipment needed. A simple drain cleaning and a complex main sewer line hydro jetting job are not the same service. Contact Zenith for pricing based on your specific situation." },
+    { q: "What is hydro jetting used for?", a: "Hydro jetting is used to clean suitable drain and sewer pipes using high-pressure water. It may remove grease, sludge, certain deposits, and other accumulated material from the inside of piping." },
+    { q: "Is hydro jetting better than snaking?", a: "Hydro jetting can clean more of the pipe's interior surface when heavy buildup is present. Snaking is often faster and more practical for simple localized clogs. The best method depends on the blockage and pipe condition." },
+    { q: "Can hydro jetting remove grease from pipes?", a: "Yes. Hydro jetting can remove many types of grease buildup from suitable pipes by using controlled high-pressure water to break up and flush away deposits." },
+    { q: "Can hydro jetting remove tree roots?", a: "Hydro jetting may clear some lighter root intrusion. Heavy root growth may require mechanical cutting. If roots are entering through a damaged joint or crack, the underlying pipe problem may require repair." },
+    { q: "Can hydro jetting damage old pipes?", a: "It can pose a risk to pipes that are cracked, deteriorated, or structurally weak. This is why the pipe should be evaluated before selecting the equipment and pressure." },
+    { q: "Do you need a camera inspection before hydro jetting?", a: "A camera inspection is often useful because it can reveal visible damage, root intrusion, offsets, and other conditions inside the accessible pipe. The need for inspection depends on the job and available access." },
+    { q: "How long does hydro jetting take?", a: "The time depends on pipe length, access, buildup, blockages, and inspection requirements. The time required for a simple accessible line may differ considerably from a complex sewer cleaning job." },
+    { q: "Can hydro jetting clean a main sewer line?", a: "Yes, hydro jetting may be used on a suitable main sewer line when its condition and access allow. The pipe should be evaluated before high-pressure cleaning is performed." },
+    { q: "Is hydro jetting available for commercial restaurants?", a: "Zenith provides commercial drain services and can evaluate suitable restaurant and commercial kitchen lines for hydro jetting. The recommended method depends on the piping and the type of buildup." },
+    { q: "Does hydro jetting remove mineral scale?", a: "It may remove certain deposits, depending on the type of scale, pipe material, and condition. Some hardened deposits require a different approach." },
+    { q: "How often should I schedule hydro jetting?", a: "There is no universal schedule. Cleaning frequency depends on how the plumbing system is used, the amount of buildup, pipe condition, and previous drainage problems. A recommendation should be based on the actual condition of the line." },
+    { q: "Will hydro jetting fix a broken sewer pipe?", a: "No. Hydro jetting cleans suitable piping but does not repair cracks, broken sections, separated joints, or collapsed pipes. Damaged piping may require sewer line repair or replacement." },
+    { q: "Can hydro jetting prevent future clogs?", a: "Removing accumulated deposits may reduce some causes of recurring blockages. However, it cannot guarantee that clogs will not return, particularly when the underlying issue involves damaged piping or recurring root intrusion." },
+    { q: "Do you provide hydro jetting in Aurora, Denver, and Northern Colorado?", a: "Yes. Zenith serves Denver, Aurora, and other communities throughout Denver Metro and Northern Colorado. Contact us to confirm availability for your property." },
+  ],
+  cta: {
+    title: "Schedule Professional Hydro Jetting With Zenith",
+    text: "Recurring drain clogs and heavy buildup can affect the performance of your entire drainage system. Zenith provides professional hydro jetting for residential and commercial properties throughout Denver Metro and Northern Colorado, and explains the recommended method and pricing before additional work begins.",
+  },
+};
+
 /** Extra long-form content for individual service pages, keyed by service slug. */
 export const servicePageContent: Record<string, CategoryPageContent> = {
   "pipe-repair": pipeRepair,
@@ -2071,4 +2339,5 @@ export const servicePageContent: Record<string, CategoryPageContent> = {
   "kitchen-drain-cleaning": kitchenDrainCleaning,
   "bathroom-drain-cleaning": bathroomDrainCleaning,
   "main-line-drain-cleaning": mainLineDrainCleaning,
+  "hydro-jetting": hydroJetting,
 };

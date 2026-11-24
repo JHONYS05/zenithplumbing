@@ -278,7 +278,7 @@ async function ServicePage({ service, cms }: { service: Service; cms: CmsPage })
               </section>
             )}
 
-            {service.sections?.map((block, i) => (
+            {service.sections?.filter((b) => !extra?.replacesSections?.includes(b.heading)).map((block, i) => (
               <section key={i} className="section-block">
                 {block.heading && <h2>{block.heading}</h2>}
                 <Paragraphs text={block.body} />
