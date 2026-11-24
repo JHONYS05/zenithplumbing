@@ -3376,6 +3376,189 @@ const sewerLineInspection: CategoryPageContent = {
   },
 };
 
+const sewerCleanoutInstallation: CategoryPageContent = {
+  og: {
+    title: "Sewer Cleanout Installation Denver CO | Zenith Plumbing",
+    description: "Professional sewer cleanout installation and replacement in Denver Metro and Northern Colorado.",
+  },
+  introParagraphs: [
+    "We provide sewer cleanout installation and replacement throughout Denver Metro and Northern Colorado. Our team works to identify a practical access location, install the necessary fittings and restore the work area according to the agreed project scope.",
+  ],
+  whatIs: {
+    heading: "Professional Sewer Cleanout Installation",
+    paragraphs: [
+      "A sewer cleanout is an access pipe connected to a building's sewer drainage system. It typically has a removable threaded cap and provides an access point for approved drain-cleaning equipment and sewer inspection cameras.",
+      "Without a suitable cleanout, accessing a main sewer line can be more difficult. Depending on the plumbing layout, a technician may need to use another access point, which can add time and complexity to future service.",
+      "Installing a properly located sewer cleanout can make routine maintenance and future sewer work more convenient.",
+      "Zenith can evaluate your existing sewer access, determine whether a new cleanout is appropriate and explain the proposed work before installation begins.",
+    ],
+    items: [],
+  },
+  signsList: {
+    heading: "When Do You Need a Sewer Cleanout?",
+    lead: "Your property may benefit from a new sewer cleanout or replacement when:",
+    items: [
+      "Your property has no accessible cleanout: a new access point may make future sewer cleaning and inspections easier.",
+      "The existing cleanout is damaged: cracked fittings, broken threads or a damaged cap can make the opening difficult to use.",
+      "The cleanout is buried: a cleanout covered by soil, landscaping or concrete may need to be located and made accessible.",
+      "Your sewer line experiences recurring blockages: an accessible cleanout can provide a more convenient entry point for diagnosing and clearing certain main-line obstructions.",
+      "You are planning sewer repairs: installing or updating a cleanout may be practical while the sewer line is already exposed.",
+      "You need better access for camera inspections: a suitable cleanout can provide an entry point for sewer camera equipment.",
+    ],
+    outro: "The right solution depends on the location, condition and configuration of your sewer line.",
+  },
+  servicesHeading: "Sewer Cleanout Installation Services",
+  servicesLead: "",
+  services: [
+    {
+      title: "New Sewer Cleanout Installation",
+      paragraphs: [
+        "If your home or commercial property does not have an appropriate sewer access point, we can evaluate the plumbing layout and determine whether a new cleanout can be installed.",
+        "Installation may involve locating the existing sewer line, excavating to the pipe, making the appropriate connection and installing a cleanout fitting with a removable cap. The final location and configuration depend on pipe depth, access, local requirements and site conditions.",
+      ],
+    },
+    {
+      title: "Sewer Cleanout Replacement",
+      paragraphs: [
+        "An old or damaged cleanout may need replacement when the fitting, connection or cap is no longer serviceable.",
+        "Depending on the condition of the existing assembly, replacement may involve exposing the pipe, removing damaged components, installing compatible fittings and checking the connection.",
+      ],
+    },
+    {
+      title: "Buried Sewer Cleanout Access",
+      paragraphs: [
+        "A cleanout can become difficult to find or reach when landscaping, soil, concrete or other improvements cover it.",
+        "We can evaluate the area, locate the existing access where possible and discuss options for restoring accessibility. The amount of excavation and surface restoration depends on the conditions at the property.",
+      ],
+    },
+    {
+      title: "Exterior Sewer Cleanout Installation",
+      paragraphs: [
+        "An exterior cleanout may provide convenient access to an underground sewer line. Its placement must account for the existing pipe route, depth, property layout and applicable requirements.",
+        "We evaluate the site before recommending an exterior installation.",
+      ],
+    },
+    {
+      title: "Sewer Cleanout Installation During Sewer Repair",
+      href: "/sewer-repair",
+      linkLabel: "Sewer Line Repair",
+      paragraphs: [
+        "When a sewer line is already being repaired or replaced, adding or updating a cleanout may be a practical improvement.",
+        "Combining the work can sometimes reduce the need for separate excavation later. We can explain whether a cleanout should be included in the proposed sewer project.",
+      ],
+    },
+  ],
+  relatedLinks: [
+    { label: "Sewer Line Replacement", href: "/sewer-replacement" },
+    { label: "Trenchless Sewer Repair", href: "/trenchless-sewer-repair" },
+    { label: "Sewer Line Inspection", href: "/sewer-line-inspection" },
+    { label: "Sewer Camera Inspection", href: "/sewer-camera-inspection" },
+    { label: "Main Sewer Line Cleaning", href: "/main-line-drain-cleaning" },
+    { label: "Professional Hydro Jetting", href: "/hydro-jetting" },
+    { label: "Drain Cleaning Services", href: "/drain-cleaning" },
+  ],
+  process: {
+    heading: "Our Sewer Cleanout Installation Process",
+    lead: "Every property is different. Our process begins with evaluating the existing sewer system and explaining the work required.",
+    steps: [
+      { title: "Evaluate the Existing Sewer Access", body: "We look for an existing cleanout and assess its condition and accessibility." },
+      { title: "Locate the Sewer Line", body: "We determine the proposed connection area using available access and appropriate locating methods." },
+      { title: "Determine the Installation Location", body: "We consider pipe direction, depth, access, site conditions and applicable requirements." },
+      { title: "Excavate When Necessary", body: "We carefully expose the sewer pipe in the approved work area." },
+      { title: "Install the Cleanout Assembly", body: "We connect compatible fittings and install an accessible cleanout with an appropriate cap." },
+      { title: "Check the Connection", body: "We inspect the completed installation for proper fit and visible signs of leakage or other issues." },
+      { title: "Backfill and Address the Work Area", body: "We backfill and compact the excavation as agreed in the project scope. Concrete, asphalt, landscaping and other surface restoration are specified in the estimate." },
+    ],
+    outro: "Before work begins, we explain the proposed installation, access requirements and pricing.",
+  },
+  listSections: [
+    {
+      heading: "Why Is a Sewer Cleanout Important?",
+      lead: [
+        "A sewer cleanout is a practical access point for maintaining and diagnosing your property's sewer system.",
+        "An accessible cleanout can help with:",
+      ],
+      items: [
+        "Main sewer line drain cleaning.",
+        "Access for certain sewer camera inspections.",
+        "Clearing eligible blockages with appropriate equipment.",
+        "Reducing the need to access the system through a plumbing fixture when a suitable cleanout is available.",
+        "Making future sewer maintenance more convenient.",
+        "Providing a useful access point during certain sewer repair projects.",
+      ],
+      outro: "A cleanout does not prevent every sewer blockage or repair issue. It provides access to the line, while the condition of the sewer pipe determines what maintenance or repair may be needed.",
+    },
+    {
+      heading: "What Is Included in a Sewer Cleanout Installation?",
+      lead: ["The exact scope depends on the property and the approved estimate. A typical installation may include:"],
+      items: [
+        "Evaluation of the existing sewer access.",
+        "Locating the proposed connection area.",
+        "Excavation to expose the existing sewer pipe.",
+        "Cutting into the pipe where appropriate.",
+        "Installation of compatible sewer fittings.",
+        "Installation of a cleanout riser and removable cap.",
+        "Inspection of the completed connection.",
+        "Backfilling and basic cleanup as specified in the estimate.",
+      ],
+      outro: "Additional work may be required for deep excavation, difficult access, damaged existing piping, concrete removal, asphalt removal, landscaping restoration or other site conditions. These items are identified and priced separately when applicable.",
+    },
+    {
+      heading: "Factors That Affect Sewer Cleanout Installation Cost",
+      lead: ["The price of sewer cleanout installation varies by property. Important factors include:"],
+      items: [
+        "Excavation depth: a deeper sewer line generally requires more excavation, labor and safety planning.",
+        "Pipe location: the distance from the house, access conditions and pipe configuration affect the work.",
+        "Existing pipe condition: damaged, deteriorated or incompatible piping may require additional repairs.",
+        "Surface material: soil, grass, concrete, asphalt, pavers and landscaping can affect removal and restoration costs.",
+        "Installation complexity: pipe direction, fittings, available working space and connection requirements influence labor.",
+        "Permits and inspections: applicable local requirements may affect project scope and cost.",
+        "Backfill and restoration: the estimate clarifies whether it includes basic backfill only or finished surface restoration.",
+      ],
+      outro: "Zenith provides pricing based on the actual work required rather than assuming every cleanout installation is the same.",
+    },
+  ],
+  why: {
+    heading: "Why Choose Zenith Plumbing, Drain, Sewer & HVAC?",
+    lead: "Here's what you can expect when Zenith works on your sewer access.",
+    points: [
+      { title: "Practical Recommendations", body: "We evaluate the existing sewer access and explain whether installation, replacement or another solution makes sense." },
+      { title: "Clear Project Pricing", body: "You receive the proposed scope and pricing before work begins, including clarification of excavation and restoration items." },
+      { title: "Sewer and Drain Experience", body: "Our services include drain cleaning, sewer inspections, sewer repairs and sewer replacement, helping us consider how a cleanout fits into the larger sewer system." },
+      { title: "Respect for Your Property", body: "We work to protect surrounding areas, maintain an organized jobsite and leave the work area in the condition agreed upon for the project." },
+      { title: "Denver Metro and Northern Colorado Service", body: "Zenith serves residential and commercial customers throughout our established service area." },
+    ],
+  },
+  areas: {
+    heading: "Sewer Cleanout Installation Service Areas",
+    lead: "Zenith provides sewer cleanout installation and replacement in Denver Metro and Northern Colorado, including:",
+    outro: "Contact us to confirm service availability for your specific address.",
+  },
+  faqHeading: "Frequently Asked Questions About Sewer Cleanout Installation",
+  replacesFaqs: ["Where is my sewer cleanout?", "Is a cleanout required?"],
+  faqs: () => [
+    { q: "What is a sewer cleanout?", a: "A sewer cleanout is an access fitting connected to a sewer or drain line. It normally has a removable cap and allows appropriate equipment to enter the pipe for cleaning or inspection." },
+    { q: "Does every house have a sewer cleanout?", a: "No. Some properties have one or more accessible cleanouts, while others have older or less accessible plumbing configurations. The layout and applicable requirements vary by property." },
+    { q: "Where is a sewer cleanout usually located?", a: "A cleanout may be located outside near the foundation, in a yard, in a basement or at another accessible point along the drainage system. Its location depends on the plumbing layout." },
+    { q: "How much does sewer cleanout installation cost?", a: "The cost depends on excavation depth, pipe location, fittings, access, surface removal and restoration requirements. An evaluation is needed to prepare an accurate estimate." },
+    { q: "Can you install a sewer cleanout outside?", a: "Yes, an exterior cleanout may be possible when the sewer line location, configuration, site conditions and applicable requirements allow it." },
+    { q: "Can you replace a broken sewer cleanout?", a: "Yes. A damaged cleanout assembly may be repairable or may need replacement. The appropriate option depends on the condition of the fitting and the connected sewer pipe." },
+    { q: "Can a buried sewer cleanout be uncovered?", a: "Often, yes. The existing cleanout may be located and exposed, but the work depends on its condition, depth and surrounding surface." },
+    { q: "Does a sewer cleanout help with drain cleaning?", a: "Yes. When properly located and suitable for the equipment being used, a cleanout provides direct access for certain main sewer line cleaning procedures." },
+    { q: "Can a sewer camera inspection be performed through a cleanout?", a: "Yes. A suitable cleanout can provide access for a sewer camera. The camera's ability to inspect the line depends on pipe configuration, access, blockages and other conditions." },
+    { q: "Should I install a cleanout when replacing my sewer line?", a: "It may be a good opportunity to add or update a cleanout while the sewer line is exposed. The best configuration depends on the project and applicable requirements." },
+    { q: "Does installing a cleanout require excavation?", a: "An underground cleanout installation commonly requires excavation to expose the sewer pipe. The required excavation depends on the location and depth of the line." },
+    { q: "Can a sewer cleanout be installed in concrete?", a: "A cleanout may be installed in an appropriate accessible location, but work involving concrete cutting or removal requires additional planning. The estimate identifies concrete removal and restoration separately." },
+    { q: "How long does sewer cleanout installation take?", a: "The time varies with excavation depth, access, pipe condition, surface materials and installation complexity. A straightforward installation may take less time than a project involving deep excavation or surface removal." },
+    { q: "Is a sewer cleanout required by code?", a: "Requirements can vary by jurisdiction, building type, plumbing configuration and project scope. The applicable local plumbing code and authority having jurisdiction should be checked before installation." },
+    { q: "Does a new sewer cleanout fix sewer backups?", a: "No. A cleanout provides access to the sewer line; it does not repair a damaged pipe or automatically eliminate a blockage. If backups continue, the sewer line may need cleaning, camera inspection or repair." },
+  ],
+  cta: {
+    title: "Schedule Sewer Cleanout Installation in Denver, CO",
+    text: "Make future sewer maintenance easier with an accessible, properly installed sewer cleanout. Whether you need a new exterior cleanout, replacement of a damaged fitting or improved access to an existing sewer line, Zenith can evaluate your property and explain the next steps.",
+  },
+};
+
 /** Extra long-form content for individual service pages, keyed by service slug. */
 export const servicePageContent: Record<string, CategoryPageContent> = {
   "pipe-repair": pipeRepair,
@@ -3389,4 +3572,5 @@ export const servicePageContent: Record<string, CategoryPageContent> = {
   "sewer-replacement": sewerReplacement,
   "trenchless-sewer-repair": trenchlessSewerRepair,
   "sewer-line-inspection": sewerLineInspection,
+  "sewer-cleanout-installation": sewerCleanoutInstallation,
 };

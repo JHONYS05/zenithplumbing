@@ -76,13 +76,15 @@ export function ExtraBody({ extra, icon, phone }: Props & { icon: string; phone:
               <p key={i}>{p}</p>
             ))}
             {extra.whatIs.itemsLead && <p className="home-service-lead">{extra.whatIs.itemsLead}</p>}
-            <ul className="check-list">
-              {extra.whatIs.items.map((it) => (
-                <li key={it}>
-                  <Icon name="check" size={20} /> {it}
-                </li>
-              ))}
-            </ul>
+            {extra.whatIs.items.length > 0 && (
+              <ul className="check-list">
+                {extra.whatIs.items.map((it) => (
+                  <li key={it}>
+                    <Icon name="check" size={20} /> {it}
+                  </li>
+                ))}
+              </ul>
+            )}
             {extra.whatIs.outro && <p className="signs-warning">{extra.whatIs.outro}</p>}
           </div>
         </section>
@@ -94,7 +96,7 @@ export function ExtraBody({ extra, icon, phone }: Props & { icon: string; phone:
             <>
               <div className="section-head">
                 <h2>{extra.servicesHeading}</h2>
-                <p>{extra.servicesLead}</p>
+                {extra.servicesLead && <p>{extra.servicesLead}</p>}
               </div>
               <ServiceCards items={extra.services} icon={icon} fill={fill} />
             </>
