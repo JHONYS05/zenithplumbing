@@ -29,6 +29,7 @@ export interface CategoryPageContent {
   listSections?: { heading: string; lead: string[]; items: string[]; outro?: string }[];
   signs?: { heading: string; lead: string[]; items: { title: string; body: string }[]; outro?: string };
   process?: { heading: string; lead: string; steps: { title: string; body: string }[]; outro?: string };
+  signsList?: { heading: string; lead: string; items: string[]; outro?: string };
   causes?: { heading: string; lead: string; items: { title: string; body: string }[] };
   equipment?: { heading: string; lead: string; items: CategoryPageContent["services"] };
   compare?: { heading: string; lead: string; columns: { heading: string; items: string[] }[]; outro?: string };
@@ -1671,9 +1672,186 @@ const kitchenDrainCleaning: CategoryPageContent = {
   },
 };
 
+const bathroomDrainCleaning: CategoryPageContent = {
+  og: {
+    title: "Bathroom Drain Cleaning Denver CO | Zenith",
+    description: "Professional bathroom sink, shower, bathtub and toilet drain cleaning throughout Denver Metro and Northern Colorado.",
+  },
+  introParagraphs: [
+    "Zenith Plumbing, Drain, Sewer & HVAC provides professional bathroom drain cleaning throughout Denver Metro and Northern Colorado. Our team works to identify the source of the blockage, clear the affected drain, and test the fixture to help restore proper drainage.",
+    "Whether you have a slow bathroom sink, a shower that fills with standing water, or a bathtub that repeatedly backs up, we can help you determine the right solution.",
+    "Ask about our $69 drain cleaning offer. An accessible cleanout is required. Additional work, difficult access, multiple fixtures, or more extensive blockages may require separate pricing. Confirm eligibility and the included service with Zenith before scheduling.",
+  ],
+  servicesHeading: "Bathroom Drain Cleaning Services",
+  servicesLead:
+    "Bathroom drains handle daily use, and buildup can develop gradually inside the piping. Zenith provides drain cleaning for common bathroom fixtures and drainage problems.",
+  services: [
+    {
+      title: "Bathroom Sink Drain Cleaning",
+      paragraphs: [
+        "Bathroom sinks can become clogged with toothpaste, soap residue, hair, shaving debris, and other materials. These substances collect inside the drain opening, stopper assembly, and connecting pipe.",
+        "Our bathroom sink drain cleaning service addresses slow drainage, standing water, and recurring sink clogs. We inspect the accessible drain components and determine the appropriate way to clear the blockage.",
+      ],
+    },
+    {
+      title: "Shower Drain Cleaning",
+      paragraphs: [
+        "A shower that drains slowly can leave water pooling around your feet. Hair and soap residue are common causes of shower drain blockages, especially when buildup collects around the drain opening or farther inside the pipe.",
+        "Zenith can help clear shower drain obstructions and evaluate recurring drainage problems. If the blockage is deeper in the line, we can determine whether professional drain equipment is needed.",
+      ],
+    },
+    {
+      title: "Bathtub Drain Cleaning",
+      href: "/plumbing#shower-and-bathtub-plumbing",
+      linkLabel: "Shower and Bathtub Plumbing",
+      paragraphs: [
+        "Bathtub drains can collect hair, soap scum, shampoo residue, and other debris. Over time, this buildup can restrict water flow and cause the tub to drain slowly or hold standing water.",
+        "We address bathtub drain clogs by evaluating the drain opening, stopper assembly, and accessible piping before selecting an appropriate cleaning method.",
+      ],
+    },
+    {
+      title: "Toilet Drain Blockage",
+      href: "/clogged-drain-repair",
+      linkLabel: "Clogged Drain Repair",
+      paragraphs: [
+        "A toilet that repeatedly clogs may have an obstruction in the toilet trap or farther down the drain line. Excessive toilet paper, unsuitable materials, and deeper plumbing blockages can all contribute to the problem.",
+        "We can assess recurring toilet drainage issues and determine whether the blockage is isolated to the toilet or connected to a larger drain problem.",
+      ],
+    },
+    {
+      title: "Bathroom Drain Odor and Recurring Clogs",
+      paragraphs: [
+        "Unpleasant bathroom drain odors can come from buildup, a dry plumbing trap, or other plumbing conditions. Repeated clogs may indicate that debris remains inside the pipe or that a deeper drainage issue has not been addressed.",
+        "Our approach is to investigate the symptoms instead of assuming every problem has the same cause.",
+      ],
+    },
+  ],
+  relatedLinks: [
+    { label: "Professional Drain Cleaning", href: "/drain-cleaning" },
+    { label: "Kitchen Drain Cleaning", href: "/kitchen-drain-cleaning" },
+    { label: "Main Line Drain Cleaning", href: "/main-line-drain-cleaning" },
+    { label: "Plumbing Repair", href: "/plumbing-repair" },
+  ],
+  signsList: {
+    heading: "Signs You Need Professional Bathroom Drain Cleaning",
+    lead: "Bathroom drainage problems often start with small warning signs. Addressing them early may help prevent a complete blockage or an unexpected backup. Look for these common symptoms:",
+    items: [
+      "Water drains slowly from the bathroom sink.",
+      "The shower fills with water while you are using it.",
+      "The bathtub takes longer than normal to empty.",
+      "Hair and debris repeatedly collect around the drain.",
+      "The bathroom sink backs up when water is running.",
+      "The toilet clogs frequently or drains poorly.",
+      "You hear gurgling sounds from a sink, tub, or shower.",
+      "Several bathroom fixtures are draining slowly.",
+      "Unpleasant odors are coming from a bathroom drain.",
+      "A clog returns shortly after a previous cleaning.",
+    ],
+    outro: "If multiple fixtures are affected at the same time, the problem may be farther down the drainage system rather than inside one individual fixture.",
+  },
+  causes: {
+    heading: "What Causes Bathroom Drain Clogs?",
+    lead: "Bathroom drains collect materials that can gradually restrict the inside of a pipe. Common causes include:",
+    items: [
+      { title: "Hair Buildup", body: "Hair is one of the most common causes of shower, bathtub, and bathroom sink clogs. It can become trapped around drain components and combine with soap residue to create a dense blockage." },
+      { title: "Soap Scum and Shampoo Residue", body: "Soap, shampoo, conditioner, and body wash can leave residue inside drainpipes. This material can collect around hair and other debris, making the blockage more difficult to remove." },
+      { title: "Toothpaste and Personal Care Products", body: "Toothpaste, shaving products, and other bathroom materials can contribute to buildup when they accumulate inside the drain system." },
+      { title: "Foreign Objects", body: "Small objects, hygiene products, and other materials that should not enter the drain can cause obstructions. Some items may become lodged in the piping and require professional removal." },
+      { title: "Pipe Buildup and Drainage Problems", body: "Older or damaged piping, improper drainage slopes, and recurring obstructions can contribute to persistent drainage issues. When a clog repeatedly returns, additional inspection may be necessary." },
+    ],
+  },
+  process: {
+    heading: "Our Bathroom Drain Cleaning Process",
+    lead: "At Zenith, we focus on identifying the affected fixture and selecting a suitable cleaning method for the specific problem.",
+    steps: [
+      { title: "Evaluate the Drainage Problem", body: "We identify which fixtures are affected and ask about the symptoms, frequency, and history of the clog." },
+      { title: "Inspect Accessible Drain Components", body: "We check the drain opening, stopper, and accessible connections when appropriate." },
+      { title: "Identify the Blockage", body: "We determine whether the issue appears to be near the fixture or farther inside the drain line." },
+      { title: "Select the Appropriate Equipment", body: "Depending on the location and severity of the obstruction, we may use a drain cable or other suitable equipment." },
+      { title: "Clear the Blockage", body: "We work to remove the material restricting the drain while taking the condition of the plumbing into account." },
+      { title: "Test the Fixture", body: "We run water and check drainage to evaluate whether the blockage has been cleared." },
+      { title: "Explain Additional Recommendations", body: "If we find signs of a deeper or recurring problem, we explain the available options before proceeding with additional work." },
+    ],
+  },
+  equipment: {
+    heading: "Professional Drain Cleaning Equipment",
+    lead: "Different clogs require different approaches. The appropriate equipment depends on the fixture, pipe condition, blockage location, and accessibility.",
+    items: [
+      {
+        title: "Drain Cable and Auger Service",
+        paragraphs: [
+          "A professional drain cable or auger can help break through or retrieve certain obstructions inside bathroom drainpipes. This method may be appropriate for hair and other localized blockages.",
+        ],
+      },
+      {
+        title: "Manual Drain Cleaning",
+        paragraphs: [
+          "For accessible buildup around a stopper or drain opening, removing debris from the fixture components may be an important first step.",
+        ],
+      },
+      {
+        title: "Camera Inspection When Needed",
+        href: "/sewer-camera-inspection",
+        linkLabel: "Sewer Camera Inspection",
+        paragraphs: [
+          "If a blockage continues to return or multiple fixtures are affected, a sewer or drain camera inspection may help identify conditions farther inside the piping. Camera inspection is not necessary for every routine bathroom clog.",
+        ],
+      },
+      {
+        title: "Hydro Jetting When Appropriate",
+        href: "/hydro-jetting",
+        linkLabel: "Hydro Jetting",
+        paragraphs: [
+          "For certain deeper or heavy pipe-buildup problems, hydro jetting may be considered after evaluating the piping and the condition of the line. It is not appropriate for every bathroom drain or every pipe condition.",
+        ],
+      },
+    ],
+  },
+  why: {
+    heading: "Why Choose Zenith for Bathroom Drain Cleaning?",
+    lead: "Here's what you can expect when Zenith clears your bathroom drain.",
+    points: [
+      { title: "Professional Diagnosis", body: "We look at the symptoms and affected fixtures before recommending a cleaning method. This helps distinguish a simple fixture clog from a possible deeper drainage issue." },
+      { title: "Upfront Pricing", body: "We explain the recommended work and pricing before additional work begins. You can understand the available options before making a decision." },
+      { title: "Respect for Your Home", body: "Our team works to protect the work area, use appropriate care around bathroom fixtures, and leave the workspace clean when the job is complete." },
+      { title: "Plumbing, Drain, Sewer, and HVAC Services", body: "Zenith provides multiple home services under one company, including plumbing repairs, drain cleaning, sewer services, water heaters, heating, and air conditioning." },
+      { title: "Serving Denver Metro and Northern Colorado", body: "We serve homeowners across our established service area, with bathroom drain cleaning available in Denver and surrounding communities." },
+    ],
+  },
+  areas: {
+    heading: "Bathroom Drain Cleaning Service Areas",
+    lead: "Zenith Plumbing, Drain, Sewer & HVAC provides bathroom drain cleaning throughout Denver Metro and Northern Colorado, including:",
+    outro: "If you are located in or near one of these communities and need help with a clogged bathroom sink, shower, bathtub, or toilet, contact Zenith to confirm service availability.",
+  },
+  faqHeading: "Frequently Asked Questions About Bathroom Drain Cleaning",
+  replacesFaqs: ["How do I keep my shower drain from clogging?", "Why does my toilet gurgle?"],
+  faqs: () => [
+    { q: "How much does bathroom drain cleaning cost in Denver?", a: "The cost depends on the location of the clog, the affected fixture, accessibility, and the equipment needed. Zenith offers $69 drain cleaning when there is an accessible cleanout. Additional work or conditions outside the offer may cost extra. Contact us to confirm the price for your specific situation." },
+    { q: "What is the most common cause of a clogged shower drain?", a: "Hair and soap residue are common causes. Hair becomes trapped inside the drain and combines with soap buildup, gradually restricting water flow." },
+    { q: "Why is my bathroom sink draining slowly?", a: "A slow bathroom sink may be caused by hair, toothpaste, soap residue, or debris around the stopper and inside the drainpipe. A deeper blockage may also restrict drainage." },
+    { q: "Can you clean a bathtub drain that is completely clogged?", a: "Yes. The appropriate cleaning method depends on where the obstruction is located and what is causing it. We evaluate the drain and determine the best approach." },
+    { q: "How do plumbers remove hair from a shower drain?", a: "Depending on the blockage and access, a plumber may remove accessible debris or use a professional drain cable to clear hair farther inside the drainpipe." },
+    { q: "Why does my shower drain keep getting clogged?", a: "Recurring shower clogs may indicate that hair and soap buildup have not been completely removed. The issue may also involve deeper pipe buildup or a drainage problem." },
+    { q: "Why does my toilet gurgle when I use the shower?", a: "Gurgling can indicate a drainage restriction or a plumbing vent issue. If multiple fixtures make unusual sounds, the problem may involve a shared drain line and should be evaluated." },
+    { q: "Why do multiple bathroom drains clog at the same time?", a: "When multiple fixtures drain slowly or back up together, the restriction may be in a shared branch drain or a larger drain line instead of an individual fixture." },
+    { q: "Can chemical drain cleaners damage pipes?", a: "Some chemical drain cleaners can create risks for plumbing materials and may not remove the underlying obstruction. Repeated use is not a reliable solution for recurring clogs. Professional evaluation can help identify the cause." },
+    { q: "Should I use boiling water to clear a bathroom drain?", a: "Boiling water is not recommended as a general solution. It may damage certain plumbing components or fixtures and often does not remove a substantial blockage." },
+    { q: "How can I prevent my shower drain from clogging?", a: "Use a hair catcher, remove collected hair regularly, and avoid allowing excess debris to enter the drain. Routine cleaning of accessible drain components can also help." },
+    { q: "Can a clogged bathroom drain cause water damage?", a: "A blocked drain can cause water to overflow from a sink, tub, or shower. If water escapes onto floors or into surrounding areas, it may damage flooring, cabinets, and nearby building materials." },
+    { q: "When should I schedule professional drain cleaning?", a: "Schedule service when a drain remains slow, repeatedly clogs, produces unusual odors, or backs up despite basic cleaning. If several fixtures are affected, arrange an evaluation of the larger drainage system." },
+    { q: "Do you offer bathroom drain cleaning in Aurora and Denver?", a: "Zenith serves Denver, Aurora, and other communities throughout its Denver Metro and Northern Colorado service area. Contact us to confirm availability for your address." },
+    { q: "Do I need a cleanout for the $69 drain cleaning offer?", a: "Yes. The $69 drain cleaning offer requires an accessible cleanout. If your property does not have an accessible cleanout or the work requires additional service, separate pricing may apply." },
+  ],
+  cta: {
+    title: "Schedule Bathroom Drain Cleaning With Zenith",
+    text: "A clogged bathroom sink, shower, bathtub, or toilet can interrupt your daily routine. Zenith evaluates the problem, explains the recommended service, and provides pricing before additional work begins, throughout Denver Metro and Northern Colorado.",
+  },
+};
+
 /** Extra long-form content for individual service pages, keyed by service slug. */
 export const servicePageContent: Record<string, CategoryPageContent> = {
   "pipe-repair": pipeRepair,
   "clogged-drain-repair": cloggedDrainRepair,
   "kitchen-drain-cleaning": kitchenDrainCleaning,
+  "bathroom-drain-cleaning": bathroomDrainCleaning,
 };

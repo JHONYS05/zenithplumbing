@@ -92,6 +92,23 @@ export function ExtraBody({ extra, icon, phone }: Props & { icon: string; phone:
         </div>
       </section>
 
+      {extra.signsList && (
+        <section className="section">
+          <div className="container home-intro">
+            <h2>{extra.signsList.heading}</h2>
+            <p>{extra.signsList.lead}</p>
+            <ul className="check-list">
+              {extra.signsList.items.map((it) => (
+                <li key={it}>
+                  <Icon name="check" size={20} /> {it}
+                </li>
+              ))}
+            </ul>
+            {extra.signsList.outro && <p className="signs-warning">{extra.signsList.outro}</p>}
+          </div>
+        </section>
+      )}
+
       {extra.causes && (
         <section className="section">
           <div className="container">
