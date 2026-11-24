@@ -2332,6 +2332,211 @@ const hydroJetting: CategoryPageContent = {
   },
 };
 
+const sewerCameraInspection: CategoryPageContent = {
+  og: {
+    title: "Sewer Camera Inspection Denver CO | Zenith",
+    description: "Professional sewer camera inspections to identify visible roots, cracks, blockages and pipe damage throughout Denver Metro and Northern Colorado.",
+  },
+  introParagraphs: [
+    "A professional sewer camera inspection allows a plumber to examine the inside of an accessible sewer pipe using a specialized waterproof camera. Instead of guessing where the problem is located, you can see visible conditions inside the line and better understand what may need attention.",
+    "Zenith Plumbing, Drain, Sewer & HVAC provides sewer camera inspection services throughout Denver Metro and Northern Colorado. We inspect accessible sewer piping, identify visible obstructions and pipe conditions, locate problem areas when equipment and access allow, and explain the findings so you can consider the right next step.",
+    "Whether you are experiencing repeated sewer backups, suspect tree root intrusion, or want to understand the condition of an existing sewer line before repairs, Zenith can help.",
+  ],
+  whatIs: {
+    heading: "What Is a Sewer Camera Inspection?",
+    paragraphs: [
+      "A sewer camera inspection is a diagnostic service that uses a specialized waterproof camera attached to a flexible cable. The camera is guided through an accessible drain or sewer pipe, allowing a technician to view the interior of the line.",
+      "The camera sends live video to a monitor so visible conditions can be evaluated. Depending on the equipment and access, an electronic locator may also help identify the approximate location and depth of a specific point along the pipe.",
+    ],
+    itemsLead: "A sewer camera inspection may help identify:",
+    items: [
+      "Tree roots entering the sewer line.",
+      "Cracked or damaged pipe sections.",
+      "Separated or offset pipe joints.",
+      "Visible blockages and accumulated debris.",
+      "Grease and sludge buildup.",
+      "Sagging or bellied pipe sections.",
+      "Corrosion or deterioration.",
+      "Other visible restrictions inside the accessible piping.",
+    ],
+    outro: "A camera inspection is a diagnostic tool. It does not repair the sewer line, and it cannot guarantee that every hidden defect or condition will be visible.",
+  },
+  servicesHeading: "When Do You Need a Sewer Camera Inspection?",
+  servicesLead:
+    "A sewer problem does not always begin with a complete blockage. Sometimes, the first warning signs are recurring slow drains, unusual sounds, or odors around your property. A sewer camera inspection may be useful in the following situations.",
+  services: [
+    {
+      title: "Recurring Main Sewer Line Backups",
+      href: "/main-line-drain-cleaning",
+      linkLabel: "Main Line Drain Cleaning",
+      paragraphs: [
+        "If your main sewer line continues backing up after drain cleaning, there may be an underlying condition that has not been addressed.",
+        "A camera inspection can help determine whether visible roots, damaged joints, accumulated debris, or another restriction is contributing to the problem.",
+      ],
+    },
+    {
+      title: "Suspected Tree Root Intrusion",
+      paragraphs: [
+        "Tree roots can enter sewer piping through cracks, openings, and separated joints. Once inside, roots may grow and catch waste, gradually restricting the flow of wastewater.",
+        "A camera can help identify visible root intrusion and the affected section of the line.",
+      ],
+    },
+    {
+      title: "Before Sewer Line Repair",
+      href: "/sewer-repair",
+      linkLabel: "Sewer Line Repair",
+      paragraphs: [
+        "Before digging or repairing an underground sewer pipe, it is important to understand where the visible problem is located and what condition the accessible line is in.",
+        "A camera inspection can help narrow down the affected area and support a more informed repair recommendation.",
+      ],
+    },
+    {
+      title: "Before Sewer Line Replacement",
+      href: "/sewer-replacement",
+      linkLabel: "Sewer Line Replacement",
+      paragraphs: [
+        "If a sewer line has recurring blockages or visible damage, a camera inspection may help evaluate the condition of the accessible piping.",
+        "The findings can help determine whether a targeted repair, further investigation, or replacement should be considered.",
+      ],
+    },
+    {
+      title: "Slow Drains Throughout the Property",
+      href: "/drain-cleaning",
+      linkLabel: "Professional Drain Cleaning",
+      paragraphs: [
+        "When multiple plumbing fixtures drain slowly, the issue may involve a shared branch line or the main sewer line.",
+        "A camera inspection may help identify visible restrictions farther inside the accessible drainage system.",
+      ],
+    },
+    {
+      title: "Sewer Odors or Wet Areas in the Yard",
+      paragraphs: [
+        "Unusual sewer odors or persistently wet areas near a sewer route can have several possible causes. A camera inspection may help identify visible pipe problems, although additional testing may be necessary to confirm the source of a leak.",
+      ],
+    },
+  ],
+  relatedLinks: [
+    { label: "Hydro Jetting Services", href: "/hydro-jetting" },
+    { label: "Trenchless Sewer Repair", href: "/trenchless-sewer-repair" },
+    { label: "Sewer Cleanout Installation", href: "/sewer-cleanout-installation" },
+    { label: "Sewer Line Inspection", href: "/sewer-line-inspection" },
+  ],
+  causes: {
+    heading: "What Can a Sewer Camera Inspection Find?",
+    lead: "A sewer camera inspection can reveal different conditions depending on pipe material, access, water levels, debris, and camera visibility.",
+    items: [
+      { title: "Tree Root Intrusion", body: "Roots can enter through openings and damaged joints. The camera may reveal root growth inside the pipe and help identify the affected area." },
+      { title: "Cracked Sewer Pipes", body: "Cracks can allow soil, groundwater, and roots to enter the piping. A camera may reveal visible cracks or other damage along the accessible portion of the line." },
+      { title: "Offset or Separated Pipe Joints", body: "Pipe sections can shift over time because of ground movement, settlement, or other conditions. An offset joint can restrict flow and allow debris to collect." },
+      { title: "Bellied or Sagging Sewer Lines", body: "A bellied sewer line has a section that has settled lower than the surrounding pipe. Wastewater and solids may collect there. A camera may reveal standing water or other signs of a low section, although further evaluation may be needed to confirm the pipe's slope and condition." },
+      { title: "Grease and Debris Buildup", body: "Accumulated grease, sludge, and other debris can reduce the available space inside the pipe. A camera may show visible deposits or restrictions." },
+      { title: "Broken or Collapsed Sections", body: "Severe pipe deterioration can cause a section to break, deform, or collapse. A camera may reveal visible structural damage, helping determine whether further inspection or sewer replacement is needed." },
+    ],
+  },
+  process: {
+    heading: "Our Sewer Camera Inspection Process",
+    lead: "At Zenith, we focus on identifying visible problems and explaining the findings before recommending additional work.",
+    steps: [
+      { title: "Discuss the Symptoms", body: "We ask about recurring backups, slow drains, sewer odors, previous cleaning, and other plumbing concerns." },
+      { title: "Locate an Access Point", body: "We identify an accessible cleanout or another suitable entry point for the inspection equipment." },
+      { title: "Insert the Inspection Camera", body: "A waterproof camera is guided through the accessible sewer piping." },
+      { title: "Examine the Line", body: "We review the video for visible roots, cracks, offsets, buildup, blockages, and other conditions." },
+      { title: "Locate Problem Areas When Possible", body: "Electronic locating equipment may help identify the approximate position and depth of a visible concern." },
+      { title: "Review the Findings", body: "We explain what the camera shows and discuss the areas that may need further attention." },
+      { title: "Discuss Next Steps", body: "Depending on the findings, we may recommend drain cleaning, hydro jetting when appropriate, targeted sewer repair, or replacement." },
+    ],
+    outro: "Our goal is to help you understand the condition of your sewer line so you can make a more informed decision.",
+  },
+  listSections: [
+    {
+      heading: "Sewer Camera Inspection Before Buying a Home",
+      lead: [
+        "A sewer line is an important part of a property's plumbing system, but it is underground and cannot be evaluated through a normal visual walkthrough of the house.",
+        "A sewer camera inspection may be useful when purchasing an older home or a property with a history of sewer problems. Potential concerns include:",
+      ],
+      items: [
+        "Older sewer piping.",
+        "Previous root intrusion.",
+        "Repeated main-line backups.",
+        "Cracked or deteriorated sections.",
+        "Offset pipe connections.",
+        "Sagging or bellied piping.",
+        "Previous sewer repairs.",
+        "Visible obstructions and accumulated debris.",
+      ],
+      outro: "An inspection can provide useful information about the accessible sewer line before you make a purchase decision. It is not a guarantee against future sewer problems; it is a visual assessment of the portions of the pipe that can be accessed and viewed during the inspection.",
+    },
+    {
+      heading: "Sewer Line Location and Depth Detection",
+      lead: [
+        "Finding the approximate location of an underground sewer problem can be important when planning a repair.",
+        "When the inspection equipment supports electronic locating, a technician may use a locator to help identify where the camera is positioned underground. This information can help estimate:",
+      ],
+      items: [
+        "The approximate route of the sewer line.",
+        "The location of a visible obstruction or defect.",
+        "The approximate depth of a marked point.",
+        "Where additional investigation or excavation may be needed.",
+      ],
+      outro: "Locating results are estimates and can be affected by site conditions, pipe depth, access, and equipment limitations. They should not be treated as a substitute for utility locating before excavation.",
+    },
+  ],
+  split: {
+    heading: "How a Camera Inspection Compares to Other Sewer Services",
+    lead: "A camera inspection, drain cleaning, and sewer repair have different purposes. In some situations, more than one may be appropriate.",
+    items: [
+      {
+        title: "Camera Inspection vs. Regular Drain Cleaning",
+        body: "Drain cleaning is intended to clear a blockage and help restore wastewater flow. A camera inspection examines the inside of the pipe to identify visible conditions that may be causing drainage problems. If your sewer line keeps clogging, cleaning may temporarily restore flow, while a camera inspection can help investigate why the blockage keeps returning.",
+      },
+      {
+        title: "Camera Inspection vs. Sewer Line Repair",
+        body: "A camera inspection identifies visible conditions; sewer line repair addresses physical damage. If the camera reveals a cracked section, separated joint, or other structural problem, the next step may involve targeted repair or replacement. The final scope may require additional measurements, excavation, testing, or evaluation of site conditions.",
+      },
+    ],
+    outro: ["Zenith provides related sewer services to help customers move from diagnosis to an appropriate solution."],
+  },
+  why: {
+    heading: "Why Choose Zenith for Sewer Camera Inspection?",
+    lead: "Here's what you can expect when Zenith inspects your sewer line.",
+    points: [
+      { title: "Diagnosis Before Recommendations", body: "We use camera inspection to help identify visible sewer conditions before recommending additional work. Our focus is understanding the problem rather than automatically suggesting a repair." },
+      { title: "Review the Findings With You", body: "We explain what the camera shows, discuss visible concerns, and answer questions about the inspection." },
+      { title: "Options and Pricing Up Front", body: "We explain the proposed service and pricing before additional work begins, so you can review your options." },
+      { title: "Complete Sewer and Drain Services", body: "If the inspection identifies a concern, Zenith also provides related drain and sewer services, including main-line drain cleaning, hydro jetting, sewer line repair, sewer replacement, and cleanout installation." },
+      { title: "Respect for Your Property", body: "We work to protect the surrounding area, use appropriate care inside your home, and leave the workspace clean when the inspection is complete." },
+    ],
+  },
+  areas: {
+    heading: "Sewer Camera Inspection Service Areas",
+    lead: "Zenith Plumbing, Drain, Sewer & HVAC provides sewer camera inspection throughout Denver Metro and Northern Colorado, including:",
+    outro: "If you are experiencing recurring sewer backups, suspect a damaged pipe, or need to understand the condition of your sewer line, contact Zenith to confirm service availability in your area.",
+  },
+  faqHeading: "Frequently Asked Questions About Sewer Camera Inspection",
+  replacesFaqs: ["Does a camera inspection fix the problem?", "Can I see the footage?"],
+  faqs: () => [
+    { q: "How much does a sewer camera inspection cost in Denver?", a: "The price depends on the sewer line's access, length, condition, inspection requirements, and whether additional locating or diagnostic work is needed. Contact Zenith for pricing based on your property and the service requested." },
+    { q: "What does a sewer camera inspection show?", a: "A camera inspection can reveal visible conditions inside accessible sewer piping, including tree roots, cracks, offset joints, blockages, debris, and certain signs of sagging or deterioration." },
+    { q: "Does a sewer camera inspection fix the problem?", a: "No. A camera inspection is a diagnostic service. It helps identify visible conditions and where a problem may be located. Cleaning, repair, or replacement is a separate service." },
+    { q: "Can I watch the sewer camera inspection?", a: "Your technician can review the camera footage with you and explain visible findings. Ask whether a recording or copy of the footage is available for your records." },
+    { q: "How long does a sewer camera inspection take?", a: "The time depends on access, the length and condition of the line, and whether the camera encounters obstructions or standing water. More complex inspections may take longer." },
+    { q: "Can a sewer camera find tree roots?", a: "Yes. A camera can often identify visible root intrusion inside accessible sewer piping. The inspection may also help locate the affected section." },
+    { q: "Can a sewer camera detect a cracked pipe?", a: "A camera may reveal visible cracks, broken sections, and other defects inside the accessible pipe. Some defects may be difficult to identify because of water, debris, limited visibility, or camera access." },
+    { q: "Can a sewer camera find a belly in the sewer line?", a: "A camera may show standing water or other signs consistent with a low section of pipe. Confirming the slope and full extent of a belly may require additional evaluation." },
+    { q: "Should I get a sewer inspection before buying a house?", a: "A sewer camera inspection can provide useful information about the accessible sewer line, particularly for older properties or homes with a history of drainage problems. It can help identify visible concerns before you complete a purchase." },
+    { q: "Do you need a cleanout for a sewer camera inspection?", a: "A cleanout is often the most convenient access point. If one is not available, another access method may be possible depending on the property's plumbing configuration." },
+    { q: "Can a sewer camera inspect the entire sewer line?", a: "The camera can inspect accessible portions of the line that it can safely travel through. Severe blockages, standing water, pipe damage, tight bends, or other access limitations may prevent a complete inspection." },
+    { q: "Can a camera inspection locate the sewer pipe underground?", a: "With compatible electronic locating equipment, a technician may be able to identify the approximate location and depth of the camera at a particular point along the line." },
+    { q: "What happens if the camera finds a damaged sewer pipe?", a: "The technician reviews the visible condition and discusses possible next steps. Depending on the damage, a targeted repair, additional evaluation, or sewer line replacement may be recommended." },
+    { q: "Is a sewer camera inspection the same as hydro jetting?", a: "No. A camera inspection examines the inside of the pipe. Hydro jetting uses high-pressure water to clean suitable piping. The two services may be used together when appropriate." },
+    { q: "Do you provide sewer camera inspections in Denver and Aurora?", a: "Yes. Zenith serves Denver, Aurora, and other communities throughout Denver Metro and Northern Colorado. Contact us to confirm availability for your address." },
+  ],
+  cta: {
+    title: "Schedule a Sewer Camera Inspection With Zenith",
+    text: "Recurring sewer backups, tree root intrusion, pipe damage, and unexplained drainage problems should not be left to guesswork. A professional sewer camera inspection can help you understand the visible condition of your sewer line and make a more informed decision about cleaning, repair, or replacement.",
+  },
+};
+
 /** Extra long-form content for individual service pages, keyed by service slug. */
 export const servicePageContent: Record<string, CategoryPageContent> = {
   "pipe-repair": pipeRepair,
@@ -2340,4 +2545,5 @@ export const servicePageContent: Record<string, CategoryPageContent> = {
   "bathroom-drain-cleaning": bathroomDrainCleaning,
   "main-line-drain-cleaning": mainLineDrainCleaning,
   "hydro-jetting": hydroJetting,
+  "sewer-camera-inspection": sewerCameraInspection,
 };
