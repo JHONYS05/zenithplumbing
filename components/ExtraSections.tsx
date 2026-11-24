@@ -227,7 +227,7 @@ export function ExtraBody({ extra, icon, phone }: Props & { icon: string; phone:
               <h2>{extra.materials.heading}</h2>
               <p>{extra.materials.lead}</p>
             </div>
-            <div className="home-why grid-4">
+            <div className={`home-why ${extra.materials.items.length === 3 ? "grid-3" : "grid-4"}`}>
               {extra.materials.items.map((it) => (
                 <div key={it.title} className="home-why-item">
                   <h3>{it.title}</h3>

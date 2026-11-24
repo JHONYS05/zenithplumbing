@@ -2722,6 +2722,206 @@ const sewerRepair: CategoryPageContent = {
   },
 };
 
+const sewerReplacement: CategoryPageContent = {
+  og: {
+    title: "Sewer Line Replacement Denver CO | Zenith Plumbing",
+    description: "Professional sewer line replacement for damaged, collapsed and deteriorating pipes throughout Denver Metro and Northern Colorado.",
+  },
+  introParagraphs: [
+    "Your sewer line is an essential part of your home's plumbing system. When it fails, wastewater may back up into your home, leak into your yard, create unpleasant odors, or cause damage around the property.",
+    "Zenith helps homeowners evaluate sewer line problems, understand their replacement options, and plan the work based on the actual condition of the existing piping. From camera inspection and locating to excavation, new pipe installation, cleanout work, and backfilling, we help manage the sewer replacement project from start to finish.",
+  ],
+  replacesSections: ["What Affects a Sewer Replacement Project", "Sewer Repair vs. Sewer Replacement"],
+  whatIs: {
+    heading: "Professional Sewer Line Replacement Services",
+    paragraphs: [
+      "A sewer line replacement involves removing or bypassing a damaged section of existing sewer piping and installing new piping designed to carry wastewater away from your home.",
+      "Replacement may be necessary when the existing line has extensive deterioration, multiple damaged areas, significant root intrusion, collapsed sections, or recurring problems that cannot be reliably resolved with isolated repairs.",
+      "Zenith evaluates the sewer line before recommending a replacement. The recommended scope depends on the pipe material, depth, length, route, accessibility, and condition of the existing system.",
+    ],
+    itemsLead: "Our sewer replacement projects may include:",
+    items: [
+      "Residential sewer line replacement",
+      "Main sewer line replacement",
+      "Replacement of collapsed sewer pipes",
+      "Replacement of deteriorated clay sewer lines",
+      "Replacement of aging cast iron sewer piping",
+      "Replacement of damaged underground sewer sections",
+      "PVC sewer pipe installation",
+      "Sewer cleanout installation or upgrades",
+      "Sewer camera inspection and pipe locating",
+      "Excavation and removal of existing sewer piping",
+      "Backfilling and work-area restoration according to the agreed scope",
+    ],
+    outro: "Every property is different. We explain the proposed work and project pricing before authorized work begins.",
+  },
+  servicesHeading: "",
+  servicesLead: "",
+  services: [],
+  relatedLinks: [
+    { label: "Sewer Line Repair", href: "/sewer-repair" },
+    { label: "Trenchless Sewer Replacement Options", href: "/trenchless-sewer-repair" },
+    { label: "Sewer Camera Inspection", href: "/sewer-camera-inspection" },
+    { label: "Sewer Line Inspection", href: "/sewer-line-inspection" },
+    { label: "Sewer Cleanout Installation", href: "/sewer-cleanout-installation" },
+    { label: "Main Sewer Line Cleaning", href: "/main-line-drain-cleaning" },
+    { label: "Professional Hydro Jetting", href: "/hydro-jetting" },
+  ],
+  signs: {
+    heading: "Signs You May Need Sewer Line Replacement",
+    lead: [
+      "Sewer line damage can develop gradually or occur suddenly. Recognizing the warning signs can help homeowners address problems before they cause more extensive disruption.",
+    ],
+    items: [
+      { title: "Frequent Sewer Backups", body: "Repeated wastewater backups in toilets, showers, bathtubs, or basement floor drains may indicate a serious main sewer line problem. If cleaning does not resolve the issue for long, the pipe may have structural damage or deterioration." },
+      { title: "Multiple Slow Drains Throughout the Home", body: "When several plumbing fixtures drain slowly at the same time, the main sewer line may be restricted or damaged. A professional evaluation can help determine whether the issue is a blockage or a failing pipe." },
+      { title: "Collapsed or Severely Damaged Sewer Pipe", body: "A collapsed sewer line can prevent wastewater from flowing properly. Depending on the extent and location of the collapse, replacement of the affected section or a larger portion of the line may be necessary." },
+      { title: "Recurring Tree Root Intrusion", body: "Tree roots can enter through cracks and separated joints. If roots repeatedly return after cleaning, the underlying pipe may be damaged and require replacement." },
+      { title: "Persistent Sewer Odors", body: "Unusual sewage odors around the property may indicate leaking wastewater or a damaged connection. The source should be investigated rather than assuming the entire line needs replacement." },
+      { title: "Wet Areas or Unusual Yard Conditions", body: "Soggy soil, standing water, or unusually green areas near the sewer route may indicate an underground leak. These conditions can also have other causes, so proper inspection is important." },
+      { title: "An Aging Sewer System", body: "Older sewer lines made from clay, cast iron, or other aging materials may experience deterioration, joint separation, cracking, or root intrusion. Age alone does not prove a line needs replacement; its actual condition should guide the decision." },
+    ],
+  },
+  causes: {
+    heading: "Common Causes of Sewer Line Failure",
+    lead: "Underground sewer pipes are exposed to soil conditions, moisture, ground movement, tree roots, and normal material deterioration. Over time, these factors can contribute to sewer line failure.",
+    items: [
+      { title: "Tree Root Intrusion", body: "Roots naturally seek moisture and can enter sewer piping through small openings, cracks, and deteriorated joints. As they grow, they may obstruct wastewater flow and contribute to structural damage." },
+      { title: "Aging Clay Sewer Pipes", body: "Older clay sewer pipes can develop cracks, separated joints, and root intrusion. A camera inspection can help evaluate visible pipe conditions and determine whether repair or replacement is appropriate." },
+      { title: "Deteriorating Cast Iron Pipes", body: "Cast iron piping can corrode and deteriorate over time. Internal corrosion, wall deterioration, and restricted drainage may indicate that replacement should be considered." },
+      { title: "Orangeburg Pipe Deterioration", body: "Some older properties may have Orangeburg sewer piping, a bituminous fiber material that can deform or deteriorate over time. Its condition should be evaluated before choosing a repair or replacement approach." },
+      { title: "Shifting Soil and Ground Settlement", body: "Changes in soil conditions, settlement, and ground movement can place stress on underground piping. These forces may cause pipe joints to separate or sections to crack." },
+      { title: "Collapsed or Broken Sewer Sections", body: "A pipe may collapse due to deterioration, external pressure, ground movement, or other damage. When structural integrity is compromised, replacement of the affected section may be necessary." },
+    ],
+  },
+  compare: {
+    heading: "Sewer Repair vs. Full Sewer Line Replacement",
+    lead: "Not every sewer problem requires a complete replacement. A localized repair may be sufficient when the damage is limited to one section and the remaining pipe is in suitable condition.",
+    columns: [
+      {
+        heading: "When Sewer Repair May Be Appropriate",
+        items: [
+          "Damage is limited to one identifiable area.",
+          "The surrounding pipe remains structurally sound.",
+          "The problem involves an isolated crack or separated joint.",
+          "The damaged section can be accessed and repaired effectively.",
+        ],
+      },
+      {
+        heading: "When Sewer Replacement May Be Appropriate",
+        items: [
+          "Multiple sections of the line are damaged.",
+          "The pipe has extensive deterioration.",
+          "A significant section has collapsed.",
+          "Repeated repairs have not resolved the problem.",
+          "The existing pipe has widespread structural issues.",
+          "Replacement is a more practical long-term solution based on the inspection findings.",
+        ],
+      },
+    ],
+    outro: ["We explain the findings and available options so you can make an informed decision about your property."],
+  },
+  materials: {
+    heading: "What Type of Pipe Is Used for Sewer Replacement?",
+    lead: "The appropriate replacement material depends on local requirements, pipe specifications, connection conditions, and the property's sewer system.",
+    items: [
+      { title: "PVC Sewer Pipe", body: "PVC is commonly used in modern underground sewer installations. It is resistant to corrosion and provides a smooth interior surface for wastewater flow when properly installed." },
+      { title: "Other Approved Pipe Materials", body: "Depending on the project, local code requirements, and connection conditions, other approved materials may be appropriate. Material selection should account for the existing system and applicable local requirements." },
+      { title: "Proper Bedding and Slope", body: "The pipe material is only one part of a successful installation. Proper bedding, alignment, connection methods, and slope are important to help wastewater flow correctly and reduce the risk of future problems." },
+    ],
+  },
+  process: {
+    heading: "Our Sewer Line Replacement Process",
+    lead: "Replacing an underground sewer line requires planning, proper access, suitable materials, and attention to the property's existing conditions.",
+    steps: [
+      { title: "Sewer Camera Inspection", body: "We begin by evaluating the sewer line when camera access is available and appropriate. A sewer camera can help identify visible cracks, root intrusion, separated joints, deterioration, and collapsed sections." },
+      { title: "Locate the Sewer Line and Identify the Work Area", body: "The affected sewer section is evaluated and located as accurately as site conditions allow. Electronic locating equipment may help estimate the position and depth of the pipe." },
+      { title: "Review Replacement Options and Project Pricing", body: "We explain the inspection findings, the proposed replacement scope, and any relevant alternatives. The estimate may account for excavation, pipe materials, depth, access, cleanouts, permitting, and restoration." },
+      { title: "Prepare the Work Area and Excavate", body: "The work area is prepared before excavation. Depending on the sewer route, the project may involve removing soil, landscaping, concrete, asphalt, or other surface materials. Excavation depth and safety requirements depend on actual site conditions and applicable regulations." },
+      { title: "Remove the Damaged Sewer Piping", body: "The existing damaged or deteriorated pipe is removed according to the approved project scope. The condition of the exposed pipe and surrounding area can be evaluated during this stage." },
+      { title: "Install New Sewer Piping", body: "New sewer piping is installed using appropriate materials, fittings, connections, bedding, and slope requirements for the project. Proper alignment and drainage are important for reliable wastewater flow." },
+      { title: "Install or Upgrade Sewer Cleanouts", body: "Where included and appropriate, sewer cleanouts may be installed or upgraded to provide access for future inspection and maintenance." },
+      { title: "Test, Backfill, and Address Restoration", body: "The completed installation is evaluated according to the project requirements. The excavation is backfilled and the work area is restored according to the agreed scope. Concrete, asphalt, landscaping, and other surface restoration are identified in the estimate." },
+    ],
+  },
+  listSections: [
+    {
+      heading: "What Affects the Cost of Sewer Line Replacement?",
+      lead: [
+        "Sewer replacement costs vary considerably because every property has different excavation, access, pipe, and restoration requirements. A proper estimate should reflect the actual job rather than a generic price per foot.",
+        "Factors that can affect the project cost include:",
+      ],
+      items: [
+        "Length of the sewer line: the total distance being replaced affects material quantities, excavation, labor, and project time.",
+        "Depth of the sewer pipe: deeper sewer lines generally require more excavation and additional safety measures. Soil conditions and excavation requirements also affect the scope.",
+        "Pipe location and accessibility: a sewer line beneath an open yard may be easier to access than a line beneath a driveway, sidewalk, garage, basement, or other structure.",
+        "Concrete and asphalt removal: if the sewer line runs beneath concrete or asphalt, cutting, breaking, removal, and surface restoration may add to the project.",
+        "Landscaping and property conditions: trees, shrubs, rocks, retaining walls, fences, and existing landscaping can affect equipment access and excavation planning.",
+        "Pipe material and connections: the required pipe diameter, fittings, transitions, connections, and cleanouts affect material and installation costs.",
+        "Permits and inspections: applicable permits, utility coordination, inspections, and local requirements are considered when preparing the project estimate.",
+        "Backfill and surface restoration: the scope may include backfilling, compaction, and restoration of affected areas. Concrete, asphalt, and landscaping restoration are identified separately when not included in the agreed work.",
+      ],
+      outro: "Zenith reviews these factors and provides project pricing based on the actual conditions and agreed scope.",
+    },
+  ],
+  split: {
+    heading: "Traditional Sewer Replacement vs. Trenchless Sewer Replacement",
+    lead: "There are different methods of replacing or rehabilitating underground sewer lines. The right method depends on the existing pipe, the route, access conditions, and the selected technology.",
+    items: [
+      {
+        title: "Traditional Excavation",
+        body: "Traditional replacement involves digging to expose the existing sewer line, removing the damaged pipe, and installing new piping. It allows direct access to the sewer line and may be necessary when the pipe is collapsed, severely damaged, or difficult to access with another method.",
+      },
+      {
+        title: "Trenchless Methods",
+        body: "Some properties may qualify for trenchless sewer solutions that reduce the amount of excavation required. Suitability depends on the pipe's condition, configuration, access points, and the specific method being considered.",
+      },
+    ],
+    outro: [
+      "Trenchless methods are not appropriate for every sewer line. A professional evaluation is necessary before deciding which approach is feasible. See our Trenchless Sewer Repair page to learn more about alternative sewer solutions.",
+    ],
+  },
+  why: {
+    heading: "Why Choose Zenith for Sewer Line Replacement?",
+    lead: "A sewer replacement is a significant home improvement project. You deserve to understand what is wrong, what needs to be replaced, and what the work will involve.",
+    points: [
+      { title: "Inspection Before Recommendations", body: "We evaluate the sewer line and use camera inspection or other diagnostic methods when appropriate before recommending a project." },
+      { title: "Clear Replacement Options", body: "We explain whether the findings support a localized repair, a larger replacement, or an alternative approach." },
+      { title: "Project Pricing Before Work Begins", body: "You receive the proposed scope and pricing before authorized work begins." },
+      { title: "Attention to Your Property", body: "Sewer replacement can involve excavation and disruption to landscaping and surfaces. We plan the work area carefully and address cleanup and restoration according to the agreed project scope." },
+      { title: "Complete Home Service Experience", body: "Zenith provides plumbing, drain cleaning, sewer, water heater, and HVAC services for homeowners throughout Denver Metro and Northern Colorado." },
+    ],
+  },
+  areas: {
+    heading: "Sewer Line Replacement Service Areas",
+    lead: "Zenith provides sewer line replacement services throughout Denver Metro and Northern Colorado, including:",
+    outro: "If you are located near one of these communities and need a sewer line replacement, contact Zenith to confirm service availability for your property.",
+  },
+  faqHeading: "Frequently Asked Questions About Sewer Line Replacement",
+  replacesFaqs: ["How much does sewer line replacement cost?", "How long does a sewer line last?", "Will my yard be torn up?"],
+  faqs: () => [
+    { q: "How much does sewer line replacement cost in Denver?", a: "The cost depends on the length and depth of the sewer line, pipe material, excavation access, surface removal, permits, and restoration. A property evaluation is necessary to provide an accurate project estimate." },
+    { q: "How long does sewer line replacement take?", a: "The timeline depends on the length and depth of the pipe, site access, excavation conditions, utility conflicts, inspections, and restoration requirements. Your project schedule can be discussed after the site evaluation." },
+    { q: "How long does a sewer line last?", a: "Service life varies by pipe material, installation quality, soil conditions, and maintenance. Older clay, cast iron, and Orangeburg systems may experience deterioration, but age alone does not determine whether replacement is necessary." },
+    { q: "Will my yard be damaged during sewer replacement?", a: "Traditional excavation requires opening the ground along the affected route or replacement area. We plan the excavation and address the work area according to the agreed scope. The amount of disruption depends on the property's conditions." },
+    { q: "Do you replace sewer lines under concrete?", a: "Sewer lines beneath concrete may require concrete cutting and removal to access the pipe. The work and restoration requirements depend on the location, depth, and project scope." },
+    { q: "Can a collapsed sewer line be replaced?", a: "Yes. A collapsed section may require excavation and replacement. The extent of replacement depends on the condition of the surrounding pipe and the location of the failure." },
+    { q: "Is PVC a good material for sewer line replacement?", a: "PVC is commonly used for modern sewer installations because it resists corrosion and has a smooth interior surface. Proper installation, bedding, connections, and slope are important." },
+    { q: "Can tree roots cause a sewer line to need replacement?", a: "Yes. Repeated root intrusion can contribute to structural damage. If roots have entered through multiple cracks or deteriorated joints, replacing the affected portion or a larger section may be appropriate." },
+    { q: "Should I repair or replace my sewer line?", a: "The decision depends on the location and extent of damage and the condition of the remaining pipe. A limited problem may be repaired, while extensive deterioration or multiple failures may justify replacement." },
+    { q: "Is trenchless sewer replacement possible?", a: "Some sewer lines qualify for trenchless methods, depending on the pipe condition, configuration, access, and selected technology. A site evaluation is necessary to determine whether a trenchless option is appropriate." },
+    { q: "Do I need a sewer camera inspection before replacement?", a: "A camera inspection is often helpful because it can show visible conditions inside accessible portions of the pipe. It helps inform the repair or replacement recommendation." },
+    { q: "Will you install a new sewer cleanout?", a: "A cleanout can be installed or upgraded when appropriate and included in the project scope. It provides access for future inspection and maintenance." },
+    { q: "Do I need a permit for sewer line replacement in Colorado?", a: "Permit and inspection requirements depend on the city, county, project location, and scope of work. Applicable requirements should be confirmed with the local authority before construction." },
+    { q: "Can you replace a sewer line in Aurora, Lakewood, Boulder, or Longmont?", a: "Zenith serves Aurora, Lakewood, Boulder, Longmont, Denver, Littleton, Centennial, Arvada, Westminster, Thornton, Morrison, and surrounding communities. Contact us to confirm service availability at your address." },
+    { q: "What should I do if sewage is backing up into my home?", a: "Stop using water fixtures that may contribute to the backup. Avoid contact with wastewater, keep children and pets away from affected areas, and arrange a professional evaluation. If wastewater is entering living areas, address immediate safety and cleanup needs." },
+  ],
+  cta: {
+    title: "Schedule a Sewer Line Replacement Estimate",
+    text: "A failing sewer line can create repeated backups, wastewater leaks, and expensive property damage if left unresolved. Whether your home has an aging clay pipe, a collapsed sewer section, recurring root intrusion, or multiple damaged areas, Zenith can help evaluate the condition and explain your replacement options.",
+  },
+};
+
 /** Extra long-form content for individual service pages, keyed by service slug. */
 export const servicePageContent: Record<string, CategoryPageContent> = {
   "pipe-repair": pipeRepair,
@@ -2732,4 +2932,5 @@ export const servicePageContent: Record<string, CategoryPageContent> = {
   "hydro-jetting": hydroJetting,
   "sewer-camera-inspection": sewerCameraInspection,
   "sewer-repair": sewerRepair,
+  "sewer-replacement": sewerReplacement,
 };
