@@ -187,7 +187,7 @@ export function ExtraBody({ extra, icon, phone }: Props & { icon: string; phone:
               <h2>{extra.process.heading}</h2>
               <p>{extra.process.lead}</p>
             </div>
-            <ol className={`home-steps${extra.process.steps.length === 6 ? " grid-3" : ""}`}>
+            <ol className={`home-steps${extra.process.steps.length === 6 ? " grid-3" : extra.process.steps.length >= 7 ? " grid-4" : ""}`}>
               {extra.process.steps.map((st) => (
                 <li key={st.title}>
                   <strong>{st.title}</strong>

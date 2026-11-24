@@ -1435,8 +1435,245 @@ const cloggedDrainRepair: CategoryPageContent = {
   },
 };
 
+const kitchenDrainCleaning: CategoryPageContent = {
+  introParagraphs: [
+    "Zenith Plumbing, Drain, Sewer & HVAC provides professional kitchen drain cleaning services throughout Denver Metro and Northern Colorado. We help homeowners with clogged kitchen sinks, grease buildup, garbage disposal drain problems, slow-draining sinks, and dishwasher drainage backups.",
+    "Whether your kitchen sink is draining slowly or water is backing up into the basin, our team evaluates the problem and recommends an appropriate cleaning solution.",
+  ],
+  servicesHeading: "Professional Kitchen Drain Cleaning Services",
+  servicesLead:
+    "Kitchen drains handle grease, food residue, dish soap, and other materials every day. Over time, these substances can collect inside the drain piping and create stubborn restrictions. Zenith provides professional kitchen drain cleaning to help remove blockages and restore proper drainage.",
+  services: [
+    {
+      title: "Kitchen Sink Clog Removal",
+      href: "/clogged-drain-repair",
+      linkLabel: "Clogged Drain Repair",
+      paragraphs: [
+        "A clogged kitchen sink is one of the most common household plumbing problems. A blockage can develop near the sink drain, inside the P-trap, or farther down the branch drain line.",
+      ],
+      bulletsLead: "Common symptoms include:",
+      bullets: [
+        "Water draining slowly from the kitchen sink",
+        "Standing water inside the sink basin",
+        "Water backing up into a double kitchen sink",
+        "Gurgling sounds when the sink drains",
+        "Unpleasant odors coming from the drain",
+        "Recurring blockages after temporary cleaning",
+      ],
+      outro: ["Our technicians evaluate the affected plumbing and select appropriate equipment to remove the obstruction."],
+    },
+    {
+      title: "Kitchen Drain Grease Removal",
+      href: "/hydro-jetting",
+      linkLabel: "Hydro Jetting",
+      paragraphs: [
+        "Grease is a major contributor to kitchen drain blockages.",
+        "Cooking oils, fats, and grease may enter the drain as liquids, but they can cool and collect along the inside of the piping. Over time, grease can trap food particles and other debris, reducing the space available for water to flow.",
+        "Our kitchen drain cleaning service addresses grease-related blockages using suitable drain-cleaning methods. Depending on the condition of the piping and the severity of the buildup, cleaning may involve a drain cable or hydro jetting when appropriate.",
+      ],
+    },
+    {
+      title: "Garbage Disposal Drain Cleaning",
+      href: "/fixture-installation",
+      linkLabel: "Garbage Disposal Services",
+      paragraphs: [
+        "A garbage disposal does not eliminate the possibility of a kitchen drain blockage. Food particles, grease, and other debris can still accumulate inside the drain piping.",
+      ],
+      bulletsLead: "Common garbage disposal drainage problems include:",
+      bullets: [
+        "Water draining slowly after using the disposal",
+        "Water backing up into the opposite sink basin",
+        "Unpleasant odors near the disposal",
+        "Gurgling sounds during operation",
+        "Repeated kitchen sink blockages",
+        "Disposal operation accompanied by poor drainage",
+      ],
+      outro: [
+        "Our team can evaluate the disposal connection and affected drain line to determine whether the problem involves the disposal, trap, or downstream piping.",
+      ],
+    },
+    {
+      title: "Dishwasher Drain Backup",
+      paragraphs: [
+        "Most residential dishwashers discharge wastewater through plumbing connected to the kitchen sink drain or garbage disposal. When the shared drainage line becomes clogged, water may back up into the sink or interfere with dishwasher drainage.",
+      ],
+      bulletsLead: "Warning signs include:",
+      bullets: [
+        "Water appearing in the kitchen sink during dishwasher operation",
+        "Standing water inside the dishwasher after a cycle",
+        "Slow drainage from the sink",
+        "Unpleasant odors near the dishwasher",
+        "Water backing up around the disposal connection",
+      ],
+      outro: ["We evaluate the accessible kitchen drainage connections and affected drain piping to identify the likely cause."],
+    },
+    {
+      title: "Double Kitchen Sink Drain Cleaning",
+      paragraphs: [
+        "Double-basin kitchen sinks share drainage connections in many plumbing configurations. A blockage in a shared drain section can cause water to back up into one or both basins.",
+        "Our technicians evaluate the sink connections, accessible trap, and branch drain to identify the obstruction and determine the appropriate cleaning method.",
+      ],
+    },
+    {
+      title: "Recurring Kitchen Drain Clogs",
+      href: "/sewer-camera-inspection",
+      linkLabel: "Sewer Camera Inspection",
+      paragraphs: [
+        "If your kitchen sink keeps clogging after being cleaned, the underlying problem may not have been completely removed.",
+      ],
+      bulletsLead: "Recurring blockages can be associated with:",
+      bullets: [
+        "Grease buildup inside the pipe",
+        "Food particles accumulating downstream",
+        "Improper pipe slope",
+        "Damaged or restricted drain piping",
+        "Poorly configured connections",
+        "A blockage farther down the drainage system",
+      ],
+      outro: ["If the problem repeatedly returns, additional inspection may help determine whether the drain requires more than routine cleaning."],
+    },
+  ],
+  relatedLinks: [
+    { label: "Drain Cleaning Services", href: "/drain-cleaning" },
+    { label: "Bathroom Drain Cleaning", href: "/bathroom-drain-cleaning" },
+    { label: "Main Line Drain Cleaning", href: "/main-line-drain-cleaning" },
+    { label: "Plumbing Repairs", href: "/plumbing-repair" },
+  ],
+  causes: {
+    heading: "What Causes Kitchen Drains to Become Clogged?",
+    lead: "Kitchen drain blockages usually develop gradually as materials accumulate inside the plumbing system.",
+    items: [
+      { title: "Cooking Grease and Oils", body: "Cooking grease and oils can cool inside drain pipes and contribute to stubborn buildup. Even small amounts entering the drain repeatedly can create problems over time." },
+      { title: "Food Particles", body: "Rice, pasta, vegetable scraps, coffee grounds, and other food waste can contribute to drain restrictions, especially when combined with grease." },
+      { title: "Soap and Detergent Residue", body: "Dish soap and other cleaning products can combine with grease and debris, contributing to accumulated residue inside the piping." },
+      { title: "Coffee Grounds", body: "Coffee grounds do not dissolve in water and can collect with grease and other debris inside kitchen drains." },
+      { title: "Improper Garbage Disposal Use", body: "Disposing of excessive food waste or unsuitable materials can contribute to blockages and disposal problems." },
+      { title: "Drain Pipe Buildup", body: "Over time, accumulated material can restrict the inside diameter of a drain pipe, making it increasingly difficult for wastewater to flow." },
+    ],
+  },
+  signs: {
+    heading: "Signs You Need Professional Kitchen Drain Cleaning",
+    lead: ["Your kitchen drain may need professional attention if you notice:"],
+    items: [
+      { title: "Slow Drainage", body: "Water takes longer than usual to leave the sink." },
+      { title: "Standing Water", body: "Water remains in the basin instead of draining normally." },
+      { title: "Grease Odors", body: "Persistent unpleasant smells may indicate accumulated organic material or grease inside the drain." },
+      { title: "Double Sink Backups", body: "Water moves from one sink basin into the other when the faucet or disposal is used." },
+      { title: "Dishwasher Drainage Problems", body: "The dishwasher does not drain properly or water backs up into the sink." },
+      { title: "Gurgling Sounds", body: "Bubbling or gurgling may indicate restricted drainage or air movement inside the plumbing." },
+      { title: "Repeated Clogs", body: "The same kitchen drain becomes blocked shortly after being cleaned." },
+    ],
+    outro: "If wastewater is backing up into your kitchen, stop using the affected fixtures until the blockage is evaluated.",
+  },
+  process: {
+    heading: "Our Kitchen Drain Cleaning Process",
+    lead: "Zenith follows a practical process to identify the blockage and select an appropriate cleaning method.",
+    steps: [
+      { title: "Evaluate the Kitchen Drain", body: "We ask about the symptoms, how long the problem has been occurring, and whether the sink, garbage disposal, or dishwasher is affected." },
+      { title: "Inspect Accessible Plumbing", body: "We evaluate the accessible sink drain, P-trap, disposal connection, dishwasher connection, and other relevant components." },
+      { title: "Identify the Blockage", body: "We determine whether the restriction appears to be near the fixture or farther inside the branch drain line." },
+      { title: "Select the Appropriate Cleaning Method", body: "Depending on the pipe configuration and obstruction, we may use a drain cable or another suitable cleaning method. Hydro jetting may be considered for appropriate piping with significant buildup." },
+      { title: "Clear the Drain", body: "We work to remove the blockage and improve wastewater flow through the affected line." },
+      { title: "Test Drainage", body: "We run water and evaluate the sink drainage and related connections as appropriate." },
+      { title: "Provide Recommendations", body: "If the problem appears to involve damaged piping, improper drainage, or recurring buildup, we explain whether further inspection or repair should be considered." },
+    ],
+  },
+  equipment: {
+    heading: "Kitchen Drain Cleaning Methods",
+    lead: "Different kitchen drain problems require different equipment. The cleaning method should be selected based on the location of the blockage and condition of the piping.",
+    items: [
+      {
+        title: "Drain Cable Cleaning",
+        paragraphs: [
+          "A professional drain cable machine uses a flexible cable and appropriate attachment to break through or remove obstructions inside drain piping.",
+          "This method may be suitable for many common kitchen sink blockages involving food residue, grease accumulation, and other debris.",
+        ],
+      },
+      {
+        title: "Hydro Jetting for Kitchen Drains",
+        href: "/hydro-jetting",
+        linkLabel: "Hydro Jetting",
+        paragraphs: [
+          "Hydro jetting uses specialized equipment to direct high-pressure water through suitable drain piping. It can help remove accumulated grease, sludge, and other material from appropriate drain lines.",
+          "Hydro jetting is not recommended for every plumbing system. The pipe material, condition, accessibility, and severity of the blockage should be evaluated before using this method.",
+        ],
+      },
+      {
+        title: "Sewer and Drain Camera Inspection",
+        href: "/sewer-camera-inspection",
+        linkLabel: "Sewer Camera Inspection",
+        paragraphs: [
+          "If kitchen drain problems continue returning, a camera inspection may help evaluate the inside of accessible piping and identify visible problems.",
+        ],
+        bulletsLead: "A camera inspection can help identify:",
+        bullets: ["Heavy grease buildup", "Pipe damage", "Separated connections", "Standing water", "Visible obstructions", "Other drainage concerns"],
+        outro: ["Camera inspection is particularly useful when the symptoms suggest a deeper problem rather than a simple blockage near the sink."],
+      },
+    ],
+  },
+  listSections: [
+    {
+      heading: "How to Prevent Kitchen Drain Clogs",
+      lead: ["A few simple habits can help reduce the likelihood of future kitchen drain problems."],
+      items: [
+        "Dispose of cooking grease in a container and place it in the trash after it cools.",
+        "Avoid pouring cooking oils and fats down the sink.",
+        "Scrape food scraps into the trash or compost before washing dishes.",
+        "Use a sink strainer to catch food particles.",
+        "Avoid putting large amounts of fibrous or starchy food into the garbage disposal.",
+        "Run water according to the disposal manufacturer's recommendations.",
+        "Clean accessible sink strainers regularly.",
+        "Address slow drainage before the blockage becomes more severe.",
+        "Avoid repeatedly using chemical drain cleaners.",
+      ],
+      outro: "Remember that hot water does not make grease safe to pour down the drain. Grease can travel farther into the plumbing before cooling and collecting inside the pipe.",
+    },
+  ],
+  why: {
+    heading: "Why Choose Zenith for Kitchen Drain Cleaning?",
+    lead: "Here's what you can expect when Zenith cleans your kitchen drain.",
+    points: [
+      { title: "Professional Drain Evaluation", body: "We evaluate the symptoms and affected plumbing before recommending a cleaning method." },
+      { title: "Appropriate Equipment", body: "We select suitable drain-cleaning equipment based on the obstruction and piping conditions." },
+      { title: "Clear Pricing", body: "We explain the recommended service and pricing before authorized work begins." },
+      { title: "Recurring Clog Solutions", body: "If the same kitchen drain keeps clogging, we can discuss further inspection to help identify the underlying problem." },
+      { title: "Respect for Your Home", body: "We take care to protect work areas and maintain an organized jobsite." },
+      { title: "Complete Home Services", body: "Zenith also provides plumbing, sewer, water heater, heating, and air conditioning services." },
+    ],
+  },
+  areas: {
+    heading: "Kitchen Drain Cleaning in Denver Metro & Northern Colorado",
+    lead: "Zenith provides professional kitchen drain cleaning services throughout Denver Metro and Northern Colorado.",
+    outro: "Contact our team to confirm service availability in your area.",
+  },
+  faqHeading: "Frequently Asked Questions About Kitchen Drain Cleaning",
+  replacesFaqs: ["Can grease go down the drain if I run hot water?", "Why does my dishwasher back up into the sink?"],
+  faqs: (phone) => [
+    { q: "How much does kitchen drain cleaning cost in Denver?", a: "The cost depends on the location of the blockage, severity of the buildup, equipment required, and accessibility of the drain line. Zenith offers $69 drain cleaning when there is an accessible cleanout. Ask us to confirm eligibility, included work, and the total price when you book." },
+    { q: "What causes a kitchen sink to drain slowly?", a: "Common causes include grease, cooking oils, food particles, soap residue, and accumulated material inside the drain piping. A restriction in the P-trap or farther down the branch line may also cause slow drainage." },
+    { q: "Can grease clog kitchen drain pipes?", a: "Yes. Grease and cooking oils can cool and accumulate inside drain piping. Over time, they may trap food particles and contribute to stubborn blockages." },
+    { q: "Can I pour hot water down the drain to remove grease?", a: "Hot water may temporarily move grease farther into the plumbing, but it does not eliminate the problem. The grease can cool and accumulate farther down the pipe." },
+    { q: "Why does water back up into the other side of my double sink?", a: "Many double sinks share a drainage connection. A blockage in the shared piping or downstream drain can cause water to back up into the opposite basin." },
+    { q: "Why is my dishwasher backing up into my kitchen sink?", a: "The dishwasher commonly shares a drainage connection with the kitchen sink or garbage disposal. A blockage in the shared drain line may interfere with dishwasher drainage." },
+    { q: "Can a garbage disposal cause kitchen drain clogs?", a: "Yes. Food particles, grease, and debris can accumulate in the disposal connection or downstream drain piping. Improper disposal use may contribute to recurring blockages." },
+    { q: "Is hydro jetting good for kitchen drains?", a: "Hydro jetting can help remove grease and accumulated material from suitable drain pipes. However, the pipe condition and configuration should be evaluated before high-pressure cleaning is recommended." },
+    { q: "How long does professional kitchen drain cleaning take?", a: "The time depends on the location and severity of the blockage, accessibility, and cleaning method required. A straightforward sink blockage may take less time than a restriction farther down the drain line." },
+    { q: "Should I use chemical drain cleaners?", a: "Chemical drain cleaners may damage certain plumbing components or create safety concerns when used improperly. Repeated use may also fail to remove the underlying blockage. Professional evaluation is a better option for stubborn or recurring clogs." },
+    { q: "Why does my kitchen sink smell bad?", a: "Unpleasant odors may come from accumulated food debris, grease, residue, or drainage problems. Persistent sewer odors may indicate a different plumbing issue that requires evaluation." },
+    { q: "How often should kitchen drains be professionally cleaned?", a: "There is no universal cleaning schedule for every kitchen. Professional cleaning is generally recommended when drainage problems develop or recurring buildup becomes an issue." },
+    { q: "Can a clogged kitchen drain damage my plumbing?", a: "A clog can cause water backups and place additional stress on plumbing connections. Ignoring recurring blockages may allow an underlying drainage or pipe problem to continue." },
+    { q: "Does Zenith provide kitchen drain cleaning in Aurora and Denver?", a: "Yes. Zenith serves Denver, Aurora, and communities throughout its Denver Metro and Northern Colorado service area. Contact us to confirm availability." },
+    { q: "How do I schedule kitchen drain cleaning?", a: `Call Zenith at ${phone} or submit a service request through our website.` },
+  ],
+  cta: {
+    title: "Schedule Kitchen Drain Cleaning with Zenith",
+    text: "Do not let a slow or clogged kitchen sink interrupt your daily routine. Whether you are dealing with grease buildup, a blocked kitchen sink, garbage disposal drainage problems, or a dishwasher backup, Zenith can help throughout Denver Metro and Northern Colorado.",
+  },
+};
+
 /** Extra long-form content for individual service pages, keyed by service slug. */
 export const servicePageContent: Record<string, CategoryPageContent> = {
   "pipe-repair": pipeRepair,
   "clogged-drain-repair": cloggedDrainRepair,
+  "kitchen-drain-cleaning": kitchenDrainCleaning,
 };
