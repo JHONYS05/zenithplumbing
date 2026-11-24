@@ -3181,6 +3181,201 @@ const trenchlessSewerRepair: CategoryPageContent = {
   },
 };
 
+const sewerLineInspection: CategoryPageContent = {
+  og: {
+    title: "Sewer Scope Inspection Denver CO | Sewer Line Inspection | Zenith",
+    description: "Professional sewer scope inspections for homebuyers and homeowners. Identify visible roots, cracks, blockages and sewer pipe damage throughout Denver Metro and Northern Colorado.",
+  },
+  introParagraphs: [
+    "Zenith Plumbing, Drain, Sewer & HVAC provides sewer line inspections and sewer camera evaluations in Denver, CO, and surrounding communities throughout Denver Metro and Northern Colorado.",
+    "A sewer scope inspection uses a specialized camera to examine accessible portions of the underground sewer line. It can help identify visible problems such as tree root intrusion, cracks, broken pipe sections, separated joints, blockages, sagging sections, and deteriorating pipe materials.",
+    "Whether you are purchasing a home, preparing to sell, or investigating repeated drainage problems, Zenith can help evaluate the condition of your sewer line and explain the findings and potential next steps.",
+  ],
+  whatIs: {
+    heading: "Professional Sewer Line Inspection Services",
+    paragraphs: [
+      "Your home's sewer line carries wastewater away from the property. Because much of this piping is underground, problems can develop without being visible from inside the home.",
+      "A sewer line inspection helps evaluate the accessible portions of the pipe and identify visible conditions that may affect drainage or the long-term performance of the system.",
+      "Zenith provides sewer inspection services for homeowners and property buyers who want more information about their underground sewer piping.",
+    ],
+    itemsLead: "Our sewer inspection services may help evaluate:",
+    items: [
+      "Tree root intrusion",
+      "Cracked or broken sewer pipes",
+      "Separated or offset pipe joints",
+      "Sagging or bellied sewer sections",
+      "Blockages and accumulated debris",
+      "Deteriorating pipe materials",
+      "Signs of corrosion or internal pipe damage",
+      "Sewer lines with a history of recurring backups",
+      "Underground sewer piping before a home purchase",
+      "Sewer line conditions before planning repairs or replacement",
+    ],
+    outro: "The inspection findings depend on camera access, pipe conditions, and the portions of the line that can be examined.",
+  },
+  servicesHeading: "When Should You Schedule a Sewer Line Inspection?",
+  servicesLead:
+    "A sewer inspection is not only for home purchases. It can also help investigate existing plumbing problems and evaluate the condition of an older sewer system.",
+  services: [
+    { title: "Before Purchasing a Home", paragraphs: ["A sewer scope can help identify visible underground pipe issues before you complete a real estate transaction."] },
+    { title: "Before Selling Your Property", paragraphs: ["A seller may choose to inspect the sewer line before listing a home to better understand its condition and identify issues that may need attention."] },
+    {
+      title: "Recurring Sewer Backups",
+      href: "/main-line-drain-cleaning",
+      linkLabel: "Main Sewer Line Cleaning",
+      paragraphs: ["If your toilets, showers, floor drains, or other fixtures repeatedly back up, an inspection can help determine whether a pipe condition is contributing to the problem."],
+    },
+    { title: "Mature Trees Near the Sewer Route", paragraphs: ["Tree roots can enter sewer lines through cracks and deteriorated joints. Properties with mature trees near the sewer route may benefit from an inspection when symptoms or other concerns are present."] },
+    { title: "Multiple Slow Drains", paragraphs: ["When multiple fixtures drain slowly, the main sewer line may have a blockage or another problem that needs investigation."] },
+    { title: "Before a Major Remodel", paragraphs: ["Adding bathrooms, expanding a home, or changing plumbing fixtures can increase wastewater demands. Evaluating the existing sewer line may help identify concerns before a remodeling project."] },
+    {
+      title: "Before Sewer Repair or Replacement",
+      href: "/sewer-repair",
+      linkLabel: "Sewer Line Repair",
+      paragraphs: ["An inspection can help identify visible conditions and provide information that supports decisions about localized repair, full replacement, or other solutions."],
+    },
+  ],
+  relatedLinks: [
+    { label: "Sewer Camera Inspection", href: "/sewer-camera-inspection" },
+    { label: "Sewer Line Replacement", href: "/sewer-replacement" },
+    { label: "Trenchless Sewer Repair", href: "/trenchless-sewer-repair" },
+    { label: "Sewer Cleanout Installation", href: "/sewer-cleanout-installation" },
+    { label: "Hydro Jetting", href: "/hydro-jetting" },
+  ],
+  cardGroups: [
+    {
+      heading: "Sewer Scope Inspection Before Buying a Home",
+      lead: "A general home inspection does not necessarily evaluate the entire underground sewer line. A separate sewer scope inspection can provide additional information about the condition of the sewer piping before you purchase a property. This can be especially valuable when buying an older home, a property with mature trees, or a house with a history of drainage problems.",
+      items: [
+        {
+          title: "Why Get a Sewer Scope Before Closing?",
+          paragraphs: [
+            "Underground sewer repairs and replacement can be significant expenses. Identifying visible pipe problems before closing may help you understand potential repair needs and make a more informed purchasing decision.",
+          ],
+          bulletsLead: "A sewer scope may help identify:",
+          bullets: [
+            "Existing cracks or broken pipe sections",
+            "Tree roots entering through joints",
+            "Separated or offset connections",
+            "Areas where water and debris collect",
+            "Visible deterioration of older pipe materials",
+            "Blockages or restrictions inside the sewer line",
+            "Conditions that may require further evaluation",
+          ],
+        },
+        {
+          title: "Older Homes and Sewer Inspections",
+          paragraphs: [
+            "Older properties may have sewer lines made from clay, cast iron, Orangeburg, or other materials. These materials can experience different types of deterioration over time.",
+            "The age of the home or pipe does not automatically mean replacement is necessary. An inspection helps evaluate visible conditions and determine whether additional investigation is recommended.",
+          ],
+        },
+        {
+          title: "Sewer Inspection for Homebuyers and Real Estate Professionals",
+          paragraphs: [
+            "A sewer scope can provide useful information during a real estate transaction. Homebuyers, sellers, agents, and property professionals may use inspection findings to better understand the condition of an underground sewer line.",
+            "A sewer inspection does not guarantee that a pipe will never develop problems. It provides information about the accessible portions of the system at the time of inspection.",
+          ],
+        },
+      ],
+    },
+  ],
+  causes: {
+    heading: "What Can a Sewer Camera Inspection Find?",
+    lead: "A sewer camera allows a technician to examine the inside of accessible sewer piping. It can reveal visible problems that may otherwise remain hidden underground.",
+    items: [
+      { title: "Tree Root Intrusion", body: "Tree roots can enter through small openings and deteriorated joints. As they grow, they may obstruct wastewater flow and contribute to pipe damage." },
+      { title: "Cracked or Broken Pipes", body: "Cracks and broken sections can allow wastewater to escape or soil and debris to enter the sewer line. The severity and location of the damage affect the recommended next steps." },
+      { title: "Offset or Separated Joints", body: "Sewer pipe sections can shift or separate over time. An offset joint may restrict drainage and allow roots or soil to enter the pipe." },
+      { title: "Sagging or Bellied Sewer Lines", body: "A sagging section, sometimes called a pipe belly, occurs when a portion of the line settles and creates a low area where wastewater and debris can collect." },
+      { title: "Blockages and Debris", body: "Grease, sludge, accumulated debris, and other obstructions may restrict the flow of wastewater. A camera can help identify visible restrictions and their approximate location." },
+      { title: "Deteriorating Pipe Materials", body: "Older materials may show signs of deterioration, deformation, corrosion, or other visible defects. The material and its condition can help inform the next steps." },
+      { title: "Collapsed Sewer Sections", body: "A collapsed section can restrict or completely prevent wastewater flow. Further evaluation may be needed to determine the appropriate repair or replacement approach." },
+    ],
+  },
+  process: {
+    heading: "Our Sewer Line Inspection Process",
+    lead: "Zenith follows a practical inspection process to help homeowners understand the condition of their sewer line.",
+    steps: [
+      { title: "Discuss the Property and Sewer Concerns", body: "We review the property's history, previous sewer problems, recurring backups, and the reason for the inspection." },
+      { title: "Locate and Access the Sewer Cleanout", body: "When an accessible cleanout is available, it can provide an entry point for the inspection camera. Other access arrangements may be needed depending on the property's plumbing configuration." },
+      { title: "Insert the Sewer Inspection Camera", body: "A specialized waterproof camera is guided through the accessible sewer line. When conditions permit, the inspection can follow the line from the house toward the main sewer connection." },
+      { title: "Examine the Pipe Conditions", body: "The technician looks for visible roots, cracks, offset joints, sagging sections, blockages, and deterioration." },
+      { title: "Review the Findings", body: "The visible conditions are reviewed with the customer so they can better understand the sewer line's condition." },
+      { title: "Discuss Recommended Next Steps", body: "If a problem is identified, Zenith can explain potential options such as drain cleaning, additional evaluation, targeted sewer repair, or sewer line replacement." },
+    ],
+    outro: "The appropriate recommendation depends on the inspection findings and the condition of the pipe.",
+  },
+  signs: {
+    heading: "What Happens After a Sewer Inspection?",
+    lead: ["The next step depends on what the camera reveals."],
+    items: [
+      { title: "If the Sewer Line Is in Satisfactory Visible Condition", body: "If no significant visible problems are identified in the inspected portion, you have useful information about the line's condition at the time of inspection. This is not a guarantee against future problems or defects outside the inspected area." },
+      { title: "If the Line Has a Blockage", body: "Drain cleaning or another appropriate cleaning method may be recommended, depending on the obstruction and pipe condition." },
+      { title: "If Roots Are Present", body: "Roots may need to be removed to restore drainage. If the pipe has cracks or damaged joints, a repair or replacement evaluation may also be appropriate." },
+      { title: "If the Pipe Is Cracked or Damaged", body: "A localized sewer repair may be suitable when the damage is limited and the surrounding pipe remains in suitable condition." },
+      { title: "If the Sewer Line Has Extensive Damage", body: "Full sewer line replacement or a suitable alternative may be recommended when the existing system has widespread deterioration or structural failure." },
+    ],
+  },
+  split: {
+    heading: "What Is the Difference Between a Sewer Scope and a General Home Inspection?",
+    lead: "A general home inspection evaluates many visible and accessible components of a property. However, the underground sewer line may require a separate inspection using specialized camera equipment.",
+    items: [
+      { title: "General Home Inspection", body: "A general home inspection may evaluate visible plumbing fixtures, drainage, and other accessible parts of the property. It does not necessarily examine the entire underground sewer line." },
+      { title: "Sewer Scope Inspection", body: "A sewer scope uses a camera to inspect accessible portions of the sewer pipe. It helps identify visible defects, obstructions, and other conditions inside the line." },
+    ],
+    outro: ["A sewer scope complements a general home inspection; it does not replace one. Neither inspection can guarantee that every hidden or future problem will be identified."],
+  },
+  compare: {
+    heading: "Sewer Camera Inspection vs. Sewer Line Inspection",
+    lead: "These services are closely related, but the purpose of each is different.",
+    columns: [
+      { heading: "Sewer Camera Inspection", lead: "A sewer camera inspection focuses on using camera equipment to view the inside of accessible piping and identify visible conditions.", items: [] },
+      { heading: "Sewer Line Inspection", lead: "A sewer line inspection is the broader service of evaluating the sewer system's condition and explaining the findings, particularly for home purchases, property assessments, and existing sewer concerns.", items: [] },
+    ],
+    outro: ["See our Sewer Camera Inspection page to learn more about the camera-based diagnostic process."],
+  },
+  why: {
+    heading: "Why Choose Zenith for Sewer Line Inspection?",
+    lead: "A sewer inspection should provide useful information, not unnecessary pressure to purchase repairs.",
+    points: [
+      { title: "Diagnosis Before Recommendations", body: "We focus on identifying visible conditions before recommending a solution. Camera inspection and other diagnostic methods help inform the next steps." },
+      { title: "Findings Explained Clearly", body: "We review the visible conditions and explain why a particular issue may matter to your sewer system." },
+      { title: "Repair Options and Pricing Up Front", body: "If additional work is recommended, we explain the proposed options and pricing before authorized work begins." },
+      { title: "Respect for Your Home", body: "We use appropriate work-area protection and aim to leave the jobsite clean and organized." },
+      { title: "Plumbing, Drain and Sewer Services", body: "Zenith provides plumbing, drain cleaning, sewer, water heater, and HVAC services for homes throughout Denver Metro and Northern Colorado." },
+    ],
+  },
+  areas: {
+    heading: "Sewer Line Inspection Service Areas",
+    lead: "Zenith provides sewer line inspection services throughout Denver Metro and Northern Colorado, including:",
+    outro: "If you are buying a home or need an inspection of your existing sewer line, contact Zenith to confirm availability in your area.",
+  },
+  faqHeading: "Frequently Asked Questions About Sewer Line Inspection",
+  replacesFaqs: ["Should I get a sewer scope before buying a home?", "What problems can a sewer inspection find?"],
+  faqs: () => [
+    { q: "Should I get a sewer scope inspection before buying a home?", a: "A sewer scope is a useful additional inspection for many home purchases, especially older properties or homes with mature trees and a history of drainage problems. It can help identify visible sewer line concerns before closing." },
+    { q: "What problems can a sewer inspection find?", a: "A camera inspection may identify visible tree roots, cracks, broken sections, offset joints, sagging areas, blockages, and deteriorating pipe materials." },
+    { q: "How long does a sewer scope inspection take?", a: "The time depends on access, the length and condition of the sewer line, and any obstructions. The expected timing can be discussed when scheduling." },
+    { q: "Does a sewer scope inspect the entire sewer line?", a: "The camera can inspect accessible portions of the pipe. Blockages, bends, access limitations, standing water, and pipe damage may prevent the camera from reaching or viewing the entire line." },
+    { q: "Can a sewer camera see tree roots?", a: "Yes. A camera may show roots that have entered the accessible portion of the sewer line." },
+    { q: "Can a sewer inspection find a broken pipe?", a: "A camera can reveal visible cracks, breaks, and other structural problems inside the inspected section. Additional evaluation may be needed to establish the full extent of the damage." },
+    { q: "Does a sewer inspection include cleaning?", a: "Not necessarily. Inspection and cleaning are different services. If the pipe contains an obstruction that prevents a useful inspection, cleaning may need to be discussed separately." },
+    { q: "Can I get a sewer inspection if my home has no cleanout?", a: "An accessible cleanout is a common camera entry point, but access options depend on the property's plumbing layout. The available access is evaluated before scheduling." },
+    { q: "What is a sewer belly?", a: "A sewer belly is a low section of pipe where wastewater and debris can collect because the pipe has settled or lost its proper slope." },
+    { q: "Can a sewer inspection identify Orangeburg pipe?", a: "A camera inspection may reveal visual characteristics consistent with Orangeburg or other older pipe materials. The material and condition may require additional confirmation." },
+    { q: "Should I inspect an older house's sewer line?", a: "An inspection can be particularly useful for older properties because their underground sewer systems may contain aging materials, deteriorated joints, or previous repairs." },
+    { q: "Can a sewer inspection help before a bathroom remodel?", a: "Yes. Evaluating the existing sewer line may help identify drainage concerns before increasing the number of fixtures or changing the plumbing system." },
+    { q: "Will the sewer inspection tell me whether I need repair or replacement?", a: "The findings can help identify visible damage and inform the next steps. The appropriate solution depends on the location, extent, and condition of the pipe." },
+    { q: "Do you provide sewer scope inspections in Denver and Aurora?", a: "Zenith serves Denver, Aurora, Lakewood, Littleton, Centennial, Arvada, Westminster, Thornton, Longmont, Boulder, Morrison, and surrounding communities. Contact us to confirm availability." },
+    { q: "Is a sewer scope inspection a guarantee that my sewer line is good?", a: "No. A sewer scope provides information about visible conditions in accessible portions of the line at the time of inspection. It cannot guarantee that hidden defects or future problems do not exist." },
+  ],
+  cta: {
+    title: "Schedule a Sewer Line Inspection With Zenith",
+    text: "Whether you are purchasing a home, preparing to sell, investigating recurring sewer backups, or checking an older underground sewer system, a professional sewer line inspection can help you make a more informed decision.",
+  },
+};
+
 /** Extra long-form content for individual service pages, keyed by service slug. */
 export const servicePageContent: Record<string, CategoryPageContent> = {
   "pipe-repair": pipeRepair,
@@ -3193,4 +3388,5 @@ export const servicePageContent: Record<string, CategoryPageContent> = {
   "sewer-repair": sewerRepair,
   "sewer-replacement": sewerReplacement,
   "trenchless-sewer-repair": trenchlessSewerRepair,
+  "sewer-line-inspection": sewerLineInspection,
 };

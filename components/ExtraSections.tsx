@@ -201,13 +201,15 @@ export function ExtraBody({ extra, icon, phone }: Props & { icon: string; phone:
                   <h3>{col.heading}</h3>
                   {col.lead && <p>{col.lead}</p>}
                   {col.itemsLead && <p className="home-service-lead">{col.itemsLead}</p>}
-                  <ul>
-                    {col.items.map((it) => (
-                      <li key={it}>
-                        <Icon name="check" size={16} /> {it}
-                      </li>
-                    ))}
-                  </ul>
+                  {col.items.length > 0 && (
+                    <ul>
+                      {col.items.map((it) => (
+                        <li key={it}>
+                          <Icon name="check" size={16} /> {it}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               ))}
             </div>
