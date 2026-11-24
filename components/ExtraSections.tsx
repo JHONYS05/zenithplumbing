@@ -267,6 +267,11 @@ export function ExtraBody({ extra, icon, phone }: Props & { icon: string; phone:
                 </div>
               ))}
             </div>
+            {extra.split.outro?.map((p, i) => (
+              <p key={i} className="process-outro">
+                {p}
+              </p>
+            ))}
           </div>
         </section>
       )}

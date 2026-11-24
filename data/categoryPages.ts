@@ -34,7 +34,7 @@ export interface CategoryPageContent {
   equipment?: { heading: string; lead: string; items: CategoryPageContent["services"] };
   compare?: { heading: string; lead: string; columns: { heading: string; items: string[] }[]; outro?: string };
   materials?: { heading: string; lead: string; items: { title: string; body: string }[]; outro?: string };
-  split?: { heading: string; lead: string; items: { title: string; body: string }[] };
+  split?: { heading: string; lead: string; items: { title: string; body: string }[]; outro?: string[] };
   why: { heading: string; lead: string; points: { title: string; body: string }[] };
   areas: { heading: string; lead: string; outro: string };
   faqHeading: string;
@@ -1848,10 +1848,227 @@ const bathroomDrainCleaning: CategoryPageContent = {
   },
 };
 
+const mainLineDrainCleaning: CategoryPageContent = {
+  og: {
+    title: "Main Sewer Line Cleaning Denver CO | Zenith",
+    description: "Professional main-line drain cleaning, sewer blockage removal and camera inspections throughout Denver Metro and Northern Colorado.",
+  },
+  introParagraphs: [
+    "These symptoms can indicate a blockage in the main drain or sewer line connecting your home to the municipal sewer system.",
+    "Zenith Plumbing, Drain, Sewer & HVAC provides professional main-line drain cleaning throughout Denver Metro and Northern Colorado. We help identify the location of drainage restrictions, clear appropriate blockages, and evaluate whether additional inspection or sewer repairs may be necessary.",
+    "Whether you are dealing with recurring backups, tree root intrusion, grease buildup, or a completely blocked main drain, our team can help determine the right next step.",
+    "Ask about our $69 drain cleaning offer. An accessible cleanout is required. Additional work, difficult access, extensive blockages, or other repairs may require separate pricing. Contact Zenith to confirm eligibility and what is included before scheduling.",
+  ],
+  servicesHeading: "Professional Main Line Drain Cleaning Services",
+  servicesLead:
+    "Your main drain carries wastewater from your home's plumbing fixtures toward the sewer connection. When this line becomes restricted, problems can affect more than one bathroom or drain. Zenith provides main-line drain cleaning to address common blockages and help restore proper drainage.",
+  services: [
+    {
+      title: "Main Sewer Line Clog Removal",
+      paragraphs: [
+        "A blockage in the main sewer line can affect toilets, sinks, showers, tubs, and floor drains throughout the property.",
+        "We evaluate the symptoms and accessible cleanout, then determine the appropriate equipment and cleaning approach for the blockage. Our goal is to clear the restriction and test drainage after service.",
+      ],
+    },
+    {
+      title: "Tree Root Removal From Sewer Lines",
+      href: "/sewer-repair",
+      linkLabel: "Sewer Line Repair",
+      paragraphs: [
+        "Tree roots can enter sewer piping through small openings, loose joints, cracks, or damaged connections. As roots grow inside a pipe, they can catch waste and debris, gradually restricting wastewater flow.",
+        "Professional drain cable equipment may be used to cut through or clear certain root obstructions. If roots return or the pipe is damaged, a camera inspection can help determine whether sewer line repair or replacement should be considered.",
+      ],
+    },
+    {
+      title: "Basement Floor Drain Backup",
+      paragraphs: [
+        "A basement floor drain can be one of the first places where a main-line blockage becomes visible. When wastewater cannot move through the main drain, it may back up through the lowest available fixture.",
+        "If water or sewage is coming through a floor drain, avoid using additional plumbing fixtures until the problem is evaluated. Keep people and pets away from contaminated water.",
+      ],
+    },
+    {
+      title: "Multiple Drain Backups",
+      href: "/clogged-drain-repair",
+      linkLabel: "Clogged Drain Repair",
+      paragraphs: [
+        "When multiple fixtures begin draining slowly or backing up around the same time, the problem may be located in a shared branch drain or the main sewer line.",
+        "We evaluate the affected fixtures and drainage symptoms to help determine whether the blockage is isolated or part of a larger plumbing issue.",
+      ],
+    },
+    {
+      title: "Recurring Main Drain Clogs",
+      href: "/sewer-camera-inspection",
+      linkLabel: "Sewer Camera Inspection",
+      paragraphs: [
+        "If your main sewer line keeps clogging after cleaning, there may be an underlying condition that needs attention. Possible causes include root intrusion, pipe offsets, accumulated debris, damaged piping, or a sagging section of pipe.",
+        "Repeatedly clearing the same blockage without investigating its cause may not provide a lasting solution. Camera inspection may help identify the condition of the line.",
+      ],
+    },
+  ],
+  relatedLinks: [
+    { label: "Professional Drain Cleaning", href: "/drain-cleaning" },
+    { label: "Kitchen Drain Cleaning", href: "/kitchen-drain-cleaning" },
+    { label: "Bathroom Drain Cleaning", href: "/bathroom-drain-cleaning" },
+    { label: "Sewer Line Replacement", href: "/sewer-replacement" },
+    { label: "Trenchless Sewer Repair", href: "/trenchless-sewer-repair" },
+    { label: "Sewer Cleanout Installation", href: "/sewer-cleanout-installation" },
+  ],
+  signsList: {
+    heading: "Signs You Need Main Line Drain Cleaning",
+    lead: "Main-line problems can develop gradually or appear suddenly. Recognizing the warning signs can help you respond before a backup causes additional damage. Look for these common symptoms:",
+    items: [
+      "Multiple drains in the home are slow at the same time.",
+      "Toilets bubble or gurgle when another fixture drains.",
+      "Water rises in a bathtub when the toilet is flushed.",
+      "Wastewater backs up into a basement floor drain.",
+      "Several toilets clog repeatedly.",
+      "Sewer odors are noticeable inside the home or near drains.",
+      "Water backs up into a shower or tub when the washing machine drains.",
+      "Drains make unusual gurgling sounds.",
+      "A previous main-line blockage returns shortly after cleaning.",
+      "Wastewater drains slowly throughout the property.",
+    ],
+    outro: "A single slow sink may indicate a localized fixture clog. Multiple affected fixtures, especially on lower levels, can point to a shared drain or main-line restriction.",
+  },
+  causes: {
+    heading: "What Causes Main Sewer Line Blockages?",
+    lead: "Main sewer lines carry wastewater from many fixtures, so a blockage can develop from several different conditions.",
+    items: [
+      { title: "Tree Root Intrusion", body: "Tree roots naturally seek moisture. Small openings at pipe joints, cracks, and damaged connections can allow roots to enter sewer piping. Root growth can restrict flow and trap waste." },
+      { title: "Grease and Sludge Buildup", body: "Grease, fats, oils, and other materials can accumulate inside drainage pipes. Over time, this buildup may narrow the pipe and catch additional debris." },
+      { title: "Flushing Non-Flushable Materials", body: "Wipes, paper towels, hygiene products, and other unsuitable materials can create blockages. Even products labeled as flushable may contribute to problems in a sewer system." },
+      { title: "Damaged or Offset Sewer Pipes", body: "A pipe joint that has shifted or a section of damaged piping can restrict wastewater flow. Debris may collect around the obstruction, leading to recurring clogs." },
+      { title: "Sagging or Bellied Sewer Lines", body: "A section of sewer pipe that has settled may create a low area where wastewater and solids collect. This condition can contribute to repeated blockages and may require a repair rather than routine cleaning alone." },
+      { title: "Heavy Debris and Accumulated Waste", body: "Over time, material can collect inside a sewer line, particularly where there are existing restrictions, root intrusion, or pipe defects." },
+    ],
+  },
+  process: {
+    heading: "Our Main Line Drain Cleaning Process",
+    lead: "At Zenith, we evaluate the drainage symptoms and use an appropriate method based on the access point, pipe condition, and location of the blockage.",
+    steps: [
+      { title: "Evaluate the Symptoms", body: "We determine which fixtures are affected, when the backup occurs, and whether the issue has happened before." },
+      { title: "Locate the Access Point", body: "We identify an accessible sewer cleanout or evaluate other suitable access options." },
+      { title: "Select the Appropriate Equipment", body: "We determine whether a professional sewer cable or another cleaning method is appropriate." },
+      { title: "Clear the Blockage", body: "We work through the accessible line to remove or break through the obstruction." },
+      { title: "Check Drainage", body: "We test the drainage system as appropriate to evaluate whether normal flow has been restored." },
+      { title: "Recommend Camera Inspection When Needed", body: "If roots, recurring blockages, pipe damage, or other concerns are suspected, we may recommend a sewer camera inspection." },
+      { title: "Explain the Findings", body: "We discuss what we found, the available options, and any recommended next steps before additional work begins." },
+    ],
+  },
+  equipment: {
+    heading: "Professional Main Line Drain Cleaning Equipment",
+    lead: "The right equipment depends on the type of blockage and the condition of the sewer piping.",
+    items: [
+      {
+        title: "Professional Sewer Cable Machines",
+        paragraphs: [
+          "A sewer cable machine uses a rotating cable and appropriate cutting or clearing attachments to address certain obstructions inside the main drain.",
+          "This equipment may be effective for localized blockages and some root intrusions. The appropriate cable and cutting head depend on the pipe size, material, and condition.",
+        ],
+      },
+      {
+        title: "Sewer Camera Inspection",
+        href: "/sewer-camera-inspection",
+        linkLabel: "Sewer Camera Inspection",
+        paragraphs: ["A sewer camera allows a technician to view the inside of accessible sewer piping."],
+        bulletsLead: "It can help identify:",
+        bullets: [
+          "Tree root intrusion",
+          "Cracked or damaged pipe sections",
+          "Offset pipe joints",
+          "Heavy buildup",
+          "Sagging or bellied sections",
+          "Other visible restrictions or defects",
+        ],
+        outro: ["A camera inspection is especially useful when the same blockage continues returning or when the symptoms suggest a structural pipe problem."],
+      },
+      {
+        title: "Hydro Jetting When Appropriate",
+        href: "/hydro-jetting",
+        linkLabel: "Hydro Jetting Services",
+        paragraphs: [
+          "Hydro jetting uses high-pressure water to clean certain types of buildup from the inside of a pipe. It may be considered for grease, sludge, and other suitable deposits.",
+          "Before recommending hydro jetting, the pipe condition and material should be evaluated. It is not appropriate for every sewer line, particularly where there may be significant damage or structural weakness.",
+        ],
+      },
+    ],
+  },
+  listSections: [
+    {
+      heading: "What to Do When Your Main Sewer Line Backs Up",
+      lead: [
+        "A sewer backup can create unsanitary conditions and damage floors, walls, and personal property.",
+        "If you suspect a main-line blockage:",
+      ],
+      items: [
+        "Stop using toilets, sinks, showers, dishwashers, and washing machines if they are contributing to the backup.",
+        "Keep children and pets away from sewage or contaminated water.",
+        "Avoid touching wastewater without appropriate protective equipment.",
+        "Do not pour chemical drain cleaners into a backed-up system.",
+        "If water is near electrical outlets or equipment, stay clear and contact a qualified professional.",
+        "Arrange an inspection to determine the source of the backup.",
+      ],
+      outro: "If sewage has entered your home, cleanup may require appropriate professional remediation after the plumbing problem is addressed.",
+    },
+  ],
+  split: {
+    heading: "Main Line Cleaning vs. Sewer Line Repair",
+    lead: "Cleaning and repairing a sewer line are two different services.",
+    items: [
+      { title: "Main-Line Drain Cleaning", body: "Addresses a blockage or restriction inside the pipe. It may restore drainage when the piping is structurally sound." },
+      { title: "Sewer Line Repair or Replacement", body: "Addresses physical damage, broken sections, severe deterioration, or other conditions that cleaning cannot correct." },
+    ],
+    outro: [
+      "For example, removing roots may temporarily restore flow, but if roots entered through a cracked pipe, the damaged section may continue allowing roots to return.",
+      "When the condition of the pipe is uncertain, a camera inspection can help determine whether cleaning is sufficient or additional sewer work should be considered.",
+    ],
+  },
+  why: {
+    heading: "Why Choose Zenith for Main Line Drain Cleaning?",
+    lead: "Here's what you can expect when Zenith clears your main line.",
+    points: [
+      { title: "Diagnosis Before Recommendations", body: "We evaluate the drainage symptoms and look for the likely source of the blockage. Camera inspection and additional testing can be recommended when appropriate." },
+      { title: "Upfront Pricing", body: "We explain the proposed work and pricing before additional service begins. You can review the options before deciding how to proceed." },
+      { title: "Professional Equipment", body: "Our approach uses equipment suited to the type of blockage and the condition of the accessible piping." },
+      { title: "Respect for Your Property", body: "We work to protect the surrounding work area, use appropriate care inside your home, and leave the workspace clean when service is complete." },
+      { title: "Drain, Sewer, and Plumbing Services Under One Roof", body: "If cleaning reveals a deeper problem, Zenith also provides related sewer and plumbing services, including sewer camera inspections, sewer line repair, sewer replacement, and cleanout installation." },
+    ],
+  },
+  areas: {
+    heading: "Main Line Drain Cleaning Service Areas",
+    lead: "Zenith Plumbing, Drain, Sewer & HVAC provides main-line drain cleaning throughout Denver Metro and Northern Colorado, including:",
+    outro: "If you are experiencing multiple slow drains, a basement floor drain backup, or a recurring sewer blockage, contact Zenith to confirm service availability in your area.",
+  },
+  faqHeading: "Frequently Asked Questions About Main Line Drain Cleaning",
+  replacesFaqs: ["What causes main line clogs?", "What if my home doesn't have a cleanout?"],
+  faqs: () => [
+    { q: "What is a main sewer line?", a: "The main sewer line is the primary drainage pipe that carries wastewater from your home's plumbing system toward the municipal sewer connection or another approved wastewater system." },
+    { q: "How do I know if my main sewer line is clogged?", a: "Common signs include multiple slow drains, bubbling toilets, water backing up into tubs or floor drains, recurring toilet clogs, and sewer odors. These symptoms can indicate a shared drainage restriction." },
+    { q: "How much does main-line drain cleaning cost in Denver?", a: "Pricing depends on the blockage, cleanout accessibility, equipment required, and condition of the sewer line. Zenith offers $69 drain cleaning when there is an accessible cleanout. Additional work or conditions outside the offer may require separate pricing. We confirm the exact scope before scheduling." },
+    { q: "What causes a main sewer line to clog?", a: "Common causes include tree roots, grease buildup, non-flushable materials, accumulated debris, damaged pipe joints, and sagging sections of sewer pipe." },
+    { q: "Can tree roots be removed from a sewer line?", a: "Certain root obstructions can be cleared using professional sewer cable equipment. If roots have entered through a crack or damaged joint, additional sewer inspection and repair may be needed." },
+    { q: "Why does my basement floor drain back up?", a: "A basement floor drain is often one of the lowest drainage points in a home. If wastewater cannot move through a shared drain or main sewer line, it may back up through that opening." },
+    { q: "Why do my toilets bubble when the washing machine drains?", a: "Bubbling can indicate that air and wastewater are being displaced by a drainage restriction. If several fixtures are affected, the issue may be in a shared branch or main drain." },
+    { q: "Do I need a sewer camera inspection after drain cleaning?", a: "Not every routine cleaning requires a camera inspection. However, it can be helpful when a clog repeatedly returns, root intrusion is suspected, or the symptoms suggest damaged piping." },
+    { q: "What if my house does not have a sewer cleanout?", a: "Depending on the plumbing configuration, another access method may be possible. In some cases, installing a sewer cleanout provides a more practical access point for future cleaning and inspections." },
+    { q: "Can hydro jetting clear a main sewer line?", a: "Hydro jetting can remove certain types of buildup, grease, and sludge. The sewer line should be evaluated first to determine whether the pipe condition is suitable for high-pressure cleaning." },
+    { q: "What is the difference between drain cleaning and sewer line repair?", a: "Drain cleaning removes blockages inside the pipe. Sewer line repair addresses physical damage such as cracks, breaks, separated joints, and other structural problems." },
+    { q: "How often should a main sewer line be cleaned?", a: "There is no single schedule that works for every home. Cleaning frequency depends on pipe condition, tree roots, previous blockages, and how the drainage system is used. Homes with recurring root problems may benefit from a maintenance plan based on inspection findings." },
+    { q: "Can a main sewer line clog cause sewage to enter my home?", a: "Yes. A severe blockage can cause wastewater to back up through lower fixtures, floor drains, tubs, or showers. Stop using water and arrange professional evaluation if sewage is backing up." },
+    { q: "Should I use chemical drain cleaner for a main-line blockage?", a: "Chemical drain cleaners are generally not a reliable solution for a main sewer blockage. They may not remove the obstruction and can create additional hazards. Professional evaluation is a better approach." },
+    { q: "Do you provide main-line drain cleaning in Aurora and Denver?", a: "Yes. Zenith serves Denver, Aurora, and other communities throughout its Denver Metro and Northern Colorado service area. Contact us to confirm availability at your address." },
+  ],
+  cta: {
+    title: "Schedule Main Line Drain Cleaning With Zenith",
+    text: "A blocked main sewer line can affect your entire home's drainage system. Multiple slow drains, bubbling toilets, sewage odors, and basement floor drain backups should not be ignored. Zenith evaluates the problem, explains the recommended service, and provides pricing before additional work begins.",
+  },
+};
+
 /** Extra long-form content for individual service pages, keyed by service slug. */
 export const servicePageContent: Record<string, CategoryPageContent> = {
   "pipe-repair": pipeRepair,
   "clogged-drain-repair": cloggedDrainRepair,
   "kitchen-drain-cleaning": kitchenDrainCleaning,
   "bathroom-drain-cleaning": bathroomDrainCleaning,
+  "main-line-drain-cleaning": mainLineDrainCleaning,
 };
