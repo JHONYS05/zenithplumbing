@@ -2922,6 +2922,265 @@ const sewerReplacement: CategoryPageContent = {
   },
 };
 
+const trenchlessSewerRepair: CategoryPageContent = {
+  og: {
+    title: "Trenchless Sewer Repair Denver CO | Pipe Lining | Zenith",
+    description: "Explore trenchless sewer repair options, including pipe lining and pipe bursting, throughout Denver Metro and Northern Colorado.",
+  },
+  introParagraphs: [
+    "Zenith Plumbing, Drain, Sewer & HVAC provides trenchless sewer repair evaluations throughout Denver, CO, and surrounding communities in Denver Metro and Northern Colorado. We assess the condition of your sewer line and determine whether a trenchless method, such as pipe lining or pipe bursting, may be appropriate.",
+    "Traditional sewer excavation can require significant digging and surface restoration. When the existing pipe and site conditions qualify, trenchless methods may reduce disruption to driveways, landscaping, patios, and other finished areas.",
+    "Not every damaged sewer line is a candidate for trenchless work. Our approach begins with evaluating the pipe, identifying the damage, and explaining the available options.",
+  ],
+  replacesSections: ["Pipe Lining vs. Pipe Bursting"],
+  whatIs: {
+    heading: "What Is Trenchless Sewer Repair?",
+    paragraphs: [
+      "Trenchless sewer repair is a group of methods used to rehabilitate or replace underground sewer piping through limited access points rather than opening a continuous trench along the entire sewer route.",
+    ],
+    itemsLead: "Depending on the condition of the existing pipe, two commonly used methods are:",
+    items: [
+      "Pipe lining: a resin-treated liner is installed inside an existing pipe and cured to form a new lining within it.",
+      "Pipe bursting: specialized equipment breaks apart the existing pipe while pulling a replacement pipe into its path.",
+    ],
+    outro: "These methods are designed for different conditions. The correct solution depends on the pipe's structural condition, configuration, diameter, access, and the requirements of the selected installation system. Trenchless work can reduce surface disruption, but it does not necessarily eliminate excavation: access pits or entry points may still be needed.",
+  },
+  servicesHeading: "When Is Trenchless Sewer Repair a Good Option?",
+  servicesLead:
+    "Trenchless sewer repair may be worth evaluating when your sewer line has damage but remains suitable for the selected rehabilitation or replacement method. Situations that may qualify include:",
+  services: [
+    {
+      title: "Sewer Lines Under Driveways",
+      paragraphs: [
+        "If your sewer line runs beneath a concrete or asphalt driveway, traditional excavation may require cutting and removing part of the surface. A suitable trenchless method may reduce the amount of driveway disruption.",
+      ],
+    },
+    {
+      title: "Sewer Lines Under Landscaping",
+      paragraphs: [
+        "Mature trees, shrubs, gardens, and finished landscaping can make traditional excavation more disruptive. Trenchless methods may help limit disturbance when the pipe qualifies.",
+      ],
+    },
+    {
+      title: "Recurring Root Intrusion",
+      href: "/main-line-drain-cleaning",
+      linkLabel: "Main Sewer Line Cleaning",
+      paragraphs: [
+        "Tree roots can enter through cracks and pipe joints. Depending on the condition of the existing pipe, lining or bursting may be an option after the blockage and pipe condition are evaluated.",
+      ],
+    },
+    {
+      title: "Cracked or Deteriorating Sewer Pipes",
+      href: "/sewer-repair",
+      linkLabel: "Sewer Line Repair",
+      paragraphs: [
+        "Some pipes with cracks or deterioration may be candidates for pipe lining. The existing pipe must meet the requirements of the selected system.",
+      ],
+    },
+    {
+      title: "Sewer Lines Beneath Patios and Walkways",
+      paragraphs: [
+        "Trenchless methods may be worth considering when a sewer route passes under finished hardscaping or other difficult-to-replace surfaces.",
+      ],
+    },
+    {
+      title: "Aging Underground Sewer Lines",
+      href: "/sewer-camera-inspection",
+      linkLabel: "Sewer Camera Inspection",
+      paragraphs: [
+        "Older sewer systems may develop deteriorated joints, cracks, or recurring drainage problems. An inspection can help determine whether rehabilitation or replacement is appropriate.",
+      ],
+    },
+  ],
+  relatedLinks: [
+    { label: "Sewer Line Repair", href: "/sewer-repair" },
+    { label: "Sewer Line Replacement", href: "/sewer-replacement" },
+    { label: "Sewer Line Inspection", href: "/sewer-line-inspection" },
+    { label: "Sewer Cleanout Installation", href: "/sewer-cleanout-installation" },
+    { label: "Professional Hydro Jetting", href: "/hydro-jetting" },
+  ],
+  cardGroups: [
+    {
+      heading: "Pipe Lining: Repairing a Sewer Pipe From the Inside",
+      lead: "Pipe lining is a trenchless rehabilitation method that installs a resin-treated liner inside an existing sewer pipe. Once properly positioned and cured, the liner forms a new interior surface within the host pipe. One commonly used approach is cured-in-place pipe lining, also called CIPP.",
+      items: [
+        {
+          title: "How Pipe Lining Works",
+          paragraphs: [],
+          bullets: [
+            "Inspect the existing pipe: a sewer camera is used to evaluate accessible portions of the sewer line.",
+            "Prepare the pipe: the pipe is cleaned and prepared as required by the selected lining system.",
+            "Install the liner: a resin-treated liner is inserted and positioned inside the existing pipe.",
+            "Cure the liner: the liner is cured using the process specified by the system manufacturer.",
+            "Verify the result: a camera inspection can help evaluate the completed lining and confirm that the installation is satisfactory.",
+          ],
+        },
+        {
+          title: "Benefits of Pipe Lining",
+          paragraphs: [],
+          bullets: [
+            "May reduce the need for continuous excavation.",
+            "Can rehabilitate certain cracked or deteriorating pipes.",
+            "May reduce disruption to landscaping and paved surfaces.",
+            "Creates a new interior lining within the existing pipe.",
+            "Can address certain types of joint and root intrusion problems when properly prepared.",
+          ],
+        },
+        {
+          title: "When Pipe Lining May Not Be Appropriate",
+          paragraphs: [
+            "Pipe lining is not suitable for every sewer condition. A pipe that is fully collapsed, severely deformed, significantly misaligned, or has certain major structural problems may not be a suitable candidate.",
+            "The condition of the pipe and the requirements of the specific lining system must be evaluated before recommending this method.",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Pipe Bursting: Trenchless Sewer Pipe Replacement",
+      lead: "Pipe bursting is a trenchless replacement method that breaks apart an existing sewer pipe while pulling a new pipe into the space created by the bursting equipment. Unlike pipe lining, which rehabilitates the inside of an existing pipe, pipe bursting installs a replacement pipe.",
+      items: [
+        {
+          title: "How Pipe Bursting Works",
+          paragraphs: [],
+          bullets: [
+            "The sewer line is evaluated to determine whether pipe bursting is feasible.",
+            "Access points are prepared at the required locations.",
+            "Specialized equipment pulls a bursting head through the existing sewer pipe.",
+            "The bursting head fractures or displaces the old pipe as the replacement pipe follows behind it.",
+            "The new pipe is connected and evaluated according to the project requirements.",
+          ],
+        },
+        {
+          title: "Benefits of Pipe Bursting",
+          paragraphs: [],
+          bullets: [
+            "Can replace certain underground sewer pipes without a continuous trench.",
+            "May reduce disruption to landscaping and finished surfaces.",
+            "Installs a new sewer pipe rather than lining the old one.",
+            "Can be useful for some deteriorated or damaged sewer systems.",
+          ],
+        },
+        {
+          title: "When Pipe Bursting May Not Be Appropriate",
+          paragraphs: [
+            "Pipe bursting requires suitable access, alignment, surrounding soil conditions, and adequate space for the new pipe. Nearby utilities, bends, depth, pipe material, and site restrictions may affect feasibility.",
+            "An evaluation is needed before deciding whether pipe bursting is appropriate.",
+          ],
+        },
+      ],
+    },
+  ],
+  split: {
+    heading: "Pipe Lining vs. Pipe Bursting: Which Is Better?",
+    lead: "Both methods can reduce the need for extensive excavation, but they solve different problems.",
+    items: [
+      { title: "Pipe Lining", body: "Pipe lining rehabilitates the existing pipe by creating a new interior liner. It may be appropriate when the host pipe retains enough structural integrity and meets the selected system's installation requirements." },
+      { title: "Pipe Bursting", body: "Pipe bursting replaces the existing pipe with a new pipe by breaking apart or displacing the old one. It may be appropriate when the existing pipe needs replacement but the route and site conditions permit the method." },
+    ],
+    outro: [
+      "The best choice depends on the inspection findings, pipe configuration, access, and project requirements. A camera inspection alone does not automatically establish that either method will work.",
+    ],
+  },
+  causes: {
+    heading: "Benefits of Trenchless Sewer Repair",
+    lead: "When the existing sewer line qualifies, trenchless methods may provide several advantages over traditional excavation.",
+    items: [
+      { title: "Less Surface Disruption", body: "Because trenchless work uses limited access points, it may reduce the need to excavate an entire sewer route." },
+      { title: "Protects Certain Finished Areas", body: "Driveways, patios, landscaping, sidewalks, and other surfaces may be less affected when trenchless methods are suitable." },
+      { title: "Addresses Certain Underground Pipe Problems", body: "Pipe lining can rehabilitate certain damaged pipes, while pipe bursting can replace certain existing sewer lines." },
+      { title: "Potentially Reduces Restoration Work", body: "Reducing the excavation area may reduce some restoration requirements. Actual savings depend on the method, site conditions, and project scope." },
+      { title: "A More Targeted Approach", body: "A camera inspection and site evaluation help determine whether a trenchless approach is suitable before work begins." },
+    ],
+  },
+  process: {
+    heading: "Our Trenchless Sewer Repair Evaluation Process",
+    lead: "Before recommending trenchless sewer repair, we evaluate the sewer line and the property's conditions.",
+    steps: [
+      { title: "Discuss the Sewer Problem", body: "We review your symptoms, including recurring backups, slow drains, root intrusion, sewage odors, and any previous sewer work." },
+      { title: "Perform a Sewer Camera Inspection", body: "A camera inspection can help identify visible cracks, roots, separated joints, deterioration, blockages, and other conditions in accessible portions of the pipe." },
+      { title: "Evaluate Trenchless Suitability", body: "We consider the pipe's condition, alignment, diameter, access points, route, and the requirements of the available method." },
+      { title: "Compare Available Options", body: "If trenchless work is feasible, we can discuss the appropriate method and its expected scope. If excavation is more suitable, we explain why." },
+      { title: "Provide Project Pricing", body: "The estimate identifies the proposed method, access work, preparation, cleaning, materials, connections, testing, and restoration included in the scope." },
+      { title: "Complete and Evaluate the Work", body: "The selected repair or replacement method is performed according to its installation requirements. Camera verification may be used to evaluate the completed work." },
+    ],
+  },
+  listSections: [
+    {
+      heading: "When Traditional Sewer Excavation May Be Necessary",
+      lead: [
+        "Trenchless repair is not always the best solution. Traditional excavation may be required when the sewer line has conditions that make lining or bursting unsuitable.",
+        "Examples include:",
+      ],
+      items: [
+        "A fully collapsed pipe.",
+        "Significant pipe deformation or sagging.",
+        "Severe misalignment or inaccessible sections.",
+        "A configuration that does not meet the selected system's requirements.",
+        "Problems requiring direct access to underground connections.",
+        "Site conditions that prevent trenchless equipment from being used safely or effectively.",
+      ],
+      outro: "Traditional excavation provides direct access to the damaged pipe and allows the affected section to be removed and replaced. Zenith can explain the available options based on the condition of your sewer system.",
+    },
+    {
+      heading: "What Affects the Cost of Trenchless Sewer Repair?",
+      lead: [
+        "Trenchless sewer project pricing depends on the method, pipe condition, access requirements, and installation complexity.",
+        "Important factors include:",
+      ],
+      items: [
+        "Pipe length: the length of the section being rehabilitated or replaced affects material and installation requirements.",
+        "Pipe diameter: the size and specifications of the existing line affect equipment and material selection.",
+        "Pipe condition: severe damage, deformation, or blockages may require additional preparation or make a trenchless method unsuitable.",
+        "Cleaning and preparation: existing debris, grease, roots, and other obstructions may need to be removed before installation.",
+        "Access points: existing cleanouts or access conditions can affect the amount of excavation needed.",
+        "Depth and location: underground depth, utilities, and the sewer route can affect project complexity.",
+        "Selected method: pipe lining and pipe bursting involve different materials, equipment, and installation requirements.",
+        "Connections and restoration: reconnecting branches, restoring access points, and repairing disturbed surfaces may affect the overall cost.",
+      ],
+      outro: "Trenchless work may reduce surface restoration expenses, but the method itself can have higher installation costs in some situations. We recommend comparing the complete project scope rather than assuming one method is always less expensive.",
+    },
+  ],
+  why: {
+    heading: "Why Choose Zenith for Trenchless Sewer Repair?",
+    lead: "Choosing the right sewer contractor starts with understanding the actual problem and determining which repair methods are appropriate.",
+    points: [
+      { title: "Diagnosis Before Recommendations", body: "We evaluate the sewer line before recommending a repair method. Camera inspection and other diagnostic tools may be used when appropriate." },
+      { title: "Repair and Replacement Options", body: "Depending on the pipe's condition, we can discuss targeted sewer repair, full replacement, and whether a trenchless approach may be feasible." },
+      { title: "Clear Project Pricing", body: "We explain the recommended scope and pricing before authorized work begins." },
+      { title: "Respect for Your Property", body: "We understand the importance of protecting landscaping, driveways, patios, and finished areas. The project plan identifies required access and restoration work." },
+      { title: "Plumbing, Drain and Sewer Services", body: "Zenith provides plumbing, drain cleaning, sewer, water heater, and HVAC services throughout Denver Metro and Northern Colorado." },
+    ],
+  },
+  areas: {
+    heading: "Trenchless Sewer Repair Service Areas",
+    lead: "Zenith serves homeowners throughout Denver Metro and Northern Colorado, including:",
+    outro: "If your sewer line runs beneath a driveway, patio, landscaping, or other difficult-to-access area, contact Zenith to discuss an evaluation and confirm service availability.",
+  },
+  faqHeading: "Frequently Asked Questions About Trenchless Sewer Repair",
+  replacesFaqs: ["Is trenchless always possible?", "Is trenchless more expensive?"],
+  faqs: () => [
+    { q: "What is trenchless sewer repair?", a: "Trenchless sewer repair uses specialized methods to rehabilitate or replace underground sewer piping through limited access points instead of digging a continuous trench along the entire pipe route." },
+    { q: "Does trenchless sewer repair require digging?", a: "Some excavation is usually necessary to access the sewer line. However, trenchless methods may reduce the amount of digging compared with traditional open-trench replacement." },
+    { q: "What is the difference between pipe lining and pipe bursting?", a: "Pipe lining installs a cured liner inside an existing pipe. Pipe bursting breaks apart or displaces the old pipe while pulling a new replacement pipe into place." },
+    { q: "Is trenchless sewer repair always possible?", a: "No. Fully collapsed pipes, severe sags, significant deformation, unsuitable alignment, and other conditions may require traditional excavation. An evaluation determines whether a trenchless method is appropriate." },
+    { q: "Is trenchless sewer repair more expensive than traditional excavation?", a: "It can cost more for the pipe work itself, but it may reduce some driveway, landscaping, and hardscape restoration expenses. The total cost depends on the property and selected method." },
+    { q: "Can trenchless sewer repair fix tree root damage?", a: "Certain root-related pipe problems may qualify for lining or bursting after the roots are removed and the pipe is evaluated. The condition of the host pipe is important." },
+    { q: "Can a sewer pipe be lined if it has cracks?", a: "Some cracked pipes can qualify for lining, provided the pipe meets the structural and installation requirements of the selected lining system." },
+    { q: "Can a collapsed sewer line be repaired without digging?", a: "A fully collapsed line may not be suitable for pipe lining. Depending on the circumstances, excavation or another replacement method may be necessary." },
+    { q: "How long does trenchless sewer repair take?", a: "The project timeline depends on pipe length, preparation, access, selected method, curing requirements, connections, and site conditions. The schedule is discussed after the evaluation." },
+    { q: "Does pipe lining replace the old sewer pipe?", a: "Pipe lining creates a new lining inside the existing pipe. It generally does not remove the original pipe. Pipe bursting, by contrast, installs a new pipe while breaking apart or displacing the old one." },
+    { q: "Will trenchless sewer repair damage my driveway?", a: "Trenchless methods may reduce the amount of driveway excavation, but access points may still be required. The actual impact depends on the sewer route and the selected installation method." },
+    { q: "Do I need a sewer camera inspection first?", a: "A camera inspection is often an important part of evaluating trenchless suitability. It helps identify visible pipe conditions and potential problems that may affect the selected method." },
+    { q: "Is pipe bursting better than pipe lining?", a: "Neither method is universally better. Pipe lining rehabilitates a suitable existing pipe, while pipe bursting replaces the existing pipe. The correct choice depends on the condition and configuration of the sewer system." },
+    { q: "Can trenchless sewer repair be performed in Aurora, Denver, or Boulder?", a: "Zenith serves Denver, Aurora, Lakewood, Littleton, Centennial, Arvada, Westminster, Thornton, Longmont, Boulder, Morrison, and surrounding communities. Contact us to confirm service availability for your property." },
+    { q: "How do I know which sewer repair method is right for my home?", a: "A sewer camera inspection, site evaluation, and review of the pipe's condition help determine whether pipe lining, pipe bursting, targeted repair, or traditional excavation is the appropriate approach." },
+  ],
+  cta: {
+    title: "Request a Trenchless Sewer Repair Evaluation",
+    text: "If your sewer line is damaged beneath a driveway, patio, mature landscaping, or another difficult-to-access area, trenchless sewer repair may be worth considering. Zenith evaluates underground sewer problems and explains whether pipe lining, pipe bursting, traditional repair, or full sewer replacement may be suitable for your property.",
+  },
+};
+
 /** Extra long-form content for individual service pages, keyed by service slug. */
 export const servicePageContent: Record<string, CategoryPageContent> = {
   "pipe-repair": pipeRepair,
@@ -2933,4 +3192,5 @@ export const servicePageContent: Record<string, CategoryPageContent> = {
   "sewer-camera-inspection": sewerCameraInspection,
   "sewer-repair": sewerRepair,
   "sewer-replacement": sewerReplacement,
+  "trenchless-sewer-repair": trenchlessSewerRepair,
 };
