@@ -12,7 +12,7 @@ type Card = CategoryPageContent["services"][number];
 
 function ServiceCards({ items, icon, fill }: { items: Card[]; icon: string; fill: (t: string) => string }) {
   return (
-    <div className={`home-services home-services-wide${items.length % 3 === 0 || items.length === 5 ? " grid-3" : items.length === 4 && items.some((i) => i.bullets2) ? " grid-2" : ""}`}>
+    <div className={`home-services home-services-wide${items.length % 3 === 0 || items.length === 5 ? " grid-3" : items.length === 4 && items.some((i) => i.bullets) ? " grid-2" : ""}`}>
       {items.map((sv) => (
         <article key={sv.title} className="home-service">
           <h3>
