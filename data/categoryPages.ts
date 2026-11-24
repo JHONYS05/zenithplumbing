@@ -3559,6 +3559,229 @@ const sewerCleanoutInstallation: CategoryPageContent = {
   },
 };
 
+const waterHeaterRepair: CategoryPageContent = {
+  og: {
+    title: "Water Heater Repair Denver CO | Gas & Electric | Zenith",
+    description: "Professional gas and electric water heater repair throughout Denver Metro and Northern Colorado.",
+  },
+  introParagraphs: [
+    "We provide professional gas and electric water heater troubleshooting and repair throughout Denver Metro and Northern Colorado. Whether you are dealing with a failed heating component, a pilot light problem, a leaking connection or another water heater issue, our team evaluates the system and explains your options before work begins.",
+  ],
+  whatIs: {
+    heading: "Professional Water Heater Repair Services",
+    paragraphs: [
+      "Your water heater is an important part of your home's plumbing system. When it stops working properly, everyday activities such as showering, washing dishes and doing laundry can become difficult.",
+      "Zenith diagnoses common water heater problems and determines whether a repair is appropriate or whether replacement should be considered.",
+    ],
+    itemsLead: "Our repair services include troubleshooting and service for:",
+    items: [
+      "Gas water heaters.",
+      "Electric water heaters.",
+      "Water heaters that produce little or no hot water.",
+      "Inconsistent or fluctuating water temperatures.",
+      "Pilot light and ignition problems.",
+      "Heating element and thermostat issues.",
+      "Leaking water heater connections and valves.",
+      "Unusual popping, rumbling or banging noises.",
+      "Water heater pressure and temperature concerns.",
+      "Certain venting and combustion-related problems.",
+    ],
+    outro: "The exact repair depends on the water heater's make, model, age, condition and the cause of the failure.",
+  },
+  servicesHeading: "Gas and Electric Water Heater Repair",
+  servicesLead: "",
+  services: [
+    {
+      title: "Gas Water Heater Repair",
+      paragraphs: [
+        "Gas water heaters use a burner and gas control system to heat water stored inside the tank. When one of these components fails, the unit may produce insufficient hot water or stop heating completely.",
+      ],
+      bulletsLead: "Zenith evaluates common gas water heater problems, including:",
+      bullets: [
+        "Pilot light that will not stay lit.",
+        "Ignition or burner problems.",
+        "Faulty thermocouple or related safety components.",
+        "Gas control and thermostat issues.",
+        "Burner performance concerns.",
+        "Certain venting and combustion issues.",
+        "Water temperature problems.",
+      ],
+      outro: [
+        "Gas appliances require proper diagnosis and safe handling. Do not attempt to bypass safety devices, modify gas connections or continue operating a unit with suspected combustion or venting problems.",
+        "If you smell gas, leave the area without operating electrical switches or creating a flame and contact your gas utility or emergency services from a safe location.",
+      ],
+    },
+    {
+      title: "Electric Water Heater Repair",
+      paragraphs: [
+        "Electric water heaters use heating elements and thermostats to maintain the desired water temperature. When one of these components fails, the unit may produce lukewarm water, inconsistent temperatures or no hot water.",
+      ],
+      bulletsLead: "Common electric water heater problems include:",
+      bullets: [
+        "Failed upper or lower heating elements.",
+        "Faulty thermostats.",
+        "Electrical supply problems.",
+        "Tripped breakers or electrical interruptions.",
+        "Temperature control problems.",
+        "Sediment accumulation.",
+        "Leaking valves or plumbing connections.",
+      ],
+      outro: [
+        "Our team evaluates the system to determine whether a component repair is appropriate or whether the water heater should be replaced.",
+        "Electrical components should be serviced using proper safety procedures.",
+      ],
+    },
+  ],
+  relatedLinks: [
+    { label: "Water Heater Installation", href: "/water-heater-installation" },
+    { label: "Water Heater Replacement", href: "/water-heater-replacement" },
+    { label: "Tankless Water Heaters", href: "/tankless-water-heaters" },
+    { label: "Plumbing Repair", href: "/plumbing-repair" },
+    { label: "Leak Detection", href: "/leak-detection" },
+  ],
+  signs: {
+    heading: "Signs Your Water Heater Needs Repair",
+    lead: ["Recognizing early warning signs can help you address a problem before it causes more disruption or water damage."],
+    items: [
+      { title: "No Hot Water", body: "If your water heater is not producing hot water, the cause may involve the power supply, gas supply, thermostat, heating element, ignition system or another component. A proper diagnosis is necessary before replacing parts." },
+      { title: "Hot Water Runs Out Too Quickly", body: "If your showers become cold faster than usual, possible causes include sediment buildup, a failing heating component, thermostat problems or a water heater that no longer meets your household's demand." },
+      { title: "Water Heater Is Leaking", body: "Water around the unit may come from a loose connection, drain valve, temperature and pressure relief valve, piping or the tank itself. A leak from a connection or replaceable component may be repairable. A leaking tank generally indicates tank failure and requires replacement." },
+      { title: "Popping or Rumbling Sounds", body: "Popping and rumbling noises can be associated with sediment buildup inside a tank. As water heats, steam bubbles can form beneath accumulated sediment and create noise. An inspection can determine whether maintenance or another repair is appropriate." },
+      { title: "Water Is Rusty or Discolored", body: "Discolored hot water may indicate corrosion inside the tank, deteriorating piping or another plumbing issue. The source should be investigated rather than assuming the water heater is automatically responsible." },
+      { title: "Water Temperature Changes Unexpectedly", body: "Fluctuating temperatures can be related to thermostat problems, heating components, mixing valves or other plumbing conditions. A technician can test the system and identify the likely cause." },
+      { title: "Pilot Light Will Not Stay Lit", body: "On certain gas water heaters, a pilot light that repeatedly goes out may involve the thermocouple, gas control, ignition system, airflow or another component. Gas-related problems should be evaluated by a qualified professional." },
+    ],
+  },
+  causes: {
+    heading: "Common Water Heater Parts That May Need Repair",
+    lead: "Depending on the model and diagnosis, water heater service may involve several components.",
+    items: [
+      { title: "Thermostat", body: "The thermostat regulates water temperature. A faulty thermostat can cause water that is too hot, too cold or inconsistent." },
+      { title: "Heating Element", body: "Electric water heaters use heating elements to heat the water. A failed element can reduce hot water production or cause the unit to stop heating." },
+      { title: "Thermocouple", body: "Some gas water heaters use a thermocouple as part of the pilot safety system. A failing thermocouple may prevent the pilot from staying lit." },
+      { title: "Ignition System", body: "Certain gas water heaters use electronic ignition components. Problems with the ignition system can prevent the burner from operating properly." },
+      { title: "Drain Valve", body: "A damaged or leaking drain valve can cause water to collect around the bottom of the unit." },
+      { title: "Temperature and Pressure Relief Valve", body: "An important safety device. A discharge or leak should be evaluated to determine whether it is related to valve failure, excessive temperature, excessive pressure or another system condition. Safety valves must never be plugged, capped or disabled." },
+      { title: "Anode Rod", body: "The anode rod helps protect the inside of a tank from corrosion. Its condition can affect the tank's long-term protection, depending on the water quality and maintenance history." },
+    ],
+  },
+  compare: {
+    heading: "Should You Repair or Replace Your Water Heater?",
+    lead: "Not every water heater problem requires a new unit. Some issues involve a replaceable component, valve or connection. Other problems indicate that the tank itself has reached the end of its useful service life.",
+    columns: [
+      {
+        heading: "Repair May Make Sense When:",
+        items: [
+          "The tank is in good condition.",
+          "The problem is limited to a repairable component.",
+          "There is no evidence of tank corrosion or structural failure.",
+          "The repair cost is reasonable compared with replacement.",
+          "The unit continues to meet your household's hot water needs.",
+        ],
+      },
+      {
+        heading: "Replacement May Make More Sense When:",
+        items: [
+          "The storage tank itself is leaking.",
+          "There is significant internal corrosion.",
+          "The water heater has recurring failures.",
+          "Repair costs are high compared with a new system.",
+          "The unit is no longer meeting household demand.",
+          "Replacement parts are unavailable or the unit is no longer practical to maintain.",
+        ],
+      },
+    ],
+    outro: ["We can explain the condition of your existing water heater and provide options based on the actual findings."],
+  },
+  process: {
+    heading: "Our Water Heater Repair Process",
+    lead: "We want you to understand what is happening with your water heater before deciding how to proceed.",
+    steps: [
+      { title: "Initial Evaluation", body: "We ask about the symptoms, the age of the unit and when the problem started." },
+      { title: "System Inspection", body: "We inspect relevant plumbing connections, controls, power or gas supply, venting and other components as appropriate." },
+      { title: "Component Testing", body: "We evaluate the parts associated with the reported problem." },
+      { title: "Repair Versus Replacement", body: "We explain whether repair is practical or whether replacement should be considered based on the tank's condition, age and repair requirements." },
+      { title: "Upfront Pricing", body: "We explain the recommended scope and price before authorized work begins." },
+      { title: "Repair and Operational Check", body: "After the repair, we check the system's operation and verify the work performed." },
+    ],
+  },
+  listSections: [
+    {
+      heading: "Water Heater Repair Cost Factors",
+      lead: [
+        "The cost of water heater repair depends on the problem and the parts or labor required.",
+        "Factors that may affect the price include:",
+      ],
+      items: [
+        "Gas versus electric water heater.",
+        "Make, model and age of the unit.",
+        "Type of failed component.",
+        "Availability and cost of replacement parts.",
+        "Accessibility of the water heater.",
+        "Condition of gas, electrical and plumbing connections.",
+        "Venting or safety-related issues.",
+        "Whether additional plumbing work is needed.",
+      ],
+      outro: "A repair involving a replaceable component is different from a project requiring extensive plumbing work or full water heater replacement. Zenith explains the recommended work and pricing before proceeding.",
+    },
+    {
+      heading: "Water Heater Maintenance and Preventive Care",
+      lead: [
+        "Routine attention can help identify developing issues and support reliable operation.",
+        "Depending on the manufacturer's recommendations and the condition of the system, maintenance may include:",
+      ],
+      items: [
+        "Checking for visible leaks and corrosion.",
+        "Evaluating water temperature settings.",
+        "Inspecting accessible plumbing connections.",
+        "Checking the drain valve and safety relief valve.",
+        "Evaluating sediment accumulation and flushing when appropriate.",
+        "Inspecting the anode rod when applicable.",
+        "Reviewing the condition of gas venting or electrical components.",
+      ],
+      outro: "Tank flushing and other maintenance should be performed appropriately for the water heater's condition and manufacturer instructions. An older or heavily corroded unit may need additional evaluation before maintenance is attempted.",
+    },
+  ],
+  why: {
+    heading: "Why Choose Zenith for Water Heater Repair?",
+    lead: "Here's what you can expect when Zenith works on your water heater.",
+    points: [
+      { title: "Diagnosis Before Recommendations", body: "We evaluate the problem before recommending a repair or replacement." },
+      { title: "Clear Options and Pricing", body: "We explain the recommended work and pricing before beginning authorized repairs." },
+      { title: "Gas and Electric Water Heater Service", body: "We troubleshoot common problems with residential gas and electric water heaters." },
+      { title: "Respect for Your Home", body: "We work to protect the surrounding area, maintain an organized jobsite and clean up according to the agreed scope." },
+      { title: "Plumbing Services Under One Roof", body: "From water heaters and plumbing repairs to drains, sewer systems and HVAC, Zenith provides multiple home service solutions through one company." },
+    ],
+  },
+  areas: {
+    heading: "Water Heater Repair Service Areas",
+    lead: "Zenith provides water heater repair throughout Denver Metro and Northern Colorado, including:",
+    outro: "Contact our team to confirm service availability in your area.",
+  },
+  faqHeading: "Frequently Asked Questions About Water Heater Repair",
+  faqs: () => [
+    { q: "Why is my water heater not producing hot water?", a: "Possible causes include a failed heating element, thermostat problem, pilot light or ignition issue, gas or electrical supply interruption, or another component failure. A professional diagnosis can identify the cause." },
+    { q: "Why does my water heater make popping noises?", a: "Popping or rumbling noises can be caused by sediment buildup inside the tank. The water heater may need inspection and appropriate maintenance." },
+    { q: "Is a leaking water heater repairable?", a: "Leaks from valves, fittings or connections may be repairable. A leak coming from the storage tank itself generally means the tank has failed and the water heater needs replacement." },
+    { q: "Why does my hot water run out so quickly?", a: "Possible causes include sediment buildup, a failing heating element, thermostat problems, increased household demand or an undersized water heater." },
+    { q: "How do I know if my water heater is gas or electric?", a: "Gas units typically have a gas supply connection and burner assembly. Electric models use electrical wiring and heating elements. A technician can confirm the type and evaluate the system safely." },
+    { q: "Can you repair a gas water heater?", a: "Yes. We troubleshoot common gas water heater issues involving pilot lights, ignition, burner operation, controls and other components, subject to the unit's condition and the required repair." },
+    { q: "Can you repair an electric water heater?", a: "Yes. Common electric water heater repairs may involve thermostats, heating elements, electrical supply issues and plumbing connections." },
+    { q: "Why does my water heater pilot light keep going out?", a: "Possible causes include a thermocouple problem, gas control issue, ignition problem or inadequate airflow. The cause should be diagnosed before replacing parts." },
+    { q: "Why is my hot water rusty?", a: "Rust-colored water may be related to corrosion inside the water heater, deteriorating piping or another plumbing condition. The source should be identified before deciding on a repair." },
+    { q: "How long does a water heater repair take?", a: "The time depends on the diagnosis, part availability, accessibility and complexity of the repair. Some component repairs are relatively straightforward, while other problems require additional testing or work." },
+    { q: "Should I repair a water heater that is several years old?", a: "Age is one consideration, but tank condition, repair cost, performance and safety are also important. A repair may still make sense if the tank is sound and the failed component is replaceable." },
+    { q: "Can a water heater thermostat be replaced?", a: "In many cases, yes. Whether replacement is appropriate depends on the water heater model, component condition and diagnosis." },
+    { q: "Does a water heater need to be flushed?", a: "Some tank water heaters benefit from periodic flushing to remove sediment. The recommended frequency depends on the manufacturer's instructions and water conditions. A technician should evaluate older or heavily corroded tanks before flushing." },
+    { q: "When should I replace my water heater instead of repairing it?", a: "Replacement is generally the better option when the tank itself leaks, has significant corrosion, repeatedly fails or is no longer economical to repair." },
+    { q: "Do you offer water heater installation and replacement?", a: "Yes. Zenith also provides water heater installation and replacement services. We can discuss available options when repairing the existing unit is no longer practical." },
+  ],
+  cta: {
+    title: "Schedule Water Heater Repair in Denver, CO",
+    text: "Do not let a failing water heater disrupt your home. Whether you have no hot water, a leaking connection, a faulty heating element or a gas water heater that will not stay lit, Zenith can evaluate the problem and explain your repair options.",
+  },
+};
+
 /** Extra long-form content for individual service pages, keyed by service slug. */
 export const servicePageContent: Record<string, CategoryPageContent> = {
   "pipe-repair": pipeRepair,
@@ -3573,4 +3796,5 @@ export const servicePageContent: Record<string, CategoryPageContent> = {
   "trenchless-sewer-repair": trenchlessSewerRepair,
   "sewer-line-inspection": sewerLineInspection,
   "sewer-cleanout-installation": sewerCleanoutInstallation,
+  "water-heater-repair": waterHeaterRepair,
 };
