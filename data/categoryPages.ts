@@ -21,6 +21,8 @@ export interface CategoryPageContent {
     paragraphs: string[];
     bulletsLead?: string;
     bullets?: string[];
+    bullets2Lead?: string;
+    bullets2?: string[];
     outro?: string[];
     href?: string;
     linkLabel?: string;
@@ -3782,6 +3784,293 @@ const waterHeaterRepair: CategoryPageContent = {
   },
 };
 
+const waterHeaterInstallation: CategoryPageContent = {
+  og: {
+    title: "Water Heater Installation Denver CO | Zenith Plumbing",
+    description: "Professional gas, electric, tankless and hybrid water heater installation throughout Denver Metro and Northern Colorado.",
+  },
+  introParagraphs: [
+    "Whether you need a traditional gas water heater, an electric storage tank, a tankless system or a hybrid heat pump water heater, our team can evaluate your existing setup and explain the available installation options.",
+    "A properly selected and installed water heater can provide dependable hot water while meeting your property's plumbing, venting, electrical and safety requirements.",
+    "Zenith serves homeowners throughout Denver Metro and Northern Colorado.",
+  ],
+  whatIs: {
+    heading: "Professional Water Heater Installation Services",
+    paragraphs: [
+      "Choosing a water heater involves more than selecting a tank size. Your household's hot water usage, existing fuel source, plumbing configuration, available space and installation requirements all affect which system makes sense.",
+      "Zenith evaluates these factors before recommending an installation.",
+    ],
+    itemsLead: "Our water heater installation services include:",
+    items: [
+      "Gas tank water heater installation.",
+      "Electric tank water heater installation.",
+      "Tankless water heater installation.",
+      "Hybrid heat pump water heater installation.",
+      "Water heater sizing and equipment selection.",
+      "Water supply and connection work.",
+      "Gas connection work where applicable.",
+      "Electrical connection work where applicable.",
+      "Venting evaluation and installation where required.",
+      "Expansion tank installation where required.",
+      "Temperature and pressure relief valve discharge piping.",
+      "Drain pan and drainage provisions where required.",
+      "Water heater startup and operational checks.",
+      "Permit coordination where required by the applicable jurisdiction.",
+    ],
+    outro: "The final installation scope depends on the selected equipment, existing plumbing and local requirements.",
+  },
+  servicesHeading: "Types of Water Heaters We Install",
+  servicesLead: "Every household has different hot water needs. We help you compare available systems and choose an option that fits your property.",
+  services: [
+    {
+      title: "Gas Tank Water Heaters",
+      paragraphs: [
+        "Traditional gas water heaters store heated water in an insulated tank and use a gas burner to maintain the water temperature. They are a common choice for homes with an existing natural gas connection and compatible venting.",
+      ],
+      bulletsLead: "Potential advantages include:",
+      bullets: [
+        "Familiar and widely used technology.",
+        "Stored hot water for everyday household needs.",
+        "Multiple tank capacities and configurations.",
+        "Compatibility with many existing residential plumbing setups.",
+      ],
+      bullets2Lead: "Installation considerations:",
+      bullets2: [
+        "Gas supply and shutoff arrangements.",
+        "Proper venting and combustion air.",
+        "Water supply and hot water connections.",
+        "Temperature and pressure relief valve discharge.",
+        "Expansion tank where required.",
+        "Drain pan and drainage where required by the installation.",
+      ],
+      outro: ["The selected unit must be compatible with the property's gas system, venting and applicable codes."],
+    },
+    {
+      title: "Electric Tank Water Heaters",
+      paragraphs: [
+        "Electric water heaters use heating elements to warm water stored in an insulated tank. They may be a practical option for properties with an appropriate electrical supply and no need for gas-fired equipment.",
+      ],
+      bulletsLead: "Potential advantages include:",
+      bullets: [
+        "No gas burner or combustion venting.",
+        "Straightforward operation.",
+        "Different tank capacities for household needs.",
+        "A suitable option for homes with compatible electrical service.",
+      ],
+      bullets2Lead: "Installation considerations:",
+      bullets2: [
+        "Available electrical capacity.",
+        "Correct circuit and electrical connections.",
+        "Tank size and household demand.",
+        "Water supply and discharge connections.",
+        "Expansion tank where required.",
+        "Drain pan and drainage where required.",
+      ],
+      outro: ["Electrical requirements must be evaluated before selecting the equipment."],
+    },
+    {
+      title: "Tankless Water Heaters",
+      href: "/tankless-water-heaters",
+      linkLabel: "Tankless Water Heater Installation",
+      paragraphs: [
+        "Tankless water heaters heat water as it flows through the system instead of storing a large volume of hot water in a traditional tank. They can be an option for households interested in an on-demand hot water system.",
+      ],
+      bulletsLead: "Potential advantages include:",
+      bullets: [
+        "No large storage tank.",
+        "Compact equipment design.",
+        "Hot water produced when there is demand.",
+        "Potential energy savings depending on usage and equipment.",
+      ],
+      bullets2Lead: "Installation considerations:",
+      bullets2: [
+        "Required gas or electrical capacity.",
+        "Maximum simultaneous hot water demand.",
+        "Proper venting where applicable.",
+        "Water quality and manufacturer requirements.",
+        "Condensate drainage for applicable models.",
+        "Equipment placement and service access.",
+      ],
+      outro: [
+        "A tankless system must be properly sized for the number of fixtures and the expected simultaneous hot water demand. It is not automatically the best choice for every property.",
+      ],
+    },
+    {
+      title: "Hybrid Heat Pump Water Heaters",
+      paragraphs: [
+        "Hybrid heat pump water heaters use heat pump technology to transfer heat from surrounding air into stored water. Many models also include electric resistance heating as a supplemental heating method. They may be a good option for homeowners interested in improving water heating efficiency.",
+      ],
+      bulletsLead: "Potential advantages include:",
+      bullets: [
+        "High efficiency under suitable operating conditions.",
+        "Stored hot water for household use.",
+        "Different operating modes.",
+        "Potential long-term energy savings.",
+      ],
+      bullets2Lead: "Installation considerations:",
+      bullets2: [
+        "Available installation space.",
+        "Required surrounding air volume and temperature.",
+        "Condensate drainage.",
+        "Electrical supply.",
+        "Noise and airflow considerations.",
+        "Manufacturer clearance requirements.",
+      ],
+      outro: ["A hybrid water heater must be installed in an appropriate location with the required space and drainage provisions."],
+    },
+  ],
+  relatedLinks: [
+    { label: "Water Heater Repair", href: "/water-heater-repair" },
+    { label: "Water Heater Replacement", href: "/water-heater-replacement" },
+    { label: "Tankless Water Heater Installation", href: "/tankless-water-heaters" },
+  ],
+  cardGroups: [
+    {
+      heading: "When Should You Install a New Water Heater?",
+      lead: "A new installation may be appropriate in several situations.",
+      items: [
+        { title: "New Home or Property Construction", paragraphs: ["A new home needs a properly sized water heating system that works with the plumbing layout, utility connections and household requirements."] },
+        { title: "Remodeling or Home Additions", paragraphs: ["Adding a bathroom, expanding a home or changing the plumbing layout may increase hot water demand. A new water heater may be necessary to support the updated household needs."] },
+        { title: "Changing Fuel Types", paragraphs: ["Some homeowners consider changing from gas to electric or choosing a different type of water heating system. This requires evaluating utility capacity, installation costs and equipment compatibility."] },
+        { title: "Upgrading to Tankless", href: "/tankless-water-heaters", linkLabel: "Tankless Water Heaters", paragraphs: ["A tankless system may be worth considering when the existing setup is being redesigned and the property can support the required gas or electrical capacity."] },
+        { title: "Improving Energy Efficiency", paragraphs: ["An older system may offer an opportunity to compare newer equipment options, including high-efficiency tank, tankless and hybrid models."] },
+      ],
+    },
+  ],
+  process: {
+    heading: "Our Water Heater Installation Process",
+    lead: "We follow a structured process to help make your installation clear and organized.",
+    steps: [
+      { title: "Review Your Current Setup", body: "We evaluate your existing water heater, fuel source, plumbing connections and available installation space." },
+      { title: "Understand Your Hot Water Needs", body: "We discuss household size, bathrooms, usage patterns and expected demand." },
+      { title: "Compare Equipment Options", body: "We explain suitable gas, electric, tankless and hybrid systems when appropriate." },
+      { title: "Provide the Installation Proposal", body: "We explain the equipment, proposed work, additional requirements and pricing." },
+      { title: "Address Permit Requirements", body: "We identify applicable permit and inspection requirements for the project location." },
+      { title: "Prepare the Installation Area", body: "We coordinate removal of existing equipment when included and prepare the location." },
+      { title: "Install the New Water Heater", body: "We complete the required plumbing, gas or electrical, venting and safety connections." },
+      { title: "Test and Review Operation", body: "We check the completed installation and explain basic operation to the homeowner." },
+    ],
+    outro: "Our goal is to leave you with a properly installed system that matches the approved project scope and applicable requirements.",
+  },
+  listSections: [
+    {
+      heading: "How to Choose the Right Water Heater Size",
+      lead: [
+        "Selecting the correct water heater capacity is important. A system that is too small may run out of hot water during busy periods, while a system that is larger than necessary may increase equipment and operating costs.",
+        "We consider several factors when recommending a water heater:",
+      ],
+      items: [
+        "Number of people living in the home.",
+        "Number of bathrooms and showers.",
+        "Simultaneous hot water usage.",
+        "Dishwasher and washing machine demand.",
+        "Existing water heater capacity.",
+        "Available installation space.",
+        "Fuel source and utility capacity.",
+        "Household preferences and budget.",
+      ],
+      outro: "For tankless systems, we also evaluate expected flow rate and the temperature rise needed. Our goal is to recommend equipment that fits your actual household needs rather than choosing a unit based only on the size of the old water heater.",
+    },
+    {
+      heading: "What's Included in a Professional Water Heater Installation?",
+      lead: ["The installation scope depends on the equipment and the property's existing configuration. A typical installation may include:"],
+      items: [
+        "Reviewing the existing water heater and connections.",
+        "Confirming equipment size and type.",
+        "Preparing the installation location.",
+        "Removing existing equipment when included in the project scope.",
+        "Positioning and securing the new water heater as required.",
+        "Connecting hot and cold water lines.",
+        "Installing or updating the gas or electrical connections as applicable.",
+        "Evaluating venting and combustion air requirements for gas equipment.",
+        "Installing an expansion tank where required.",
+        "Connecting temperature and pressure relief valve discharge piping.",
+        "Installing a drain pan and drainage provisions where required.",
+        "Filling and checking the tank according to manufacturer instructions.",
+        "Starting the system and checking its operation.",
+        "Reviewing basic operation and maintenance with the homeowner.",
+      ],
+      outro: "The estimate identifies whether disposal, new supply lines, shutoff valves, gas shutoff upgrades, expansion tank, drain pan, vent modifications, electrical upgrades and other additional work are included.",
+    },
+    {
+      heading: "Water Heater Installation Cost Factors in Denver",
+      lead: [
+        "The cost of a new water heater installation varies depending on the equipment and the work required.",
+        "Important pricing factors include:",
+      ],
+      items: [
+        "Type of water heater selected.",
+        "Tank capacity and equipment model.",
+        "Gas versus electric configuration.",
+        "Standard tank versus tankless or hybrid equipment.",
+        "Existing plumbing connection condition.",
+        "Gas line or electrical modifications.",
+        "Venting modifications.",
+        "Expansion tank requirements.",
+        "Drain pan and drainage provisions.",
+        "Permit and inspection requirements.",
+        "Removal and disposal of existing equipment.",
+        "Accessibility and installation location.",
+      ],
+      outro: "A standard replacement-style installation is different from a project requiring new venting, utility upgrades, relocation or substantial plumbing modifications. Zenith explains the equipment and installation scope before authorized work begins.",
+    },
+  ],
+  split: {
+    heading: "Water Heater Permits and Installation Requirements",
+    lead: "Water heater installation requirements vary by city, equipment type and property configuration.",
+    items: [
+      {
+        title: "Permits and Inspections",
+        body: "Depending on the project, requirements may include permits, inspections, approved venting, appropriate gas or electrical connections, temperature and pressure relief valve discharge piping, expansion tank provisions and other safety measures. Zenith reviews the applicable requirements for the installation location and coordinates permits where required by the jurisdiction.",
+      },
+      {
+        title: "Code and Manufacturer Requirements",
+        body: "The completed installation must follow the equipment manufacturer's instructions and applicable local plumbing, mechanical, fuel gas and electrical requirements.",
+      },
+    ],
+  },
+  why: {
+    heading: "Why Choose Zenith for Water Heater Installation?",
+    lead: "Here's what you can expect when Zenith installs your new water heater.",
+    points: [
+      { title: "Help Choosing the Right Equipment", body: "We consider your household's hot water needs, fuel source, available space and installation requirements before recommending a system." },
+      { title: "Clear Installation Scope", body: "We explain what the project includes, which components are needed and whether additional work may be required." },
+      { title: "Options and Pricing Up Front", body: "You receive the proposed installation scope and pricing before authorized work begins." },
+      { title: "Attention to Installation Details", body: "Water supply connections, venting, gas or electrical arrangements, expansion tanks and relief valve discharge piping all matter to a safe and functional installation." },
+      { title: "Respect for Your Home", body: "We work to protect surrounding areas, maintain an organized jobsite and clean up according to the agreed project scope." },
+      { title: "Plumbing and HVAC Services", body: "Zenith provides plumbing, drain, sewer, water heater and HVAC services throughout our service area." },
+    ],
+  },
+  areas: {
+    heading: "Water Heater Installation Service Areas",
+    lead: "Zenith provides water heater installation throughout Denver Metro and Northern Colorado, including:",
+    outro: "Contact our team to confirm installation availability for your property.",
+  },
+  faqHeading: "Frequently Asked Questions About Water Heater Installation",
+  replacesFaqs: ["Do I need a permit for a new water heater?"],
+  faqs: () => [
+    { q: "What size water heater do I need?", a: "The right size depends on the number of people in your household, the number of bathrooms and how much hot water you use at the same time. We evaluate your household demand before recommending a system." },
+    { q: "How much does water heater installation cost in Denver?", a: "The cost depends on the type and size of the equipment, installation complexity, utility connections, venting, permits and additional components. An evaluation helps determine the actual project price." },
+    { q: "Do I need a permit to install a water heater in Colorado?", a: "Permit requirements depend on the city or county and the project. Many jurisdictions require permits and inspections for water heater work. The applicable local authority should be checked before installation." },
+    { q: "What types of water heaters can you install?", a: "Zenith's water heater installation services include gas tank, electric tank, tankless and hybrid heat pump water heaters, subject to the property's requirements and equipment availability." },
+    { q: "Should I choose a gas or electric water heater?", a: "The best choice depends on available utilities, operating costs, installation requirements, household demand and your preferences. We can help compare suitable options." },
+    { q: "Is a tankless water heater better than a traditional tank?", a: "Not necessarily. Tankless systems provide hot water on demand, while traditional tanks store heated water. The best option depends on household demand, installation requirements, budget and equipment suitability." },
+    { q: "Can you install a tankless water heater in an older home?", a: "Possibly. The existing gas or electrical capacity, venting, plumbing layout and installation location must be evaluated. Some older homes require upgrades before a tankless system can be installed." },
+    { q: "What is a hybrid heat pump water heater?", a: "A hybrid heat pump water heater uses heat pump technology to transfer heat from surrounding air into stored water. It requires suitable installation space, airflow and condensate drainage." },
+    { q: "Does a new water heater need an expansion tank?", a: "An expansion tank is required in certain plumbing configurations, including systems where thermal expansion must be controlled. The installation requirements depend on the plumbing system and applicable code." },
+    { q: "Do I need a drain pan under my water heater?", a: "Drain pan requirements depend on the installation location, applicable code and equipment setup. A pan and suitable drainage may be necessary to help manage water from a leak." },
+    { q: "Do you remove the old water heater?", a: "Removal and disposal can be included in the installation proposal. Confirm that these items are listed in your estimate before work begins." },
+    { q: "How long does water heater installation take?", a: "Installation time depends on the equipment, access, existing connections, permit requirements and whether modifications are needed. A straightforward installation generally takes less time than a project requiring relocation or utility upgrades." },
+    { q: "Can you install a larger water heater?", a: "Yes, if the selected equipment is appropriate for the household and the installation location can support it. We evaluate hot water demand, available space, utility connections and applicable requirements." },
+    { q: "What should I do before the installation appointment?", a: "Make sure the installation area is accessible and let us know about any existing leaks, unusual conditions or planned changes to the plumbing or utility connections. We can explain any additional preparation needed for your project." },
+    { q: "Do you offer water heater repair and replacement?", a: "Yes. In addition to new installations, Zenith provides water heater repair and replacement services. We can help determine which service is appropriate for your existing system." },
+  ],
+  cta: {
+    title: "Schedule Water Heater Installation in Denver, CO",
+    text: "Get the right water heater for your home with professional installation. Whether you are installing a traditional gas water heater, an electric tank, a tankless system or a hybrid heat pump water heater, Zenith can evaluate your needs and explain the available options throughout Denver Metro and Northern Colorado.",
+  },
+};
+
 /** Extra long-form content for individual service pages, keyed by service slug. */
 export const servicePageContent: Record<string, CategoryPageContent> = {
   "pipe-repair": pipeRepair,
@@ -3797,4 +4086,5 @@ export const servicePageContent: Record<string, CategoryPageContent> = {
   "sewer-line-inspection": sewerLineInspection,
   "sewer-cleanout-installation": sewerCleanoutInstallation,
   "water-heater-repair": waterHeaterRepair,
+  "water-heater-installation": waterHeaterInstallation,
 };

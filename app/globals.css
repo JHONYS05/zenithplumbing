@@ -492,3 +492,10 @@ html, body { overflow-x: clip; }
 @media (min-width: 720px) { .home-intro > .check-list, .home-intro > div > .check-list { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 14px; } .home-intro > div > .check-list li { margin: 0; } }
 .section.section-compact { padding-top: 28px; padding-bottom: 28px; }
 .section-compact .related-links { margin-top: 0; }
+.grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 720px) { .grid-2 { grid-template-columns: 1fr; } }
+.list-sections > div:last-child:nth-child(odd) { grid-column: 1 / -1; }
+@media (min-width: 720px) {
+  .list-sections > div:last-child:nth-child(odd) .check-list { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 14px; }
+  .list-sections > div:last-child:nth-child(odd) .check-list li { margin: 0; }
+}
