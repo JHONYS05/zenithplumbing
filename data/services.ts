@@ -1239,13 +1239,23 @@ export const services: Service[] = [
     slug: "tankless-water-heaters",
     category: "water-heaters",
     name: "Tankless Water Heaters",
-    title: "Tankless Water Heater Installation in Colorado | Zenith",
+    title: "Tankless Water Heater Installation Denver CO | Zenith",
     description:
-      "Explore tankless water heater installation and replacement for efficient on-demand hot water.",
-    keywords: ["tankless water heater installation", "tankless water heater", "tankless vs tank"],
-    h1: "Tankless Water Heater Installation",
+      "Tankless water heater installation in Denver, CO. Zenith installs and replaces gas tankless systems, with professional sizing, venting and high-altitude setup. Call today!",
+    keywords: [
+      "tankless water heater installation Denver CO",
+      "tankless water heater Denver",
+      "tankless water heater replacement",
+      "gas tankless water heater installation",
+      "whole house tankless water heater",
+      "tankless water heater plumber",
+      "high altitude tankless water heater",
+      "tankless water heater cost Denver",
+      "tankless water heater maintenance",
+    ],
+    h1: "Tankless Water Heater Installation in Denver, CO",
     intro:
-      "A tankless water heater heats water only when you need it — no tank to keep hot, and no running out halfway through a shower. Zenith installs and services tankless units, sized for your home and set up for Colorado's elevation.",
+      "Upgrade your home's hot water system with professional tankless water heater installation from Zenith. We help homeowners throughout Denver Metro and Northern Colorado choose and install tankless water heaters designed around their household's hot water demand, available utilities, and home layout.",
     summary: "On-demand hot water, sized for your home.",
     signsHeading: "Benefits of Going Tankless",
     signs: [
